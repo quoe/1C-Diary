@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.10">
+	<Item id="6a086283-3a23-4e5c-96a9-4c54ce698b32">
+		<Name>Агрессия</Name>
+		<Code>000000032</Code>
+		<Description>Агрессия</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="82868ff7-4247-4337-ba0f-cb8f7e694c96">
+		<Name>Восторг</Name>
+		<Code>000000001</Code>
+		<Description>Восторг</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="5717ee96-7d91-4997-b939-eb68922ca9bf">
+				<Name>Радость</Name>
+				<Code>000000009</Code>
+				<Description>Радость</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="afa6672b-c5e1-4ae7-80e8-ec7450f2717b">
+						<Name>Безмятежность</Name>
+						<Code>000000010</Code>
+						<Description>Безмятежность</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="0442e5f6-fd72-4552-ba33-49a6a72c0f76">
+		<Name>Восхищение</Name>
+		<Code>000000002</Code>
+		<Description>Восхищение</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="61bad38f-5bb7-43e2-9efe-db42455975d8">
+				<Name>Доверие</Name>
+				<Code>000000011</Code>
+				<Description>Доверие</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="8aaf0c65-f612-4a63-b006-3d468b16e217">
+						<Name>Принятие</Name>
+						<Code>000000012</Code>
+						<Description>Принятие</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="b18e9a70-dea0-4e04-985c-68fdbf120f70">
+		<Name>Гнев</Name>
+		<Code>000000007</Code>
+		<Description>Гнев</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="ae307435-f173-4aca-9033-128ce238d095">
+				<Name>Злость</Name>
+				<Code>000000013</Code>
+				<Description>Злость</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="14753be3-4d17-46f5-a7f9-906c47d6bc33">
+						<Name>Досада</Name>
+						<Code>000000014</Code>
+						<Description>Досада</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="a80b9349-9cee-490f-8ef0-846ff1741864">
+		<Name>Горе</Name>
+		<Code>000000005</Code>
+		<Description>Горе</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="83c0c6b7-3fbe-4ca1-a669-13d8063a345c">
+				<Name>Грусть</Name>
+				<Code>000000015</Code>
+				<Description>Грусть</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="f67b05bc-8a6e-4305-80a6-f68cadb8c339">
+						<Name>Печаль</Name>
+						<Code>000000016</Code>
+						<Description>Печаль</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="4709d188-4e94-4a05-b2ca-8df3d6c35814">
+		<Name>Изумление</Name>
+		<Code>000000004</Code>
+		<Description>Изумление</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="eb11f05c-fd3a-4bd7-b458-7d307eef3677">
+				<Name>Удивление</Name>
+				<Code>000000017</Code>
+				<Description>Удивление</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="ec8d8443-9681-4882-9248-0ad012d62e67">
+						<Name>Возбуждение</Name>
+						<Code>000000018</Code>
+						<Description>Возбуждение</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="19c53fc1-f088-45c6-912f-efec64c9f39e">
+		<Name>Любовь</Name>
+		<Code>000000026</Code>
+		<Description>Любовь</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="433af17c-7269-4927-9200-19ebda87943e">
+		<Name>Настороженность</Name>
+		<Code>000000008</Code>
+		<Description>Настороженность</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="6c590ee1-bbec-4756-bc9e-51b1333adbd9">
+				<Name>Ожидание</Name>
+				<Code>000000019</Code>
+				<Description>Ожидание</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="4ed422d3-9bdb-429b-8eaf-7012d0c089dc">
+						<Name>Интерес</Name>
+						<Code>000000020</Code>
+						<Description>Интерес</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="d7b005d0-882e-4de8-856e-e7eebbf7bd1e">
+		<Name>Оптимизм</Name>
+		<Code>000000025</Code>
+		<Description>Оптимизм</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e1a27bd0-e953-4e0e-921b-e64fae1cdb7b">
+		<Name>Отвращение</Name>
+		<Code>000000006</Code>
+		<Description>Отвращение</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="51473e4b-273f-46c9-8da5-019f88640f79">
+				<Name>Неудовольствие</Name>
+				<Code>000000021</Code>
+				<Description>Неудовольствие</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="877be35c-3f8d-4f37-a06b-05aa302ea87c">
+						<Name>Скука</Name>
+						<Code>000000022</Code>
+						<Description>Скука</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="d1be0eec-9e5e-404c-bcf4-018cd77f4cb7">
+		<Name>Покорность</Name>
+		<Code>000000027</Code>
+		<Description>Покорность</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="49d02c96-8467-4b1b-a8ad-aa5107f23015">
+		<Name>Презрение</Name>
+		<Code>000000031</Code>
+		<Description>Презрение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9c90be64-3315-4ca4-928a-b224f4335655">
+		<Name>Разочарование</Name>
+		<Code>000000029</Code>
+		<Description>Разочарование</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a15ff945-5f7d-4b9f-b926-08e7843e2ae0">
+		<Name>Раскаяние</Name>
+		<Code>000000030</Code>
+		<Description>Раскаяние</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1087afe4-116a-47d2-8d95-618866a908c5">
+		<Name>Трепет</Name>
+		<Code>000000028</Code>
+		<Description>Трепет</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="741ed1c5-5355-4f38-bb40-90e7ce55a5c1">
+		<Name>Ужас</Name>
+		<Code>000000003</Code>
+		<Description>Ужас</Description>
+		<IsFolder>false</IsFolder>
+		<ChildItems>
+			<Item id="618edb8e-1d59-499f-b14d-f94bc4633c30">
+				<Name>Страх</Name>
+				<Code>000000023</Code>
+				<Description>Страх</Description>
+				<IsFolder>false</IsFolder>
+				<ChildItems>
+					<Item id="d6120fff-f9d4-4e0c-b75f-a0635dc16e0f">
+						<Name>Тревога</Name>
+						<Code>000000024</Code>
+						<Description>Тревога</Description>
+						<IsFolder>false</IsFolder>
+					</Item>
+				</ChildItems>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

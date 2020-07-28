@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<Subsystem uuid="6b8ca34a-2780-4abe-873b-8de126189975">
+		<Properties>
+			<Name>дКалендарь</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Календарь</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСЦветомКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСGoogle</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСGoogleВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСGoogleКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСGoogleКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.CRM_ОбменСGoogle</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.CRM_ОбменСGoogleКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеНебольшойФирмойСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan.ОбменСGoogleCalendar</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ЗаписиКалендаряСотрудника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КалендариСотрудников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.CRM_УНФ_УправлениеНебольшойФирмойПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УправлениеНебольшойФирмойПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КалендариСотрудников</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.CRM_СеансовыеДанныеGoogle</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СеансовыеДанныеGoogle</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.CRM_УчетныеЗаписиЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ОбластиДоступаGoogle</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.CRM_ОбластиДоступаGoogle</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СобытияУНФКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЗаполнениеОбъектовУНФПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЗаполнениеОбъектовУНФКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЗаполнениеОбъектовУНФ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет01</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет02</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет03</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет04</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет05</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет06</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет07</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет08</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет09</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет10</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет11</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет12</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет13</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет14</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет15</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет16</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет17</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет18</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет19</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет20</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет21</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет22</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет23</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Цвет24</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

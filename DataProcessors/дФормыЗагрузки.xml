@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<DataProcessor uuid="d0306cf8-2450-4383-8b6c-2795cc839ee8">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.дФормыЗагрузки" category="Object">
+				<xr:TypeId>20d79d1e-66e1-43ae-8fd5-8a8ea2a7ac65</xr:TypeId>
+				<xr:ValueId>0d1725c5-99d7-42ef-8fd4-8e2e2df4f826</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.дФормыЗагрузки" category="Manager">
+				<xr:TypeId>43e80c3e-fd0b-414a-be75-731c4e46b66e</xr:TypeId>
+				<xr:ValueId>60d3775c-7a11-41e7-b613-f1d9045c6af1</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>дФормыЗагрузки</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формы загрузки записей</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm>DataProcessor.дФормыЗагрузки.Form.ЗаписьЗагрузкаРезультата</DefaultForm>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ЗаписьЗагрузкаРезультата</Form>
+			<Form>ЗаписьЗагрузкаЭмоций</Form>
+			<Form>ЗаписьПодборТегов</Form>
+			<Form>ЗаписьПодборВопросов</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

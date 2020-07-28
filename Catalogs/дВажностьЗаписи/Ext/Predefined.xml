@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.10">
+	<Item id="552fb3b7-166a-4743-ae84-c6fc4d563595">
+		<Name>Важное</Name>
+		<Code>000000002</Code>
+		<Description>Важное</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="57ec4f33-dc94-4fd6-8399-101674610d57">
+		<Name>Обычное</Name>
+		<Code>000000001</Code>
+		<Description>Обычное</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1f05d1b1-d03b-40d6-a4d6-217203ec5a08">
+		<Name>Особое</Name>
+		<Code>000000003</Code>
+		<Description>Особое</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.10">
+	<Item id="a5ff1b76-9c77-41ea-9c55-81d60a4b5cf7">
+		<Name>Здоровье</Name>
+		<Code>000000009</Code>
+		<Description>Здоровье</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8569c9c5-055d-4e94-9e15-a6ef0a896719">
+		<Name>Книги</Name>
+		<Code>000000001</Code>
+		<Description>Книги</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ebf4019b-5d7c-45d9-91ba-891bcbbd4f29">
+		<Name>Наука</Name>
+		<Code>000000006</Code>
+		<Description>Наука</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fb862146-9c25-47af-b647-1b25e84ec9e0">
+		<Name>Программы</Name>
+		<Code>000000003</Code>
+		<Description>Программы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="513c8a1b-41c5-45e3-b3f3-eb8b3891f349">
+		<Name>Прочее</Name>
+		<Code>000000007</Code>
+		<Description>Прочее</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e07ed64c-ff3e-4a96-a289-233cd46d12b9">
+		<Name>Сериалы</Name>
+		<Code>000000008</Code>
+		<Description>Сериалы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f9730915-c35c-48a3-b63a-4f34376a19ec">
+		<Name>Спорт</Name>
+		<Code>000000005</Code>
+		<Description>Спорт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f9043b54-1537-4443-a02c-3c5bb55d609e">
+		<Name>Фильмы</Name>
+		<Code>000000002</Code>
+		<Description>Фильмы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8ba253be-d1e2-444e-8080-cfca40f3bfae">
+		<Name>Хобби</Name>
+		<Code>000000004</Code>
+		<Description>Хобби</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

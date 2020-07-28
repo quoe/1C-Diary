@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.10">
+	<Item id="366cbf7a-95c4-4f92-949f-a166f0bb07a4">
+		<Name>Важное</Name>
+		<Code>000000005</Code>
+		<Description>Важное</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="10b204ce-3a37-4b17-889b-7ce26d6a08bb">
+		<Name>Встреча</Name>
+		<Code>000000018</Code>
+		<Description>Встреча</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7bcc7db4-299c-4e49-800a-e13dae583e28">
+		<Name>Задача</Name>
+		<Code>000000006</Code>
+		<Description>Задача</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ea50865f-d217-4614-b0dc-cb786e67c9a8">
+		<Name>Идея</Name>
+		<Code>000000012</Code>
+		<Description>Идея</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="72786df3-a8c0-406b-aac3-be591a45d1ee">
+		<Name>Изображение</Name>
+		<Code>000000020</Code>
+		<Description>Изображение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1a3fa5b8-d8b0-4dc2-a718-aa90ee667dc9">
+		<Name>Книга</Name>
+		<Code>000000007</Code>
+		<Description>Книга</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bb2f3a60-3deb-4cd8-9f9c-c5d695dcfa52">
+		<Name>Личное</Name>
+		<Code>000000015</Code>
+		<Description>Личное</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e082c658-1bdc-43c9-b35c-cdec892fe2aa">
+		<Name>Музыка</Name>
+		<Code>000000019</Code>
+		<Description>Музыка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="78576267-be8e-468b-9dad-283b3b6c33e4">
+		<Name>Мысль</Name>
+		<Code>000000003</Code>
+		<Description>Мысль</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f45320eb-5432-4432-b73e-336f7a8dab22">
+		<Name>Наблюдение</Name>
+		<Code>000000008</Code>
+		<Description>Наблюдение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3be2cd0c-8d79-46ef-afec-7267f07090ee">
+		<Name>Общение</Name>
+		<Code>000000022</Code>
+		<Description>Общение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="23e5c428-cd9a-4528-ab49-c6b69950212f">
+		<Name>Отношения</Name>
+		<Code>000000010</Code>
+		<Description>Отношения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4dbd8399-dae1-4a6a-8ef6-d7dc52d83ab3">
+		<Name>Результат</Name>
+		<Code>000000001</Code>
+		<Description>Результат</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="750d7df7-a7fc-42f8-8501-42e6860406ba">
+		<Name>Сериал</Name>
+		<Code>000000021</Code>
+		<Description>Сериал</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8cbf1b5a-ff53-4717-8704-d195be29ef3f">
+		<Name>Смысл</Name>
+		<Code>000000009</Code>
+		<Description>Смысл</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7b1f6157-8154-49fc-a9a1-210122779aac">
+		<Name>Сновидение</Name>
+		<Code>000000013</Code>
+		<Description>Сновидение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="91db0418-47b7-4f00-8b86-3985f1cd9a7d">
+		<Name>Событие</Name>
+		<Code>000000014</Code>
+		<Description>Событие</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="11ff4ffc-31f3-4de9-a4a2-3f367b9ba71d">
+		<Name>Статистика</Name>
+		<Code>000000011</Code>
+		<Description>Статистика</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fa252055-8484-4d3d-845a-64360c3e873a">
+		<Name>Фильм</Name>
+		<Code>000000016</Code>
+		<Description>Фильм</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="adab1a6f-43d7-43c4-a965-6cdeb40ed866">
+		<Name>Хобби</Name>
+		<Code>000000017</Code>
+		<Description>Хобби</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2d5c7001-64a8-427c-8af5-da98de7349b3">
+		<Name>Цель</Name>
+		<Code>000000002</Code>
+		<Description>Цель</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5060dd2c-87b0-4afc-a425-726203855819">
+		<Name>Цитата</Name>
+		<Code>000000004</Code>
+		<Description>Цитата</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

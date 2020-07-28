@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<Subsystem uuid="910914ea-e2b5-4741-af67-1a68b63e6163">
+		<Properties>
+			<Name>дДневник</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дневник</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.дТеги</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.дДневник</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.дМесяцы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.дДниНедели</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.дПогода</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.дЭмоции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.дРезультатДополнительныеРеквизиты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.дРезультат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.дВидыДеятельности</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.дТеги</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.дСтатистикаСлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.дЭмоции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.дРезультат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.дАдресПогоды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.дЧастотаСлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.дДлинаСлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.дУчетВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.дВопросОтвет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.дВопросы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.дВремя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.дВажность</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.дЗаписейЗаМесяц</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.дВидыДеятельностиСвязи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.дЗагружатьПрогнозПогоды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.дРезультаты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.дВидЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.дОбщиеФункцииКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.дОбщиеФункцииСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.дЗагрузкаПрогнозаПогоды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.дНастроения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.дОписаниеФормат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.дФормыПодборов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.дБыстраяЗаписьКомментарий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.дДневник</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.дВопросыДиалог</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.дЗагрузкаЗаписей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.дЗаписьДневника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.дЖурналЗаписей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.дШаблоныРегулярныхВыражений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.дЗаписиДневника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.дФормыЗагрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.дПриоритетФорматировнногоОписанияЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.дЧастотаСимволов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.дИмяДоменаПользователя</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.дИмяПользователяСистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.дИмяКомпьютераСистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.дТипЗаписиДневника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.дОбщиеФункцииКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.дВидЗаписиУдалить</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.дВажностьЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.дПеревод</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.дЯзыки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КоннекторHTTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.дСостояния</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.дПереходыСостояний</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.дСостояние</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбработкаТекстаКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.дКатегория</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.дИзбранное</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>дДиалог</Subsystem>
+			<Subsystem>дКалендарь</Subsystem>
+			<Subsystem>дМентальныеКарты</Subsystem>
+			<Subsystem>дПогода</Subsystem>
+			<Subsystem>дПроизводительность</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<ColumnGroup name="ГруппаПериодКодГорода" id="73">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа период код города</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа период код города</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаПериодКодГородаРасширеннаяПодсказка" id="74"/>
+					<ChildItems>
+						<LabelField name="Период" id="16">
+							<DataPath>Список.Period</DataPath>
+							<DefaultItem>true</DefaultItem>
+							<ContextMenu name="ПериодКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="18"/>
+						</LabelField>
+						<LabelField name="КодГорода" id="19">
+							<DataPath>Список.КодГорода</DataPath>
+							<ContextMenu name="КодГородаКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="КодГородаРасширеннаяПодсказка" id="21"/>
+						</LabelField>
+						<LabelField name="Широта" id="67">
+							<DataPath>Список.Широта</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Широта</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ШиротаКонтекстноеМеню" id="68"/>
+							<ExtendedTooltip name="ШиротаРасширеннаяПодсказка" id="69"/>
+						</LabelField>
+						<LabelField name="Долгота" id="70">
+							<DataPath>Список.Долгота</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Долгота</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДолготаКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="ДолготаРасширеннаяПодсказка" id="72"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ГруппаТемпература" id="83">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа температура</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа температура</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаТемператураРасширеннаяПодсказка" id="84"/>
+					<ChildItems>
+						<LabelField name="ТемператураМакс" id="52">
+							<DataPath>Список.ТемператураМакс</DataPath>
+							<ContextMenu name="ТемператураМаксКонтекстноеМеню" id="53"/>
+							<ExtendedTooltip name="ТемператураМаксРасширеннаяПодсказка" id="54"/>
+						</LabelField>
+						<LabelField name="ТемператураМин" id="55">
+							<DataPath>Список.ТемператураМин</DataPath>
+							<ContextMenu name="ТемператураМинКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ТемператураМинРасширеннаяПодсказка" id="57"/>
+						</LabelField>
+						<ColumnGroup name="ГруппаКомфорт" id="75">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа комфорт</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа комфорт</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаКомфортРасширеннаяПодсказка" id="76"/>
+							<ChildItems>
+								<LabelField name="КомфортМакс" id="22">
+									<DataPath>Список.КомфортМакс</DataPath>
+									<ContextMenu name="КомфортМаксКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="КомфортМаксРасширеннаяПодсказка" id="24"/>
+								</LabelField>
+								<LabelField name="КомфортМин" id="25">
+									<DataPath>Список.КомфортМин</DataPath>
+									<ContextMenu name="КомфортМинКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="КомфортМинРасширеннаяПодсказка" id="27"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ГруппаАтмосферныеЯвления" id="77">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа атмосферные явления</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа атмосферные явления</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаАтмосферныеЯвленияРасширеннаяПодсказка" id="78"/>
+					<ChildItems>
+						<LabelField name="АтмосферныеЯвленияОблачность" id="28">
+							<DataPath>Список.АтмосферныеЯвленияОблачность</DataPath>
+							<ContextMenu name="АтмосферныеЯвленияОблачностьКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="АтмосферныеЯвленияОблачностьРасширеннаяПодсказка" id="30"/>
+						</LabelField>
+						<LabelField name="АтмосферныеЯвленияОсадки" id="31">
+							<DataPath>Список.АтмосферныеЯвленияОсадки</DataPath>
+							<ContextMenu name="АтмосферныеЯвленияОсадкиКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="АтмосферныеЯвленияОсадкиРасширеннаяПодсказка" id="33"/>
+						</LabelField>
+						<LabelField name="АтмосферныеЯвленияИнтенсивность" id="34">
+							<DataPath>Список.АтмосферныеЯвленияИнтенсивность</DataPath>
+							<ContextMenu name="АтмосферныеЯвленияИнтенсивностьКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="АтмосферныеЯвленияИнтенсивностьРасширеннаяПодсказка" id="36"/>
+						</LabelField>
+						<LabelField name="АтмосферныеЯвленияГроза" id="37">
+							<DataPath>Список.АтмосферныеЯвленияГроза</DataPath>
+							<ContextMenu name="АтмосферныеЯвленияГрозаКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="АтмосферныеЯвленияГрозаРасширеннаяПодсказка" id="39"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ГруппаАтмосферноеДавление" id="79">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа атмосферное давление</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа атмосферное давление</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаАтмосферноеДавлениеРасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<LabelField name="АтмосферноеДавлениеМакс" id="40">
+							<DataPath>Список.АтмосферноеДавлениеМакс</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Давление макс</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="АтмосферноеДавлениеМаксКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="АтмосферноеДавлениеМаксРасширеннаяПодсказка" id="42"/>
+						</LabelField>
+						<LabelField name="АтмосферноеДавлениеМин" id="43">
+							<DataPath>Список.АтмосферноеДавлениеМин</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Давление мин</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="АтмосферноеДавлениеМинКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="АтмосферноеДавлениеМинРасширеннаяПодсказка" id="45"/>
+						</LabelField>
+						<ColumnGroup name="ГруппаВлажностьВоздуха" id="81">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа влажность воздуха</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа влажность воздуха</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаВлажностьВоздухаРасширеннаяПодсказка" id="82"/>
+							<ChildItems>
+								<LabelField name="ВлажностьВоздухаМакс" id="46">
+									<DataPath>Список.ВлажностьВоздухаМакс</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Влажность макс</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ВлажностьВоздухаМаксКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="ВлажностьВоздухаМаксРасширеннаяПодсказка" id="48"/>
+								</LabelField>
+								<LabelField name="ВлажностьВоздухаМин" id="49">
+									<DataPath>Список.ВлажностьВоздухаМин</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Влажность мин</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ВлажностьВоздухаМинКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ВлажностьВоздухаМинРасширеннаяПодсказка" id="51"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ГруппаВетер" id="85">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ветер</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ветер</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаВетерРасширеннаяПодсказка" id="86"/>
+					<ChildItems>
+						<LabelField name="ВетерНаправление" id="58">
+							<DataPath>Список.ВетерНаправление</DataPath>
+							<ContextMenu name="ВетерНаправлениеКонтекстноеМеню" id="59"/>
+							<ExtendedTooltip name="ВетерНаправлениеРасширеннаяПодсказка" id="60"/>
+						</LabelField>
+						<LabelField name="ВетерМакс" id="61">
+							<DataPath>Список.ВетерМакс</DataPath>
+							<ContextMenu name="ВетерМаксКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="ВетерМаксРасширеннаяПодсказка" id="63"/>
+						</LabelField>
+						<LabelField name="ВетерМин" id="64">
+							<DataPath>Список.ВетерМин</DataPath>
+							<ContextMenu name="ВетерМинКонтекстноеМеню" id="65"/>
+							<ExtendedTooltip name="ВетерМинРасширеннаяПодсказка" id="66"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>InformationRegister.дПогода</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

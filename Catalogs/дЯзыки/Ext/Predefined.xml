@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.10">
+	<Item id="04d109c0-9da9-4170-b890-f55cc515367d">
+		<Name>Английский</Name>
+		<Code>000000001</Code>
+		<Description>Английский</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3b04afb5-d371-40d7-b669-0882cb09fee2">
+		<Name>АнглийскийМашинный</Name>
+		<Code>000000008</Code>
+		<Description>Английский (машинный)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="35e59446-8654-4a66-8173-0491cd47fc51">
+		<Name>Испанский</Name>
+		<Code>000000005</Code>
+		<Description>Испанский</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="21155500-c980-41ad-83b2-0984b6c1c1a2">
+		<Name>Китайский</Name>
+		<Code>000000006</Code>
+		<Description>Китайский</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="94ce2ecd-a1bb-4d1d-bdfb-9b98167aab71">
+		<Name>Немецкий</Name>
+		<Code>000000003</Code>
+		<Description>Немецкий</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d0c29898-4fe7-409c-a262-6d5b5919db42">
+		<Name>Русский</Name>
+		<Code>000000002</Code>
+		<Description>Русский</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="490b8f0c-e138-4082-86eb-44ba419106aa">
+		<Name>РусскийМашинный</Name>
+		<Code>000000009</Code>
+		<Description>Русский (машинный)</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f24a19a9-aeb0-45ed-a19f-32541b1e7e68">
+		<Name>Французский</Name>
+		<Code>000000004</Code>
+		<Description>Французский</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="749b0352-6def-4d98-8f1f-eab712234b58">
+		<Name>Японский</Name>
+		<Code>000000007</Code>
+		<Description>Японский</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

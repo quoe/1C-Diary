@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.10">
+	<Item id="ed323f95-44c7-46e5-802f-e1c2c43bb6f4">
+		<Name>БазаЗнаний</Name>
+		<Code>000000012</Code>
+		<Description>База знаний</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="719971be-9aeb-4ff9-9c2c-9e49294f5cb0">
+		<Name>Встреча</Name>
+		<Code>000000014</Code>
+		<Description>Встреча</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="204b03be-4e19-4720-b2a4-46c7f098467c">
+		<Name>Выполнено</Name>
+		<Code>000000001</Code>
+		<Description>Выполнено</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f21d9c53-0007-4c30-b0e3-b51ccca7e292">
+		<Name>Диалоги</Name>
+		<Code>000000020</Code>
+		<Description>Диалоги</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7797b2df-df25-44de-bfe8-733adc236542">
+		<Name>Доход</Name>
+		<Code>000000007</Code>
+		<Description>Доход</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="441c55c2-d153-446c-9a31-2e5182733531">
+		<Name>Задача</Name>
+		<Code>000000013</Code>
+		<Description>Задача</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ec960367-855d-45f5-84a8-de398a5459ee">
+		<Name>Контакты</Name>
+		<Code>000000016</Code>
+		<Description>Контакты</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4d0861f1-7416-48f4-9e6d-cd168a23e3c4">
+		<Name>МентальнаяКарта</Name>
+		<Code>000000018</Code>
+		<Description>Ментальная карта</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="dcfe22ab-afff-4f24-968b-70a6ff0f2883">
+		<Name>НовыеЗнания</Name>
+		<Code>000000004</Code>
+		<Description>Новые знания</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c63d9e72-fc45-4549-825e-8c2fe4c09e57">
+		<Name>Общение</Name>
+		<Code>000000015</Code>
+		<Description>Общение</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="22f5af8f-4649-4b6f-b6ea-fe250678ea57">
+		<Name>Опыт</Name>
+		<Code>000000002</Code>
+		<Description>Опыт</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="379b62bc-bc9d-41b4-8859-6c942afdbb07">
+		<Name>Перевод</Name>
+		<Code>000000019</Code>
+		<Description>Перевод</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="717bf199-7e74-468e-a508-2319e3671d8f">
+		<Name>Прослушано</Name>
+		<Code>000000006</Code>
+		<Description>Прослушано</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="814c8b68-45e6-4d66-ad73-9cc8443ab5f4">
+		<Name>Просмотрено</Name>
+		<Code>000000005</Code>
+		<Description>Просмотрено</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1958d1c7-83f4-4207-a71d-6090734fc2d2">
+		<Name>Прочее</Name>
+		<Code>000000010</Code>
+		<Description>Прочее</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="44e4eb47-4308-439f-aca7-31624435a70f">
+		<Name>Прочитано</Name>
+		<Code>000000003</Code>
+		<Description>Прочитано</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6f354a0c-469e-4e73-8a57-646571a4163a">
+		<Name>Расход</Name>
+		<Code>000000008</Code>
+		<Description>Расход</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="109a1e8d-73de-46ae-94ca-8497fc9e35d8">
+		<Name>Создание</Name>
+		<Code>000000011</Code>
+		<Description>Создание</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6bfdaa4b-6646-44df-9312-44a63ff4e4b3">
+		<Name>СсылкаНаЗапись</Name>
+		<Code>000000009</Code>
+		<Description>Ссылка на запись</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="43c425df-6e44-46ed-bbe7-567e41b36171">
+		<Name>Тренировка</Name>
+		<Code>000000017</Code>
+		<Description>Тренировка</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3408f75b-c462-4b92-9f30-00cb1aaffc63">
+		<Name>Цвета</Name>
+		<Code>000000021</Code>
+		<Description>Цвета</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

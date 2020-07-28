@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.10">
+	<Item id="e2b07812-452f-49b0-93d3-97b1f9bcf692">
+		<Name>Место</Name>
+		<Code>000000007</Code>
+		<Description>Место</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="17710709-6260-40b5-a657-cb539a235efb">
+				<Name>Дом</Name>
+				<Code>000000008</Code>
+				<Description>Дом</Description>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="793fb207-e42a-4dbb-828c-f86422dda5e6">
+				<Name>Работа</Name>
+				<Code>000000009</Code>
+				<Description>Работа</Description>
+				<IsFolder>true</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="5507e369-3e98-47ae-87b9-d4462cb4637e">
+		<Name>Настроение</Name>
+		<Code>000000001</Code>
+		<Description>Настроение</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="e19e07e4-82cc-45f1-89f5-5ee705af52a1">
+				<Name>Нормальное</Name>
+				<Code>000000004</Code>
+				<Description>Нормальное</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="197030b4-c41f-4eab-b200-ef93eb77a49a">
+				<Name>Отличное</Name>
+				<Code>000000006</Code>
+				<Description>Отличное</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="28d4d429-66a3-42fb-9584-b6142b83fbf5">
+				<Name>Плохое</Name>
+				<Code>000000003</Code>
+				<Description>Плохое</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="024674ed-6c74-422b-880c-572f50e9f61d">
+				<Name>Ужасное</Name>
+				<Code>000000002</Code>
+				<Description>Ужасное</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="96e8f2d0-cd92-4918-a61f-81a4e13344f6">
+				<Name>Хорошее</Name>
+				<Code>000000005</Code>
+				<Description>Хорошее</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

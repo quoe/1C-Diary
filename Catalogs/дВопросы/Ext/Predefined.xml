@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.10">
+	<Item id="7ee3c327-5b48-481f-9c1d-297dea1140ed">
+		<Name>ЕстьИдеи</Name>
+		<Code>000000011</Code>
+		<Description>Есть идеи/мысли?</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7fd17491-3cda-4a10-a3a0-5b75e0e101de">
+		<Name>Зачем</Name>
+		<Code>000000005</Code>
+		<Description>Зачем?</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="70f11ffa-0f65-4a94-bcff-59f580b4498e">
+		<Name>КакДела</Name>
+		<Code>000000001</Code>
+		<Description>Как дела?</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a58dfa7a-89b0-4c00-8b6d-be8b52b88836">
+		<Name>КакЛучше</Name>
+		<Code>000000009</Code>
+		<Description>Как лучше?</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="caf0f081-b3aa-4987-b6da-00bd2bc961cf">
+		<Name>КакНастроение</Name>
+		<Code>000000003</Code>
+		<Description>Как настроение?</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="eb28668b-00d6-4fa1-a398-401ccd50e655">
+		<Name>КакиеПланы</Name>
+		<Code>000000007</Code>
+		<Description>Какие планы?</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d4579c0c-b9d0-4476-ad86-f7164c1de2be">
+		<Name>Почему</Name>
+		<Code>000000008</Code>
+		<Description>Почему?</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="01d57bdf-8091-4dfc-b9d8-41902b1a3eec">
+		<Name>ЧегоЭтоСтоило</Name>
+		<Code>000000010</Code>
+		<Description>Чего это стоило?</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="480f2305-7d86-41f6-9df5-38ace60ab58d">
+		<Name>ЧтоДелаешь</Name>
+		<Code>000000002</Code>
+		<Description>Что делаешь?</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d9c60694-a5de-4633-9d3f-490052337cf6">
+		<Name>ЧтоДумаешь</Name>
+		<Code>000000006</Code>
+		<Description>Что думаешь?</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e8bccfa4-9791-46f7-b6dc-36a35daefb09">
+		<Name>ЧтоНового</Name>
+		<Code>000000004</Code>
+		<Description>Что нового?</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

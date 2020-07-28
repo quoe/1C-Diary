@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Родитель" id="7">
+			<DataPath>Объект.Parent</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="РодительКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<DefaultItem>true</DefaultItem>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="OnChange">НаименованиеПриИзменении</Event>
+			</Events>
+		</InputField>
+		<InputField name="ПолноеНаименование" id="10">
+			<DataPath>Объект.ПолноеНаименование</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПолноеНаименованиеРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Описание" id="13">
+			<DataPath>Объект.Описание</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<Width>60</Width>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<TrackBarField name="ОценкаИтог" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оценка итоговая (1-10)</v8:content>
+				</v8:item>
+			</Title>
+			<EditMode>EnterOnInput</EditMode>
+			<MaxValue>10</MaxValue>
+			<LargeStep>1</LargeStep>
+			<ContextMenu name="ОценкаИтогКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ОценкаИтогРасширеннаяПодсказка" id="24"/>
+		</TrackBarField>
+		<UsualGroup name="ГруппаТеги" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка взаимодействия с записью дневника</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа теги</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаТегиРасширеннаяПодсказка" id="48"/>
+			<ChildItems>
+				<Table name="Теги" id="25">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.Теги</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ТегиКонтекстноеМеню" id="26"/>
+					<AutoCommandBar name="ТегиКоманднаяПанель" id="27"/>
+					<ExtendedTooltip name="ТегиРасширеннаяПодсказка" id="28"/>
+					<SearchStringAddition name="ТегиСтрокаПоиска" id="29">
+						<AdditionSource>
+							<Item>Теги</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТегиСтрокаПоискаКонтекстноеМеню" id="30"/>
+						<ExtendedTooltip name="ТегиСтрокаПоискаРасширеннаяПодсказка" id="31"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТегиСостояниеПросмотра" id="32">
+						<AdditionSource>
+							<Item>Теги</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТегиСостояниеПросмотраКонтекстноеМеню" id="33"/>
+						<ExtendedTooltip name="ТегиСостояниеПросмотраРасширеннаяПодсказка" id="34"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТегиУправлениеПоиском" id="35">
+						<AdditionSource>
+							<Item>Теги</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ТегиУправлениеПоискомКонтекстноеМеню" id="36"/>
+						<ExtendedTooltip name="ТегиУправлениеПоискомРасширеннаяПодсказка" id="37"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ТегиНомерСтроки" id="38">
+							<DataPath>Объект.Теги.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТегиНомерСтрокиКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="ТегиНомерСтрокиРасширеннаяПодсказка" id="40"/>
+						</LabelField>
+						<InputField name="ТегиТег" id="41">
+							<DataPath>Объект.Теги.Тег</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТегиТегКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ТегиТегРасширеннаяПодсказка" id="43"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<CheckBoxField name="БратьРодительскийТег" id="49">
+					<DataPath>Объект.БратьРодительскийТег</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="БратьРодительскийТегКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="БратьРодительскийТегРасширеннаяПодсказка" id="51"/>
+				</CheckBoxField>
+				<InputField name="ТипЗначенияРезультата" id="44">
+					<DataPath>Объект.ТипЗначенияРезультата</DataPath>
+					<ClearButton>true</ClearButton>
+					<ContextMenu name="ТипЗначенияРезультатаКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ТипЗначенияРезультатаРасширеннаяПодсказка" id="46"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Комментарий" id="16">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ClearButton>true</ClearButton>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="18"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.дВидыДеятельности</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

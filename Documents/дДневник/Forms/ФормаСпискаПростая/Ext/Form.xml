@@ -1,0 +1,1439 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<ButtonGroup name="ФормаГруппаКнопокУправления" id="135">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа кнопок управления</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа кнопок управления</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ФормаГруппаКнопокУправленияРасширеннаяПодсказка" id="136"/>
+				<ChildItems>
+					<Button name="ФормаБыстроИзменитьЗапись" id="174">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Command.БыстроИзменитьЗапись</CommandName>
+						<ExtendedTooltip name="ФормаБыстроИзменитьЗаписьРасширеннаяПодсказка" id="175"/>
+					</Button>
+					<Button name="ФормаСоздатьСоСсылкойНаВыбранный" id="87">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СоздатьСоСсылкойНаВыбраннуюЗапись</CommandName>
+						<ExtendedTooltip name="ФормаСоздатьСоСсылкойНаВыбранныйРасширеннаяПодсказка" id="88"/>
+					</Button>
+					<Button name="ФормаПоказатьДеревоЗаписей" id="92">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПоказатьДеревоЗаписей</CommandName>
+						<ExtendedTooltip name="ФормаПоказатьДеревоЗаписейРасширеннаяПодсказка" id="93"/>
+					</Button>
+					<Button name="ФормаПоказатьПанельКалендаря" id="142">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПоказатьПанельКалендаря</CommandName>
+						<ExtendedTooltip name="ФормаПоказатьПанельКалендаряРасширеннаяПодсказка" id="143"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<UsualGroup name="ГруппаКалендаря" id="146">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Календарь</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа календаря</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКалендаряРасширеннаяПодсказка" id="147"/>
+			<ChildItems>
+				<CalendarField name="ПанельКалендаря" id="139">
+					<DataPath>ПанельКалендаря</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ShowMonthsPanel>true</ShowMonthsPanel>
+					<ContextMenu name="ПанельКалендаряКонтекстноеМеню" id="140"/>
+					<ExtendedTooltip name="ПанельКалендаряРасширеннаяПодсказка" id="141"/>
+					<Events>
+						<Event name="OnActivateDate">ПанельДатыПриАктивизацииДаты</Event>
+					</Events>
+				</CalendarField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЗаписей" id="144">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа записей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа записей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаписейРасширеннаяПодсказка" id="145"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПанельЗаписи" id="148">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель записи</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Панель записи</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПанельЗаписиРасширеннаяПодсказка" id="149"/>
+					<ChildItems>
+						<LabelField name="РазницаВремениЗаписей" id="89">
+							<DataPath>РазницаВремениЗаписей</DataPath>
+							<Width>1</Width>
+							<ContextMenu name="РазницаВремениЗаписейКонтекстноеМеню" id="90"/>
+							<ExtendedTooltip name="РазницаВремениЗаписейРасширеннаяПодсказка" id="91"/>
+						</LabelField>
+						<UsualGroup name="ГруппаНоваяБыстраяЗапись" id="156">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Новая быстрая запись</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Новая быстрая запись</v8:content>
+								</v8:item>
+							</ToolTip>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНоваяБыстраяЗаписьРасширеннаяПодсказка" id="157"/>
+							<ChildItems>
+								<InputField name="НоваяБыстраяЗапись" id="150">
+									<DataPath>НоваяБыстраяЗапись</DataPath>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<ChoiceButton>true</ChoiceButton>
+									<OpenButton>true</OpenButton>
+									<ContextMenu name="НоваяБыстраяЗаписьКонтекстноеМеню" id="151"/>
+									<ExtendedTooltip name="НоваяБыстраяЗаписьРасширеннаяПодсказка" id="152"/>
+									<Events>
+										<Event name="StartChoice">НоваяБыстраяЗаписьНачалоВыбора</Event>
+										<Event name="Opening">НоваяБыстраяЗаписьОткрытие</Event>
+									</Events>
+								</InputField>
+								<Button name="ДобавитьНовуюБыструюЗапись" id="158">
+									<Type>UsualButton</Type>
+									<DefaultButton>true</DefaultButton>
+									<CommandName>Form.Command.ДобавитьНовуюБыструюЗапись</CommandName>
+									<ExtendedTooltip name="ДобавитьНовуюБыструюЗаписьРасширеннаяПодсказка" id="159"/>
+								</Button>
+								<PictureDecoration name="ДекорацияДлительнойОперации" id="153">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Индикатор длительной операции</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<PictureSize>Proportionally</PictureSize>
+									<FileDragMode>AsFile</FileDragMode>
+									<ContextMenu name="ДекорацияДлительнойОперацииКонтекстноеМеню" id="154"/>
+									<ExtendedTooltip name="ДекорацияДлительнойОперацииРасширеннаяПодсказка" id="155"/>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаЗаписи" id="94">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Записи</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа записи</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Height>1</Height>
+					<Group>AlwaysHorizontal</Group>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаЗаписиРасширеннаяПодсказка" id="95"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДеревоЗаписей" id="121">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дерево записей</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дерево записей</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаДеревоЗаписейРасширеннаяПодсказка" id="122"/>
+							<ChildItems>
+								<Table name="ДеревоЗаписей" id="96">
+									<Representation>Tree</Representation>
+									<ReadOnly>true</ReadOnly>
+									<Width>44</Width>
+									<Height>5</Height>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<FileDragMode>AsFile</FileDragMode>
+									<DataPath>ДеревоЗаписей</DataPath>
+									<ContextMenu name="ДеревоЗаписейКонтекстноеМеню" id="97"/>
+									<AutoCommandBar name="ДеревоЗаписейКоманднаяПанель" id="98">
+										<ChildItems>
+											<ButtonGroup name="ДеревоЗаписейГруппаСвернуть" id="162">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Дерево записей свернуть/развернуть</v8:content>
+													</v8:item>
+												</Title>
+												<ToolTip>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Дерево записей свернуть/развернуть</v8:content>
+													</v8:item>
+												</ToolTip>
+												<Representation>Compact</Representation>
+												<ExtendedTooltip name="ДеревоЗаписейГруппаСвернутьРасширеннаяПодсказка" id="163"/>
+												<ChildItems>
+													<Button name="ДеревоЗаписейСвернутьВсе" id="123">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ДеревоЗаписейСвернутьВсе</CommandName>
+														<ExtendedTooltip name="ДеревоЗаписейСвернутьВсеРасширеннаяПодсказка" id="124"/>
+													</Button>
+													<Button name="ДеревоЗаписейРазвернутьВсе" id="125">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ДеревоЗаписейРазвернутьВсе</CommandName>
+														<ExtendedTooltip name="ДеревоЗаписейРазвернутьВсеРасширеннаяПодсказка" id="126"/>
+													</Button>
+												</ChildItems>
+											</ButtonGroup>
+											<ButtonGroup name="ДеревоЗаписейГруппаНавигация" id="164">
+												<Title>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Навигация по дереву записей</v8:content>
+													</v8:item>
+												</Title>
+												<ToolTip>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Навигация по дереву записей</v8:content>
+													</v8:item>
+												</ToolTip>
+												<Representation>Compact</Representation>
+												<ExtendedTooltip name="ДеревоЗаписейГруппаНавигацияРасширеннаяПодсказка" id="165"/>
+												<ChildItems>
+													<Button name="ДеревоЗаписейДеревоЗаписейПерваяЗапись" id="160">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ДеревоЗаписейПерваяЗапись</CommandName>
+														<ExtendedTooltip name="ДеревоЗаписейДеревоЗаписейПерваяЗаписьРасширеннаяПодсказка" id="161"/>
+													</Button>
+													<Button name="ДеревоЗаписейДеревоЗаписейПоследняяЗапись" id="137">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ДеревоЗаписейПоследняяЗапись</CommandName>
+														<ExtendedTooltip name="ДеревоЗаписейДеревоЗаписейПоследняяЗаписьРасширеннаяПодсказка" id="138"/>
+													</Button>
+												</ChildItems>
+											</ButtonGroup>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ДеревоЗаписейРасширеннаяПодсказка" id="99"/>
+									<SearchStringAddition name="ДеревоЗаписейСтрокаПоиска" id="100">
+										<AdditionSource>
+											<Item>ДеревоЗаписей</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоЗаписейСтрокаПоискаКонтекстноеМеню" id="101"/>
+										<ExtendedTooltip name="ДеревоЗаписейСтрокаПоискаРасширеннаяПодсказка" id="102"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ДеревоЗаписейСостояниеПросмотра" id="103">
+										<AdditionSource>
+											<Item>ДеревоЗаписей</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоЗаписейСостояниеПросмотраКонтекстноеМеню" id="104"/>
+										<ExtendedTooltip name="ДеревоЗаписейСостояниеПросмотраРасширеннаяПодсказка" id="105"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ДеревоЗаписейУправлениеПоиском" id="106">
+										<AdditionSource>
+											<Item>ДеревоЗаписей</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ДеревоЗаписейУправлениеПоискомКонтекстноеМеню" id="107"/>
+										<ExtendedTooltip name="ДеревоЗаписейУправлениеПоискомРасширеннаяПодсказка" id="108"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">ДеревоЗаписейВыбор</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="ДеревоЗаписейЗаписьДатаГод" id="112">
+											<DataPath>ДеревоЗаписей.ЗаписьДатаГод</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Год</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ЧГ=</v8:content>
+												</v8:item>
+											</Format>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ЧГ=</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="ДеревоЗаписейЗаписьДатаГодКонтекстноеМеню" id="113"/>
+											<ExtendedTooltip name="ДеревоЗаписейЗаписьДатаГодРасширеннаяПодсказка" id="114"/>
+										</InputField>
+										<InputField name="ДеревоЗаписейЗаписьДатаМесяц" id="115">
+											<DataPath>ДеревоЗаписей.ЗаписьДатаМесяцЧисло</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Месяц</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>3</Width>
+											<ContextMenu name="ДеревоЗаписейЗаписьДатаМесяцКонтекстноеМеню" id="116"/>
+											<ExtendedTooltip name="ДеревоЗаписейЗаписьДатаМесяцРасширеннаяПодсказка" id="117"/>
+										</InputField>
+										<InputField name="ДеревоЗаписейДата" id="118">
+											<DataPath>ДеревоЗаписей.Дата</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>16</Width>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДЛФ=DDT</v8:content>
+												</v8:item>
+											</Format>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДЛФ=DDT</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="ДеревоЗаписейДатаКонтекстноеМеню" id="119"/>
+											<ExtendedTooltip name="ДеревоЗаписейДатаРасширеннаяПодсказка" id="120"/>
+										</InputField>
+										<InputField name="ДеревоЗаписейЗаголовок" id="166">
+											<DataPath>ДеревоЗаписей.Заголовок</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>24</Width>
+											<ContextMenu name="ДеревоЗаписейЗаголовокКонтекстноеМеню" id="167"/>
+											<ExtendedTooltip name="ДеревоЗаписейЗаголовокРасширеннаяПодсказка" id="168"/>
+										</InputField>
+										<InputField name="ДеревоЗаписейЗапись" id="109">
+											<DataPath>ДеревоЗаписей.Запись</DataPath>
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Запись</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>30</Width>
+											<ContextMenu name="ДеревоЗаписейЗаписьКонтекстноеМеню" id="110"/>
+											<ExtendedTooltip name="ДеревоЗаписейЗаписьРасширеннаяПодсказка" id="111"/>
+										</InputField>
+										<InputField name="ДеревоЗаписейВажность" id="127">
+											<DataPath>ДеревоЗаписей.Важность</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДеревоЗаписейВажностьКонтекстноеМеню" id="128"/>
+											<ExtendedTooltip name="ДеревоЗаписейВажностьРасширеннаяПодсказка" id="129"/>
+										</InputField>
+										<InputField name="ДеревоЗаписейВидЗаписи" id="130">
+											<DataPath>ДеревоЗаписей.ВидЗаписи</DataPath>
+											<Visible>false</Visible>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ДеревоЗаписейВидЗаписиКонтекстноеМеню" id="131"/>
+											<ExtendedTooltip name="ДеревоЗаписейВидЗаписиРасширеннаяПодсказка" id="132"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="Список" id="3">
+							<Representation>List</Representation>
+							<CommandBarLocation>None</CommandBarLocation>
+							<DefaultItem>true</DefaultItem>
+							<Height>2</Height>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Список</DataPath>
+							<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+							<ContextMenu name="СписокКонтекстноеМеню" id="4">
+								<ChildItems>
+									<Button name="СписокКонтекстноеМенюБыстроИзменитьЗапись" id="172">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.БыстроИзменитьЗапись</CommandName>
+										<ExtendedTooltip name="СписокКонтекстноеМенюБыстроИзменитьЗаписьРасширеннаяПодсказка" id="173"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+							<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+								<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+								<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+								<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">СписокВыбор</Event>
+								<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<ColumnGroup name="ГруппаДень" id="65">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа день</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа день</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаДеньРасширеннаяПодсказка" id="66"/>
+									<ChildItems>
+										<LabelField name="НомерДня" id="48">
+											<DataPath>Список.НомерДня</DataPath>
+											<Visible>false</Visible>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<FooterHorizontalAlign>Center</FooterHorizontalAlign>
+											<Width>5</Width>
+											<MaxWidth>1</MaxWidth>
+											<Height>1</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MaxHeight>1</MaxHeight>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ЧЦ=2; ЧВН=</v8:content>
+												</v8:item>
+											</Format>
+											<Font ref="style:NormalTextFont" height="20" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<ContextMenu name="НомерДняКонтекстноеМеню" id="49"/>
+											<ExtendedTooltip name="НомерДняРасширеннаяПодсказка" id="50"/>
+										</LabelField>
+										<LabelField name="ИндикаторМесяца" id="73">
+											<DataPath>Список.ИндикаторМесяца</DataPath>
+											<Visible>false</Visible>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<FooterHorizontalAlign>Center</FooterHorizontalAlign>
+											<Width>5</Width>
+											<Height>1</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MaxHeight>1</MaxHeight>
+											<Font ref="style:NormalTextFont" height="20" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<ContextMenu name="ИндикаторМесяцаКонтекстноеМеню" id="74"/>
+											<ExtendedTooltip name="ИндикаторМесяцаРасширеннаяПодсказка" id="75"/>
+										</LabelField>
+										<LabelField name="Время" id="67">
+											<DataPath>Список.ЗаписьВремя</DataPath>
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Время</v8:content>
+												</v8:item>
+											</Title>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<VerticalAlign>Center</VerticalAlign>
+											<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+											<FooterHorizontalAlign>Center</FooterHorizontalAlign>
+											<Width>5</Width>
+											<Height>1</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MaxHeight>1</MaxHeight>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=HH:mm</v8:content>
+												</v8:item>
+											</Format>
+											<Font ref="style:NormalTextFont" height="20" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+											<ContextMenu name="ВремяКонтекстноеМеню" id="68"/>
+											<ExtendedTooltip name="ВремяРасширеннаяПодсказка" id="69"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ГруппаДата" id="28">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа дата</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа дата</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>10</Width>
+									<ExtendedTooltip name="ГруппаДатаРасширеннаяПодсказка" id="29"/>
+									<ChildItems>
+										<LabelField name="Дата" id="16">
+											<DataPath>Список.Date</DataPath>
+											<DefaultItem>true</DefaultItem>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Начало</v8:content>
+												</v8:item>
+											</Title>
+											<CellHyperlink>true</CellHyperlink>
+											<Width>10</Width>
+											<MaxWidth>2</MaxWidth>
+											<Height>1</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MaxHeight>1</MaxHeight>
+											<HorizontalStretch>false</HorizontalStretch>
+											<Font bold="true" kind="AutoFont"/>
+											<ContextMenu name="ДатаКонтекстноеМеню" id="17"/>
+											<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="18"/>
+										</LabelField>
+										<LabelField name="ДатаОкончание" id="176">
+											<DataPath>Список.ДатаОкончание</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Окончание</v8:content>
+												</v8:item>
+											</Title>
+											<Width>10</Width>
+											<ContextMenu name="ДатаОкончаниеКонтекстноеМеню" id="177"/>
+											<ExtendedTooltip name="ДатаОкончаниеРасширеннаяПодсказка" id="178"/>
+										</LabelField>
+										<ColumnGroup name="ГруппаДатаИнфо" id="38">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа дата инфо</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа дата инфо</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ГруппаДатаИнфоРасширеннаяПодсказка" id="39"/>
+											<ChildItems>
+												<LabelField name="Месяц" id="35">
+													<DataPath>Список.Месяц</DataPath>
+													<Visible>false</Visible>
+													<Height>1</Height>
+													<AutoMaxHeight>false</AutoMaxHeight>
+													<MaxHeight>1</MaxHeight>
+													<ContextMenu name="МесяцКонтекстноеМеню" id="36"/>
+													<ExtendedTooltip name="МесяцРасширеннаяПодсказка" id="37"/>
+												</LabelField>
+												<LabelField name="ДеньНедели" id="32">
+													<DataPath>Список.ДеньНедели</DataPath>
+													<Visible>false</Visible>
+													<Height>1</Height>
+													<AutoMaxHeight>false</AutoMaxHeight>
+													<MaxHeight>1</MaxHeight>
+													<ContextMenu name="ДеньНеделиКонтекстноеМеню" id="33"/>
+													<ExtendedTooltip name="ДеньНеделиРасширеннаяПодсказка" id="34"/>
+												</LabelField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ГруппаЗапись" id="30">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа запись</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа запись</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>3</Width>
+									<ExtendedTooltip name="ГруппаЗаписьРасширеннаяПодсказка" id="31"/>
+									<ChildItems>
+										<LabelField name="Заголовок" id="22">
+											<DataPath>Список.Заголовок</DataPath>
+											<Width>35</Width>
+											<Height>1</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MaxHeight>1</MaxHeight>
+											<Font bold="true" kind="AutoFont"/>
+											<ContextMenu name="ЗаголовокКонтекстноеМеню" id="23"/>
+											<ExtendedTooltip name="ЗаголовокРасширеннаяПодсказка" id="24"/>
+										</LabelField>
+										<LabelField name="Описание" id="25">
+											<DataPath>Список.Описание</DataPath>
+											<Width>30</Width>
+											<Height>2</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MaxHeight>2</MaxHeight>
+											<ContextMenu name="ОписаниеКонтекстноеМеню" id="26"/>
+											<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="27"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ГруппаЗаписьИнфо" id="46">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа запись инфо</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа запись инфо</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>20</Width>
+									<ExtendedTooltip name="ГруппаЗаписьИнфоРасширеннаяПодсказка" id="47"/>
+									<ChildItems>
+										<LabelField name="ЗаписьИнфо" id="43">
+											<DataPath>Список.ЗаписьИнфо</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Инфо</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Слов, Знаков, Тегов, Эмоций, Результат, Вопросы</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>20</Width>
+											<Font bold="true" kind="AutoFont"/>
+											<ContextMenu name="ЗаписьИнфоКонтекстноеМеню" id="44"/>
+											<ExtendedTooltip name="ЗаписьИнфоРасширеннаяПодсказка" id="45"/>
+										</LabelField>
+										<LabelField name="ТегиСписок" id="40">
+											<DataPath>Список.ТегиСписок</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Теги</v8:content>
+												</v8:item>
+											</Title>
+											<Width>20</Width>
+											<Height>2</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MaxHeight>2</MaxHeight>
+											<ContextMenu name="ТегиСписокКонтекстноеМеню" id="41"/>
+											<ExtendedTooltip name="ТегиСписокРасширеннаяПодсказка" id="42"/>
+										</LabelField>
+										<LabelField name="Погода" id="51">
+											<DataPath>~Список.Погода</DataPath>
+											<Width>20</Width>
+											<ContextMenu name="ПогодаКонтекстноеМеню" id="52"/>
+											<ExtendedTooltip name="ПогодаРасширеннаяПодсказка" id="53"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="ГруппаСостояние" id="54">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа состояние</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа состояние</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаСостояниеРасширеннаяПодсказка" id="55"/>
+									<ChildItems>
+										<LabelField name="Автор" id="70">
+											<DataPath>Список.Автор</DataPath>
+											<Visible>false</Visible>
+											<Width>20</Width>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MaxHeight>1</MaxHeight>
+											<Font bold="true" kind="AutoFont"/>
+											<ContextMenu name="АвторКонтекстноеМеню" id="71"/>
+											<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="72"/>
+										</LabelField>
+										<LabelField name="Настроение" id="56">
+											<DataPath>Список.Настроение</DataPath>
+											<Visible>false</Visible>
+											<Width>10</Width>
+											<Height>1</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MaxHeight>1</MaxHeight>
+											<ContextMenu name="НастроениеКонтекстноеМеню" id="57"/>
+											<ExtendedTooltip name="НастроениеРасширеннаяПодсказка" id="58"/>
+										</LabelField>
+										<LabelField name="Комментарий" id="59">
+											<DataPath>Список.Комментарий</DataPath>
+											<Width>15</Width>
+											<Height>1</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MaxHeight>1</MaxHeight>
+											<ContextMenu name="КомментарийКонтекстноеМеню" id="60"/>
+											<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="61"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<LabelField name="Номер" id="19">
+									<DataPath>Список.Number</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="НомерКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="21"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИнфоЗаписей" id="82">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа инфо записей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа инфо записей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИнфоЗаписейРасширеннаяПодсказка" id="83"/>
+			<ChildItems>
+				<LabelField name="ЗаписейЗаЭтотМесяц" id="76">
+					<DataPath>ЗаписейЗаЭтотМесяц</DataPath>
+					<Width>30</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="ЗаписейЗаЭтотМесяцКонтекстноеМеню" id="77"/>
+					<ExtendedTooltip name="ЗаписейЗаЭтотМесяцРасширеннаяПодсказка" id="78"/>
+					<Events>
+						<Event name="Click">ЗаписейЗаЭтотМесяцНажатие</Event>
+					</Events>
+				</LabelField>
+				<LabelField name="ЗаписейЗаПредыдущийМесяц" id="79">
+					<DataPath>ЗаписейЗаПредыдущийМесяц</DataPath>
+					<Visible>false</Visible>
+					<Width>20</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ЗаписейЗаПредыдущийМесяцКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="ЗаписейЗаПредыдущийМесяцРасширеннаяПодсказка" id="81"/>
+				</LabelField>
+				<LabelField name="ПоследнийРезультат" id="84">
+					<DataPath>ПоследнийРезультат</DataPath>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="ПоследнийРезультатКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="ПоследнийРезультатРасширеннаяПодсказка" id="86"/>
+					<Events>
+						<Event name="Click">ПоследнийРезультатНажатие</Event>
+					</Events>
+				</LabelField>
+				<LabelField name="ДневникЭмоций" id="169">
+					<DataPath>ДневникЭмоций</DataPath>
+					<Hiperlink>true</Hiperlink>
+					<ContextMenu name="ДневникЭмоцийКонтекстноеМеню" id="170"/>
+					<ExtendedTooltip name="ДневникЭмоцийРасширеннаяПодсказка" id="171"/>
+					<Events>
+						<Event name="Click">ДневникЭмоцийНажатие</Event>
+					</Events>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.дДневник</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ЗаписейЗаЭтотМесяц" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>За этот месяц</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаписейЗаПредыдущийМесяц" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>За предыдущий месяц</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоследнийРезультат" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последний результат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РазницаВремениЗаписей" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разница времени записей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДеревоЗаписей" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево записей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Запись" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запись</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.дДневник</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЗаписьДатаГод" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запись дата год</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЗаписьДатаМесяцЧисло" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер месяца записи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Дата" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Важность" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Важность</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.дВажность</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВидЗаписи" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид записи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.дВидЗаписи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Заголовок" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заголовок</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>100</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПанельКалендаря" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Панель календаря</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НоваяБыстраяЗапись" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новая быстрая запись</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтапОбновленияДанных" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап обновления данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИДФоновогоЗадания" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ИДФонового задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="АдресФоновогоЗадания" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес фонового задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийИнтервалОжидания" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий интервал ожидания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийИнтервалДоступности" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий интервал ожидания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>2</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДневникЭмоций" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Эмоции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:use>false</dcsset:use>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДеревоЗаписейЗаписьДатаМесяц</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДеревоЗаписей.Важность</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.дВажность.Обычное</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#000000</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьСоСсылкойНаВыбраннуюЗапись" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать со ссылкой</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать новую запись со ссылкой на выбранную</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GotoURL</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СоздатьСоСсылкойНаВыбраннуюЗапись</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоказатьДеревоЗаписей" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать дерево записей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать дерево записей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ListViewModeTree</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПоказатьДеревоЗаписей</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДеревоЗаписейСвернутьВсе" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Свернуть все строки дерева записей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CollapseAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДеревоЗаписейСвернутьВсе</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДеревоЗаписейРазвернутьВсе" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть все</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Развернуть все строки дерева записей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ExpandAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДеревоЗаписейРазвернутьВсе</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ДеревоЗаписейПоследняяЗапись" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти в конец</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к последней записи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GoToEnd</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДеревоЗаписейПоследняяЗапись</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоказатьПанельКалендаря" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать календарь</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать панель календаря</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Today</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПоказатьПанельКалендаря</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ДобавитьНовуюБыструюЗапись" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ОК</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить новую быструю запись</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Document</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобавитьНовуюБыструюЗапись</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ДеревоЗаписейПерваяЗапись" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти в начало</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти к первой записи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GoToBegin</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДеревоЗаписейПерваяЗапись</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="БыстроИзменитьЗапись" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Быстренько поправить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Быстренько поправить запись</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataHistory</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>БыстроИзменитьЗапись</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.дПогода.StandardCommand.OpenList</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>1</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>Catalog.дТеги.StandardCommand.OpenList</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>2</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>Catalog.дЭмоции.StandardCommand.OpenList</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>4</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>Catalog.дВидыДеятельности.StandardCommand.OpenList</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>5</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>DocumentJournal.дЖурналЗаписей.StandardCommand.OpenList</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>Catalog.дРезультат.StandardCommand.OpenList</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>3</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>Catalog.дВопросы.StandardCommand.OpenList</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>6</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+			<Item>
+				<Command>Catalog.дМентальныеКарты.StandardCommand.OpenList</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>7</Index>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

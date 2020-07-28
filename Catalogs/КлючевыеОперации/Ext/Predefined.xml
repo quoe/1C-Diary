@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.10">
+	<Item id="fe2580e5-fd1c-4484-b77d-e1e989422240">
+		<Name>МодульДневникаОбработкаПроведения</Name>
+		<Code/>
+		<Description>Модуль дневника обработка проведения</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="68ab3ea9-2957-461f-93f7-8066d5b2aedc">
+		<Name>МодульДневникаПередЗаписью</Name>
+		<Code/>
+		<Description>Модуль дневника перед записью</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="8d52296c-48e1-4431-aad6-609240632381">
+		<Name>ОбщаяПроизводительностьСистемы</Name>
+		<Code/>
+		<Description>Общая производительность системы</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5389f8e8-d134-4410-8d09-54042f4a70e8">
+		<Name>СозданиеПростойФормыДневника</Name>
+		<Code/>
+		<Description>Создание простой формы дневника</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="09fd90d1-b5e5-4cf8-b307-c79521e941e8">
+		<Name>СозданиеФормыДневника</Name>
+		<Code/>
+		<Description>Создание формы дневника</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="273df0c4-7703-46f8-b4d4-8eedfa2c9dad">
+		<Name>ФормаДневникаПредложитьРезультаты</Name>
+		<Code/>
+		<Description>Форма дневника предложить результаты</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2e12cd9e-2381-40d6-9d84-1fac759cd66b">
+		<Name>ФормаДневникаПредложитьТеги</Name>
+		<Code/>
+		<Description>Форма дневника предложить теги</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f1eb8b94-b597-4e93-a571-a4a0159f8813">
+		<Name>ФормаДневникаПредложитьЭмоции</Name>
+		<Code/>
+		<Description>Форма дневника предложить эмоции</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

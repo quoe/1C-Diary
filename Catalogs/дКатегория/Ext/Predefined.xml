@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.10">
+	<Item id="e1857f0a-f662-4da3-a999-b60f7ea5d6c8">
+		<Name>Личный</Name>
+		<Code>000000002</Code>
+		<Description>Личный</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="5b7e8843-4190-4442-8bf2-3479c90a0fcf">
+		<Name>Общий</Name>
+		<Code>000000005</Code>
+		<Description>Общий</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d2b6ac26-7880-4b5a-a92e-2f421bf69cf6">
+		<Name>Обычный</Name>
+		<Code>000000001</Code>
+		<Description>Обычный</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4c05e531-59cd-4f15-9eb1-12651d782e1f">
+		<Name>Прочее</Name>
+		<Code>000000004</Code>
+		<Description>Прочее</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c1594421-e130-406e-b340-d0b85771dabe">
+		<Name>Рабочий</Name>
+		<Code>000000003</Code>
+		<Description>Рабочий</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

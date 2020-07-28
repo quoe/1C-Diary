@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.10">
+	<Item id="b6502579-8515-4154-b3fe-84230c787a35">
+		<Name>Общение</Name>
+		<Code>000000002</Code>
+		<Description>Общение</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="d20cafcb-adf3-4573-8bf6-a82e294568f4">
+				<Name>ЖивоеОбщение</Name>
+				<Code>000000003</Code>
+				<Description>Живое общение</Description>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="dbcba47c-55ec-4143-a459-c150e4131c46">
+				<Name>ТелефонныйРазговор</Name>
+				<Code>000000004</Code>
+				<Description>Телефонный разговор</Description>
+				<IsFolder>true</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="a34c37b4-3d7e-456a-9659-6ba1b5c70d6f">
+		<Name>Почта</Name>
+		<Code>000000005</Code>
+		<Description>Почта</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="2e7f3ae4-f56b-426a-b86d-3c643f507329">
+				<Name>Письмо</Name>
+				<Code>000000006</Code>
+				<Description>Письмо</Description>
+				<IsFolder>true</IsFolder>
+			</Item>
+			<Item id="83a79d97-d010-4fd7-8f35-f819fefa7d63">
+				<Name>ЭлектронноеПисьмо</Name>
+				<Code>000000007</Code>
+				<Description>Электронное письмо</Description>
+				<IsFolder>true</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="bdd04daf-255d-4921-a6c7-15557b666679">
+		<Name>СоцСети</Name>
+		<Code>000000001</Code>
+		<Description>Социальные сети</Description>
+		<IsFolder>true</IsFolder>
+	</Item>
+</PredefinedData>

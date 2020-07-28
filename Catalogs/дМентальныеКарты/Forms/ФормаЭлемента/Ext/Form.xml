@@ -1,0 +1,934 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Код" id="1">
+			<DataPath>Объект.Code</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<UsualGroup name="ГруппаШапка" id="199">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="200"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="OnChange">НаименованиеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПолноеНаименование" id="16">
+					<DataPath>Объект.ПолноеНаименование</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПолноеНаименованиеРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Описание" id="13">
+			<DataPath>Объект.Описание</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ОписаниеКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Комментарий" id="10">
+			<DataPath>Объект.Комментарий</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<UsualGroup name="ГруппаМентальнаяКартаОсновное" id="227">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ментальная карта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ментальная карта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаМентальнаяКартаОсновноеРасширеннаяПодсказка" id="228"/>
+			<ChildItems>
+				<Table name="МентальнаяКартаДерево" id="78">
+					<Representation>Tree</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<InitialTreeView>ExpandTopLevel</InitialTreeView>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>МентальнаяКартаДерево</DataPath>
+					<ContextMenu name="МентальнаяКартаДеревоКонтекстноеМеню" id="79"/>
+					<AutoCommandBar name="МентальнаяКартаДеревоКоманднаяПанель" id="80">
+						<ChildItems>
+							<Button name="МентальнаяКартаДеревоДеревоПоказыватьФлаг" id="140">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ДеревоПоказыватьФлаг</CommandName>
+								<ExtendedTooltip name="МентальнаяКартаДеревоДеревоПоказыватьФлагРасширеннаяПодсказка" id="141"/>
+							</Button>
+							<Button name="МентальнаяКартаДеревоДеревоУсловноеОформлениеВидимость" id="145">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ДеревоУсловноеОформлениеВидимость</CommandName>
+								<ExtendedTooltip name="МентальнаяКартаДеревоДеревоУсловноеОформлениеВидимостьРасширеннаяПодсказка" id="146"/>
+							</Button>
+							<Button name="МентальнаяКартаДеревоДеревоПоказыватьСписокТегов" id="201">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ДеревоПоказыватьСписокТегов</CommandName>
+								<ExtendedTooltip name="МентальнаяКартаДеревоДеревоПоказыватьСписокТеговРасширеннаяПодсказка" id="202"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="МентальнаяКартаДеревоРасширеннаяПодсказка" id="81"/>
+					<SearchStringAddition name="МентальнаяКартаДеревоСтрокаПоиска" id="82">
+						<AdditionSource>
+							<Item>МентальнаяКартаДерево</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="МентальнаяКартаДеревоСтрокаПоискаКонтекстноеМеню" id="83"/>
+						<ExtendedTooltip name="МентальнаяКартаДеревоСтрокаПоискаРасширеннаяПодсказка" id="84"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="МентальнаяКартаДеревоСостояниеПросмотра" id="85">
+						<AdditionSource>
+							<Item>МентальнаяКартаДерево</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="МентальнаяКартаДеревоСостояниеПросмотраКонтекстноеМеню" id="86"/>
+						<ExtendedTooltip name="МентальнаяКартаДеревоСостояниеПросмотраРасширеннаяПодсказка" id="87"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="МентальнаяКартаДеревоУправлениеПоиском" id="88">
+						<AdditionSource>
+							<Item>МентальнаяКартаДерево</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="МентальнаяКартаДеревоУправлениеПоискомКонтекстноеМеню" id="89"/>
+						<ExtendedTooltip name="МентальнаяКартаДеревоУправлениеПоискомРасширеннаяПодсказка" id="90"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="DragCheck">МентальнаяКартаДеревоПроверкаПеретаскивания</Event>
+						<Event name="OnActivateRow">МентальнаяКартаДеревоПриАктивизацииСтроки</Event>
+						<Event name="BeforeExpand">МентальнаяКартаДеревоПередРазворачиванием</Event>
+						<Event name="Drag">МентальнаяКартаДеревоПеретаскивание</Event>
+						<Event name="BeforeCollapse">МентальнаяКартаДеревоПередСворачиванием</Event>
+						<Event name="OnChange">МентальнаяКартаДеревоПриИзменении</Event>
+					</Events>
+					<ChildItems>
+						<CheckBoxField name="МентальнаяКартаДеревоФлаг" id="134">
+							<DataPath>МентальнаяКартаДерево.Флаг</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderPicture>
+								<xr:Ref>StdPicture.WriteAndClose</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</HeaderPicture>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="МентальнаяКартаДеревоФлагКонтекстноеМеню" id="135"/>
+							<ExtendedTooltip name="МентальнаяКартаДеревоФлагРасширеннаяПодсказка" id="136"/>
+						</CheckBoxField>
+						<CheckBoxField name="МентальнаяКартаДеревоПоказыватьФлаг" id="137">
+							<DataPath>МентальнаяКартаДерево.ПоказыватьФлаг</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="МентальнаяКартаДеревоПоказыватьФлагКонтекстноеМеню" id="138"/>
+							<ExtendedTooltip name="МентальнаяКартаДеревоПоказыватьФлагРасширеннаяПодсказка" id="139"/>
+						</CheckBoxField>
+						<InputField name="МентальнаяКартаДеревоЭлемент" id="91">
+							<DataPath>МентальнаяКартаДерево.Элемент</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="МентальнаяКартаДеревоЭлементКонтекстноеМеню" id="92"/>
+							<ExtendedTooltip name="МентальнаяКартаДеревоЭлементРасширеннаяПодсказка" id="93"/>
+						</InputField>
+						<InputField name="МентальнаяКартаДеревоКоличество" id="118">
+							<DataPath>МентальнаяКартаДерево.КоличествоЭлементов</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Кол.</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="МентальнаяКартаДеревоКоличествоКонтекстноеМеню" id="119"/>
+							<ExtendedTooltip name="МентальнаяКартаДеревоКоличествоРасширеннаяПодсказка" id="120"/>
+						</InputField>
+						<InputField name="МентальнаяКартаДеревоОписание" id="94">
+							<DataPath>МентальнаяКартаДерево.Описание</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<OpenButton>true</OpenButton>
+							<ContextMenu name="МентальнаяКартаДеревоОписаниеКонтекстноеМеню" id="95"/>
+							<ExtendedTooltip name="МентальнаяКартаДеревоОписаниеРасширеннаяПодсказка" id="96"/>
+						</InputField>
+						<InputField name="МентальнаяКартаДеревоТегиСписок" id="203">
+							<DataPath>МентальнаяКартаДерево.ТегиСписок</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="МентальнаяКартаДеревоТегиСписокКонтекстноеМеню" id="204"/>
+							<ExtendedTooltip name="МентальнаяКартаДеревоТегиСписокРасширеннаяПодсказка" id="205"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<InputField name="ЭлементОписание" id="229">
+					<DataPath>ЭлементОписание</DataPath>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="ЭлементОписаниеКонтекстноеМеню" id="230"/>
+					<ExtendedTooltip name="ЭлементОписаниеРасширеннаяПодсказка" id="231"/>
+					<Events>
+						<Event name="OnChange">ЭлементОписаниеПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформление" id="121">
+			<Representation>List</Representation>
+			<Autofill>true</Autofill>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>КомпоновщикНастроекКомпоновкиДанных.Settings.ConditionalAppearance</DataPath>
+			<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
+			<ContextMenu name="КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформлениеКонтекстноеМеню" id="122"/>
+			<AutoCommandBar name="КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформлениеКоманднаяПанель" id="123"/>
+			<ExtendedTooltip name="КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформлениеРасширеннаяПодсказка" id="124"/>
+			<SearchStringAddition name="КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформлениеСтрокаПоиска" id="125">
+				<AdditionSource>
+					<Item>КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформление</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформлениеСтрокаПоискаКонтекстноеМеню" id="126"/>
+				<ExtendedTooltip name="КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформлениеСтрокаПоискаРасширеннаяПодсказка" id="127"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформлениеСостояниеПросмотра" id="128">
+				<AdditionSource>
+					<Item>КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформление</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформлениеСостояниеПросмотраКонтекстноеМеню" id="129"/>
+				<ExtendedTooltip name="КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформлениеСостояниеПросмотраРасширеннаяПодсказка" id="130"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформлениеУправлениеПоиском" id="131">
+				<AdditionSource>
+					<Item>КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформление</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформлениеУправлениеПоискомКонтекстноеМеню" id="132"/>
+				<ExtendedTooltip name="КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформлениеУправлениеПоискомРасширеннаяПодсказка" id="133"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnEditEnd">КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформлениеПриОкончанииРедактирования</Event>
+				<Event name="OnActivateRow">КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформлениеПриАктивизацииСтроки</Event>
+				<Event name="OnChange">КомпоновщикНастроекКомпоновкиДанныхНастройкиУсловноеОформлениеПриИзменении</Event>
+			</Events>
+		</Table>
+		<Pages name="Страницы" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="20"/>
+			<ChildItems>
+				<Page name="ГруппаМентальнаяКарта" id="21">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ментальная карта</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ГруппаМентальнаяКартаРасширеннаяПодсказка" id="22"/>
+					<ChildItems>
+						<Table name="МентальнаяКарта" id="147">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.МентальнаяКарта</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="МентальнаяКартаКонтекстноеМеню" id="148"/>
+							<AutoCommandBar name="МентальнаяКартаКоманднаяПанель" id="149"/>
+							<ExtendedTooltip name="МентальнаяКартаРасширеннаяПодсказка" id="150"/>
+							<SearchStringAddition name="МентальнаяКартаСтрокаПоиска" id="151">
+								<AdditionSource>
+									<Item>МентальнаяКарта</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="МентальнаяКартаСтрокаПоискаКонтекстноеМеню" id="152"/>
+								<ExtendedTooltip name="МентальнаяКартаСтрокаПоискаРасширеннаяПодсказка" id="153"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="МентальнаяКартаСостояниеПросмотра" id="154">
+								<AdditionSource>
+									<Item>МентальнаяКарта</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="МентальнаяКартаСостояниеПросмотраКонтекстноеМеню" id="155"/>
+								<ExtendedTooltip name="МентальнаяКартаСостояниеПросмотраРасширеннаяПодсказка" id="156"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="МентальнаяКартаУправлениеПоиском" id="157">
+								<AdditionSource>
+									<Item>МентальнаяКарта</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="МентальнаяКартаУправлениеПоискомКонтекстноеМеню" id="158"/>
+								<ExtendedTooltip name="МентальнаяКартаУправлениеПоискомРасширеннаяПодсказка" id="159"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="МентальнаяКартаНомерСтроки" id="160">
+									<DataPath>Объект.МентальнаяКарта.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МентальнаяКартаНомерСтрокиКонтекстноеМеню" id="161"/>
+									<ExtendedTooltip name="МентальнаяКартаНомерСтрокиРасширеннаяПодсказка" id="162"/>
+								</LabelField>
+								<LabelField name="МентальнаяКартаЭлементИД" id="193">
+									<DataPath>Объект.МентальнаяКарта.ЭлементИД</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МентальнаяКартаЭлементИДКонтекстноеМеню" id="194"/>
+									<ExtendedTooltip name="МентальнаяКартаЭлементИДРасширеннаяПодсказка" id="195"/>
+								</LabelField>
+								<LabelField name="МентальнаяКартаКлючСвязи" id="196">
+									<DataPath>Объект.МентальнаяКарта.КлючСвязи</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МентальнаяКартаКлючСвязиКонтекстноеМеню" id="197"/>
+									<ExtendedTooltip name="МентальнаяКартаКлючСвязиРасширеннаяПодсказка" id="198"/>
+								</LabelField>
+								<InputField name="МентальнаяКартаЭлемент" id="169">
+									<DataPath>Объект.МентальнаяКарта.Элемент</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МентальнаяКартаЭлементКонтекстноеМеню" id="170"/>
+									<ExtendedTooltip name="МентальнаяКартаЭлементРасширеннаяПодсказка" id="171"/>
+								</InputField>
+								<InputField name="МентальнаяКартаОписание" id="166">
+									<DataPath>Объект.МентальнаяКарта.Описание</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МентальнаяКартаОписаниеКонтекстноеМеню" id="167"/>
+									<ExtendedTooltip name="МентальнаяКартаОписаниеРасширеннаяПодсказка" id="168"/>
+								</InputField>
+								<InputField name="МентальнаяКартаКомментарий" id="163">
+									<DataPath>Объект.МентальнаяКарта.Комментарий</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МентальнаяКартаКомментарийКонтекстноеМеню" id="164"/>
+									<ExtendedTooltip name="МентальнаяКартаКомментарийРасширеннаяПодсказка" id="165"/>
+								</InputField>
+								<CheckBoxField name="МентальнаяКартаФлаг" id="172">
+									<DataPath>Объект.МентальнаяКарта.Флаг</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="МентальнаяКартаФлагКонтекстноеМеню" id="173"/>
+									<ExtendedTooltip name="МентальнаяКартаФлагРасширеннаяПодсказка" id="174"/>
+								</CheckBoxField>
+								<InputField name="МентальнаяКартаКоличествоЭлементов" id="175">
+									<DataPath>Объект.МентальнаяКарта.КоличествоЭлементов</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МентальнаяКартаКоличествоЭлементовКонтекстноеМеню" id="176"/>
+									<ExtendedTooltip name="МентальнаяКартаКоличествоЭлементовРасширеннаяПодсказка" id="177"/>
+								</InputField>
+								<InputField name="МентальнаяКартаТегиСписок" id="178">
+									<DataPath>Объект.МентальнаяКарта.ТегиСписок</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МентальнаяКартаТегиСписокКонтекстноеМеню" id="179"/>
+									<ExtendedTooltip name="МентальнаяКартаТегиСписокРасширеннаяПодсказка" id="180"/>
+								</InputField>
+								<InputField name="МентальнаяКартаКоличествоСсылкиНа" id="181">
+									<DataPath>Объект.МентальнаяКарта.КоличествоСсылкиНа</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МентальнаяКартаКоличествоСсылкиНаКонтекстноеМеню" id="182"/>
+									<ExtendedTooltip name="МентальнаяКартаКоличествоСсылкиНаРасширеннаяПодсказка" id="183"/>
+								</InputField>
+								<InputField name="МентальнаяКартаКоличествоСсылаютсяНа" id="184">
+									<DataPath>Объект.МентальнаяКарта.КоличествоСсылаютсяНа</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="МентальнаяКартаКоличествоСсылаютсяНаКонтекстноеМеню" id="185"/>
+									<ExtendedTooltip name="МентальнаяКартаКоличествоСсылаютсяНаРасширеннаяПодсказка" id="186"/>
+								</InputField>
+								<CheckBoxField name="МентальнаяКартаПоказыватьФлаг" id="187">
+									<DataPath>Объект.МентальнаяКарта.ПоказыватьФлаг</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="МентальнаяКартаПоказыватьФлагКонтекстноеМеню" id="188"/>
+									<ExtendedTooltip name="МентальнаяКартаПоказыватьФлагРасширеннаяПодсказка" id="189"/>
+								</CheckBoxField>
+								<CheckBoxField name="МентальнаяКартаРазвернут" id="190">
+									<DataPath>Объект.МентальнаяКарта.Развернут</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="МентальнаяКартаРазвернутКонтекстноеМеню" id="191"/>
+									<ExtendedTooltip name="МентальнаяКартаРазвернутРасширеннаяПодсказка" id="192"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаСсылкиНа" id="54">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылки на</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ссылки на</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаСсылкиНаРасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<Table name="СсылкиНа" id="56">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.СсылкиНа</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СсылкиНаКонтекстноеМеню" id="57"/>
+							<AutoCommandBar name="СсылкиНаКоманднаяПанель" id="58"/>
+							<ExtendedTooltip name="СсылкиНаРасширеннаяПодсказка" id="59"/>
+							<SearchStringAddition name="СсылкиНаСтрокаПоиска" id="60">
+								<AdditionSource>
+									<Item>СсылкиНа</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СсылкиНаСтрокаПоискаКонтекстноеМеню" id="61"/>
+								<ExtendedTooltip name="СсылкиНаСтрокаПоискаРасширеннаяПодсказка" id="62"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СсылкиНаСостояниеПросмотра" id="63">
+								<AdditionSource>
+									<Item>СсылкиНа</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СсылкиНаСостояниеПросмотраКонтекстноеМеню" id="64"/>
+								<ExtendedTooltip name="СсылкиНаСостояниеПросмотраРасширеннаяПодсказка" id="65"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СсылкиНаУправлениеПоиском" id="66">
+								<AdditionSource>
+									<Item>СсылкиНа</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СсылкиНаУправлениеПоискомКонтекстноеМеню" id="67"/>
+								<ExtendedTooltip name="СсылкиНаУправлениеПоискомРасширеннаяПодсказка" id="68"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">СсылкиНаПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="СсылкиНаНомерСтроки" id="69">
+									<DataPath>Объект.СсылкиНа.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СсылкиНаНомерСтрокиКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="СсылкиНаНомерСтрокиРасширеннаяПодсказка" id="71"/>
+								</LabelField>
+								<InputField name="СсылкиНаЭлементИД" id="72">
+									<DataPath>Объект.СсылкиНа.ЭлементИД</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СсылкиНаЭлементИДКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="СсылкиНаЭлементИДРасширеннаяПодсказка" id="74"/>
+								</InputField>
+								<InputField name="СсылкиНаСсылкаНа" id="75">
+									<DataPath>Объект.СсылкиНа.СсылкаНа</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СсылкиНаСсылкаНаКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="СсылкиНаСсылкаНаРасширеннаяПодсказка" id="77"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаТегиЭлементов" id="97">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Теги элементов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Теги</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаТегиЭлементовРасширеннаяПодсказка" id="98"/>
+					<ChildItems>
+						<Table name="ТегиЭлементов" id="99">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.ТегиЭлементов</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТегиЭлементовКонтекстноеМеню" id="100"/>
+							<AutoCommandBar name="ТегиЭлементовКоманднаяПанель" id="101"/>
+							<ExtendedTooltip name="ТегиЭлементовРасширеннаяПодсказка" id="102"/>
+							<SearchStringAddition name="ТегиЭлементовСтрокаПоиска" id="103">
+								<AdditionSource>
+									<Item>ТегиЭлементов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТегиЭлементовСтрокаПоискаКонтекстноеМеню" id="104"/>
+								<ExtendedTooltip name="ТегиЭлементовСтрокаПоискаРасширеннаяПодсказка" id="105"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТегиЭлементовСостояниеПросмотра" id="106">
+								<AdditionSource>
+									<Item>ТегиЭлементов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТегиЭлементовСостояниеПросмотраКонтекстноеМеню" id="107"/>
+								<ExtendedTooltip name="ТегиЭлементовСостояниеПросмотраРасширеннаяПодсказка" id="108"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТегиЭлементовУправлениеПоиском" id="109">
+								<AdditionSource>
+									<Item>ТегиЭлементов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТегиЭлементовУправлениеПоискомКонтекстноеМеню" id="110"/>
+								<ExtendedTooltip name="ТегиЭлементовУправлениеПоискомРасширеннаяПодсказка" id="111"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">ТегиПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ТегиЭлементовНомерСтроки" id="112">
+									<DataPath>Объект.ТегиЭлементов.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТегиЭлементовНомерСтрокиКонтекстноеМеню" id="113"/>
+									<ExtendedTooltip name="ТегиЭлементовНомерСтрокиРасширеннаяПодсказка" id="114"/>
+								</LabelField>
+								<LabelField name="ТегиЭлементовЭлементИД" id="142">
+									<DataPath>Объект.ТегиЭлементов.ЭлементИД</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТегиЭлементовЭлементИДКонтекстноеМеню" id="143"/>
+									<ExtendedTooltip name="ТегиЭлементовЭлементИДРасширеннаяПодсказка" id="144"/>
+								</LabelField>
+								<InputField name="ТегиЭлементовТег" id="115">
+									<DataPath>Объект.ТегиЭлементов.Тег</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТегиЭлементовТегКонтекстноеМеню" id="116"/>
+									<ExtendedTooltip name="ТегиЭлементовТегРасширеннаяПодсказка" id="117"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаТеги" id="206">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Теги</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Теги</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаТегиРасширеннаяПодсказка" id="207"/>
+					<ChildItems>
+						<Table name="Теги" id="208">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Теги</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТегиКонтекстноеМеню" id="209"/>
+							<AutoCommandBar name="ТегиКоманднаяПанель" id="210"/>
+							<ExtendedTooltip name="ТегиРасширеннаяПодсказка" id="211"/>
+							<SearchStringAddition name="ТегиСтрокаПоиска" id="212">
+								<AdditionSource>
+									<Item>Теги</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТегиСтрокаПоискаКонтекстноеМеню" id="213"/>
+								<ExtendedTooltip name="ТегиСтрокаПоискаРасширеннаяПодсказка" id="214"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТегиСостояниеПросмотра" id="215">
+								<AdditionSource>
+									<Item>Теги</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТегиСостояниеПросмотраКонтекстноеМеню" id="216"/>
+								<ExtendedTooltip name="ТегиСостояниеПросмотраРасширеннаяПодсказка" id="217"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТегиУправлениеПоиском" id="218">
+								<AdditionSource>
+									<Item>Теги</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТегиУправлениеПоискомКонтекстноеМеню" id="219"/>
+								<ExtendedTooltip name="ТегиУправлениеПоискомРасширеннаяПодсказка" id="220"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ТегиНомерСтроки" id="221">
+									<DataPath>Объект.Теги.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТегиНомерСтрокиКонтекстноеМеню" id="222"/>
+									<ExtendedTooltip name="ТегиНомерСтрокиРасширеннаяПодсказка" id="223"/>
+								</LabelField>
+								<InputField name="ТегиТег" id="224">
+									<DataPath>Объект.Теги.Тег</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТегиТегКонтекстноеМеню" id="225"/>
+									<ExtendedTooltip name="ТегиТегРасширеннаяПодсказка" id="226"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.дМентальныеКарты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="МентальнаяКартаДерево" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ментальная карта дерево</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Комментарий" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Описание" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Элемент" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Элемент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭлементИД" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Элемент ИД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоЭлементов" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество элементов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Флаг" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Флаг</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПоказыватьФлаг" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показывать флаг</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоСсылкиНа" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество ссылки на</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="КоличествоСсылаютсяНа" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество ссылаются на</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТегиСписок" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Теги</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Развернут" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Развернут</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПоказыватьСписокТегов" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показывать список тегов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="КомпоновщикНастроекКомпоновкиДанных" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Компоновщик настроек компоновки данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>dcsset:SettingsComposer</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВременноеХранилищеСКД" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Временное хранилище СКД</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ЭлементОписание" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>МентальнаяКартаДеревоФлаг</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">МентальнаяКартаДерево.ПоказыватьФлаг</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:BorderColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>МентальнаяКартаДеревоФлаг</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">МентальнаяКартаДерево.ПоказыватьФлаг</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:BorderColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Видимость</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ДеревоПоказыватьФлаг" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Флаг</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать флаг</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.WriteAndClose</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДеревоПоказыватьФлаг</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ДеревоУсловноеОформлениеВидимость" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Условное оформление</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Условное оформление</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.DataCompositionConditionalAppearance</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДеревоУсловноеОформлениеВидимость</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="ДеревоПоказыватьСписокТегов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Теги</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Теги</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Dimension</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДеревоПоказыватьСписокТегов</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+</Form>
