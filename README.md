@@ -8,3 +8,4 @@ Video
 
 [![1С Дневник, 3](https://i9.ytimg.com/vi/CrJvFIasgbM/mq2.jpg?sqp=CKCbvPkF&rs=AOn4CLBMOtsDB_UQ2VgxGkyYlvnIqeDPUg)](https://youtu.be/CrJvFIasgbM "1С Дневник, 3")  
 
+<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png" alt="CC BY" title="CC BY" width="120">
