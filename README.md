@@ -22,4 +22,4 @@ Video
 
 [![1С Дневник, 3](https://i9.ytimg.com/vi_webp/CrJvFIasgbM/mqdefault.webp?sqp=CNCr2_kF&rs=AOn4CLCbw-qaf5GyW6LFmAYK_FTP14NX0Q)](https://youtu.be/CrJvFIasgbM "1С Дневник, 3")  
 
-<img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png" alt="CC BY" title="CC BY" width="120">
+<a href="https://creativecommons.org/licenses/by/4.0/" Target="_blank"><img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by.png" alt="CC BY" title="CC BY" width="120"></a>
