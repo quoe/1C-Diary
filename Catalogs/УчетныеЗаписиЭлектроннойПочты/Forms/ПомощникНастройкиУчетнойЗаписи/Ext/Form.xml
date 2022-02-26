@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
 	<CommandSet>
@@ -25,12 +25,6 @@
 	</Events>
 	<ChildItems>
 		<Pages name="Страницы" id="1">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Страницы</v8:content>
-				</v8:item>
-			</Title>
 			<PagesRepresentation>None</PagesRepresentation>
 			<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="2"/>
 			<ChildItems>
@@ -70,19 +64,12 @@
 							<ExtendedTooltip name="НадписьУчетнаяЗаписьНеНастроенаРасширеннаяПодсказка" id="7"/>
 						</LabelDecoration>
 						<UsualGroup name="НеУдалосьПодключитьсяКартинкаИНадпись" id="158">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Не удалось подключиться картинка и надпись</v8:content>
-								</v8:item>
-							</Title>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
 									<v8:content>Учетная запись не настроена картинка и надпись</v8:content>
 								</v8:item>
 							</ToolTip>
-							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="НеУдалосьПодключитьсяКартинкаИНадписьРасширеннаяПодсказка" id="159"/>
@@ -94,31 +81,52 @@
 											<v8:content>Картинка вопрос</v8:content>
 										</v8:item>
 									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.Предупреждение32</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
 									<FileDragMode>AsFile</FileDragMode>
 									<ContextMenu name="КартинкаПредупреждениеКонтекстноеМеню" id="161"/>
 									<ExtendedTooltip name="КартинкаПредупреждениеРасширеннаяПодсказка" id="162"/>
 								</PictureDecoration>
-								<InputField name="СообщенияОбОшибках" id="238">
-									<DataPath>СообщенияОбОшибках</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<TitleLocation>None</TitleLocation>
-									<Height>2</Height>
-									<VerticalStretch>false</VerticalStretch>
-									<MultiLine>true</MultiLine>
-									<BackColor>style:FormBackColor</BackColor>
-									<BorderColor>style:FormBackColor</BorderColor>
-									<ContextMenu name="СообщенияОбОшибкахКонтекстноеМеню" id="239"/>
-									<ExtendedTooltip name="СообщенияОбОшибкахРасширеннаяПодсказка" id="240"/>
-								</InputField>
+								<UsualGroup name="ГруппаСообщенияОбОшибках" id="273">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаСообщенияОбОшибкахРасширеннаяПодсказка" id="274"/>
+									<ChildItems>
+										<InputField name="СообщенияОбОшибках" id="238">
+											<DataPath>СообщенияОбОшибках</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<TitleLocation>None</TitleLocation>
+											<Height>2</Height>
+											<VerticalStretch>false</VerticalStretch>
+											<MultiLine>true</MultiLine>
+											<BackColor>style:FormBackColor</BackColor>
+											<BorderColor>style:FormBackColor</BorderColor>
+											<ContextMenu name="СообщенияОбОшибкахКонтекстноеМеню" id="239"/>
+											<ExtendedTooltip name="СообщенияОбОшибкахРасширеннаяПодсказка" id="240"/>
+										</InputField>
+										<LabelDecoration name="НужнаПомощь" id="270">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Нужна помощь?</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+											<Hyperlink>true</Hyperlink>
+											<ContextMenu name="НужнаПомощьКонтекстноеМеню" id="271"/>
+											<ExtendedTooltip name="НужнаПомощьРасширеннаяПодсказка" id="272"/>
+											<Events>
+												<Event name="Click">НужнаПомощьНажатие</Event>
+											</Events>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="Аутентификация" id="200">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Аутентификация</v8:content>
-								</v8:item>
-							</Title>
 							<Group>Vertical</Group>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
@@ -170,7 +178,6 @@
 									<v8:content>Использовать учетную запись</v8:content>
 								</v8:item>
 							</Title>
-							<Group>Horizontal</Group>
 							<Representation>NormalSeparation</Representation>
 							<ExtendedTooltip name="ИспользоватьУчетнуюЗаписьРасширеннаяПодсказка" id="190"/>
 							<ChildItems>
@@ -239,12 +246,6 @@
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ИмяОтправителя" id="202">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Имя отправителя</v8:content>
-								</v8:item>
-							</Title>
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
@@ -263,6 +264,7 @@
 									<HorizontalStretch>false</HorizontalStretch>
 									<ContextMenu name="ИмяОтправителяПисемКонтекстноеМеню" id="152"/>
 									<ExtendedTooltip name="ИмяОтправителяПисемРасширеннаяПодсказка" id="153">
+										<TextColor>style:ПоясняющийТекст</TextColor>
 										<Title formatted="false">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
@@ -277,6 +279,7 @@
 								<LabelDecoration name="ПояснениеКИмени" id="204">
 									<Visible>false</Visible>
 									<AutoMaxWidth>false</AutoMaxWidth>
+									<TextColor>style:ПоясняющийТекст</TextColor>
 									<Title formatted="false">
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -289,12 +292,6 @@
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="СпособНастройкиУчетнойЗаписи" id="154">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Способ настройки учетной записи</v8:content>
-								</v8:item>
-							</Title>
 							<Group>Vertical</Group>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
@@ -309,7 +306,7 @@
 										</v8:item>
 									</Title>
 									<TitleLocation>None</TitleLocation>
-									<RadioButtonType>Auto</RadioButtonType>
+									<RadioButtonType>RadioButtons</RadioButtonType>
 									<ColumnsCount>1</ColumnsCount>
 									<ChoiceList>
 										<xr:Item>
@@ -370,17 +367,11 @@
 							<ContextMenu name="НастройкаСервераИсходящейПочтыЗаголовокКонтекстноеМеню" id="211"/>
 							<ExtendedTooltip name="НастройкаСервераИсходящейПочтыЗаголовокРасширеннаяПодсказка" id="212"/>
 						</LabelDecoration>
-						<UsualGroup name="АвторизацияПриОтправкеПисем" id="78">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Авторизация при отправке писем</v8:content>
-								</v8:item>
-							</Title>
+						<UsualGroup name="ЛогинИПарольПриОтправкеПисем" id="78">
 							<Group>Vertical</Group>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="АвторизацияПриОтправкеПисемРасширеннаяПодсказка" id="79"/>
+							<ExtendedTooltip name="ЛогинИПарольПриОтправкеПисемРасширеннаяПодсказка" id="79"/>
 							<ChildItems>
 								<InputField name="ИмяПользователяДляОтправкиПисем" id="80">
 									<DataPath>ИмяПользователяДляОтправкиПисем</DataPath>
@@ -411,29 +402,9 @@
 									<ContextMenu name="ПарольДляОтправкиПисемКонтекстноеМеню" id="84"/>
 									<ExtendedTooltip name="ПарольДляОтправкиПисемРасширеннаяПодсказка" id="85"/>
 								</InputField>
-								<CheckBoxField name="ИспользоватьБезопасныйВходНаСерверИсходящейПочты" id="86">
-									<DataPath>ИспользоватьБезопасныйВходНаСерверИсходящейПочты</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Безопасная проверка пароля</v8:content>
-										</v8:item>
-									</Title>
-									<TitleLocation>Right</TitleLocation>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ИспользоватьБезопасныйВходНаСерверИсходящейПочтыКонтекстноеМеню" id="87"/>
-									<ExtendedTooltip name="ИспользоватьБезопасныйВходНаСерверИсходящейПочтыРасширеннаяПодсказка" id="88"/>
-								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="НастройкиСервераИсходящейПочты" id="89">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Настройки сервера входящей почты</v8:content>
-								</v8:item>
-							</Title>
-							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="НастройкиСервераИсходящейПочтыРасширеннаяПодсказка" id="90"/>
@@ -466,28 +437,45 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
-						<CheckBoxField name="ИспользоватьЗащищенноеСоединениеДляИсходящейПочты" id="97">
-							<DataPath>ИспользоватьЗащищенноеСоединениеДляИсходящейПочты</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Использовать безопасное соединение (SSL)</v8:content>
-								</v8:item>
-							</Title>
-							<TitleLocation>Right</TitleLocation>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ИспользоватьЗащищенноеСоединениеДляИсходящейПочтыКонтекстноеМеню" id="98"/>
-							<ExtendedTooltip name="ИспользоватьЗащищенноеСоединениеДляИсходящейПочтыРасширеннаяПодсказка" id="99"/>
-						</CheckBoxField>
+						<RadioButtonField name="ШифрованиеПриОтправкеПочты" id="262">
+							<DataPath>ШифрованиеПриОтправкеПочты</DataPath>
+							<RadioButtonType>Auto</RadioButtonType>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Авто</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">Авто</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Всегда (SSL)</v8:content>
+											</v8:item>
+										</Presentation>
+										<Value xsi:type="xs:string">SSL</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ШифрованиеПриОтправкеПочтыКонтекстноеМеню" id="263"/>
+							<ExtendedTooltip name="ШифрованиеПриОтправкеПочтыРасширеннаяПодсказка" id="264"/>
+							<Events>
+								<Event name="OnChange">ШифрованиеПриОтправкеПочтыПриИзменении</Event>
+							</Events>
+						</RadioButtonField>
 						<UsualGroup name="ДлительностьОжиданияИсходящейПочты" id="179">
 							<Visible>false</Visible>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Длительность ожидания</v8:content>
-								</v8:item>
-							</Title>
-							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ДлительностьОжиданияИсходящейПочтыРасширеннаяПодсказка" id="180"/>
@@ -524,21 +512,6 @@
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="188"/>
-							<ChildItems>
-								<CheckBoxField name="ТребуетсяВходНаСерверПередОтправкой" id="75">
-									<DataPath>ТребуетсяВходНаСерверПередОтправкой</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Требуется авторизация на сервере входящей почты перед отправкой</v8:content>
-										</v8:item>
-									</Title>
-									<TitleLocation>Right</TitleLocation>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ТребуетсяВходНаСерверПередОтправкойКонтекстноеМеню" id="76"/>
-									<ExtendedTooltip name="ТребуетсяВходНаСерверПередОтправкойРасширеннаяПодсказка" id="77"/>
-								</CheckBoxField>
-							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
 				</Page>
@@ -598,93 +571,68 @@
 							<ContextMenu name="ПарольДляПолученияПисемКонтекстноеМеню" id="104"/>
 							<ExtendedTooltip name="ПарольДляПолученияПисемРасширеннаяПодсказка" id="105"/>
 						</InputField>
-						<CheckBoxField name="ИспользоватьБезопасныйВходНаСерверВходящейПочты" id="106">
-							<DataPath>ИспользоватьБезопасныйВходНаСерверВходящейПочты</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Безопасная проверка пароля</v8:content>
-								</v8:item>
-							</Title>
-							<TitleLocation>Right</TitleLocation>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ИспользоватьБезопасныйВходНаСерверВходящейПочтыКонтекстноеМеню" id="107"/>
-							<ExtendedTooltip name="ИспользоватьБезопасныйВходНаСерверВходящейПочтыРасширеннаяПодсказка" id="108"/>
-						</CheckBoxField>
 						<UsualGroup name="НастройкиСервераВходящейПочты" id="109">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Настройки сервера входящей почты</v8:content>
-								</v8:item>
-							</Title>
 							<Group>Vertical</Group>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="НастройкиСервераВходящейПочтыРасширеннаяПодсказка" id="110"/>
 							<ChildItems>
-								<InputField name="СерверВходящейПочты" id="111">
-									<DataPath>СерверВходящейПочты</DataPath>
+								<InputField name="Протокол" id="116">
+									<DataPath>Протокол</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Сервер</v8:content>
+											<v8:content>Протокол</v8:content>
 										</v8:item>
 									</Title>
-									<TitleLocation>Left</TitleLocation>
-									<Width>22</Width>
+									<Width>8</Width>
 									<HorizontalStretch>false</HorizontalStretch>
+									<ListChoiceMode>true</ListChoiceMode>
 									<AutoMarkIncomplete>true</AutoMarkIncomplete>
-									<ContextMenu name="СерверВходящейПочтыКонтекстноеМеню" id="112"/>
-									<ExtendedTooltip name="СерверВходящейПочтыРасширеннаяПодсказка" id="113"/>
+									<TextEdit>false</TextEdit>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:string">IMAP</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation/>
+												<Value xsi:type="xs:string">POP</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ПротоколКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="ПротоколРасширеннаяПодсказка" id="118"/>
+									<Events>
+										<Event name="OnChange">ПротоколПриИзменении</Event>
+									</Events>
 								</InputField>
 								<UsualGroup name="ПротоколИПортСервераВходящейПочты" id="114">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Протокол и порт сервера входящей почты</v8:content>
-										</v8:item>
-									</Title>
-									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ПротоколИПортСервераВходящейПочтыРасширеннаяПодсказка" id="115"/>
 									<ChildItems>
-										<InputField name="Протокол" id="116">
-											<DataPath>Протокол</DataPath>
+										<InputField name="СерверВходящейПочты" id="111">
+											<DataPath>СерверВходящейПочты</DataPath>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Протокол</v8:content>
+													<v8:content>Сервер</v8:content>
 												</v8:item>
 											</Title>
-											<Width>8</Width>
-											<ListChoiceMode>true</ListChoiceMode>
+											<TitleLocation>Left</TitleLocation>
+											<Width>22</Width>
+											<HorizontalStretch>false</HorizontalStretch>
 											<AutoMarkIncomplete>true</AutoMarkIncomplete>
-											<TextEdit>false</TextEdit>
-											<ChoiceList>
-												<xr:Item>
-													<xr:Presentation/>
-													<xr:CheckState>0</xr:CheckState>
-													<xr:Value xsi:type="FormChoiceListDesTimeValue">
-														<Presentation/>
-														<Value xsi:type="xs:string">IMAP</Value>
-													</xr:Value>
-												</xr:Item>
-												<xr:Item>
-													<xr:Presentation/>
-													<xr:CheckState>0</xr:CheckState>
-													<xr:Value xsi:type="FormChoiceListDesTimeValue">
-														<Presentation/>
-														<Value xsi:type="xs:string">POP</Value>
-													</xr:Value>
-												</xr:Item>
-											</ChoiceList>
-											<ContextMenu name="ПротоколКонтекстноеМеню" id="117"/>
-											<ExtendedTooltip name="ПротоколРасширеннаяПодсказка" id="118"/>
-											<Events>
-												<Event name="OnChange">ПротоколПриИзменении</Event>
-											</Events>
+											<ContextMenu name="СерверВходящейПочтыКонтекстноеМеню" id="112"/>
+											<ExtendedTooltip name="СерверВходящейПочтыРасширеннаяПодсказка" id="113"/>
 										</InputField>
 										<InputField name="ПортВходящейПочты" id="119">
 											<DataPath>ПортСервераВходящейПочты</DataPath>
@@ -702,41 +650,51 @@
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="ТипСоединенияИДлительностьОжидания" id="122">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Тип соединения и длительность ожидания</v8:content>
-										</v8:item>
-									</Title>
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ТипСоединенияИДлительностьОжиданияРасширеннаяПодсказка" id="123"/>
-									<ChildItems>
-										<CheckBoxField name="ИспользоватьЗащищенноеСоединениеДляВходящейПочты" id="124">
-											<DataPath>ИспользоватьЗащищенноеСоединениеДляВходящейПочты</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Защищенное соединение (SSL)</v8:content>
-												</v8:item>
-											</Title>
-											<TitleLocation>Right</TitleLocation>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ИспользоватьЗащищенноеСоединениеДляВходящейПочтыКонтекстноеМеню" id="125"/>
-											<ExtendedTooltip name="ИспользоватьЗащищенноеСоединениеДляВходящейПочтыРасширеннаяПодсказка" id="126"/>
-										</CheckBoxField>
-									</ChildItems>
 								</UsualGroup>
+								<RadioButtonField name="ШифрованиеПриПолученииПочты" id="265">
+									<DataPath>ШифрованиеПриПолученииПочты</DataPath>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Авто</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Авто</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Всегда (SSL)</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">SSL</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ШифрованиеПриПолученииПочтыКонтекстноеМеню" id="266"/>
+									<ExtendedTooltip name="ШифрованиеПриПолученииПочтыРасширеннаяПодсказка" id="267"/>
+									<Events>
+										<Event name="OnChange">ШифрованиеПриПолученииПочтыПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ОставлятьПисьмаНаСервере" id="135">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Оставлять письма на сервере</v8:content>
-								</v8:item>
-							</Title>
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
@@ -759,13 +717,6 @@
 									</Events>
 								</CheckBoxField>
 								<UsualGroup name="НастройкаУдаленияПисем" id="140">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Настройка удаления писем</v8:content>
-										</v8:item>
-									</Title>
-									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="НастройкаУдаленияПисемРасширеннаяПодсказка" id="141"/>
@@ -841,13 +792,7 @@
 							<ExtendedTooltip name="НазваниеУчетнойЗаписиРасширеннаяПодсказка" id="150"/>
 						</InputField>
 						<UsualGroup name="ДлительностьОжидания" id="127">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Длительность ожидания</v8:content>
-								</v8:item>
-							</Title>
-							<Group>Horizontal</Group>
+							<Group>AlwaysHorizontal</Group>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ДлительностьОжиданияРасширеннаяПодсказка" id="128"/>
@@ -903,19 +848,12 @@
 							<ExtendedTooltip name="ПроверкаНастроекУчетнойЗаписиЗаголовокРасширеннаяПодсказка" id="234"/>
 						</LabelDecoration>
 						<UsualGroup name="ПроверкаНастроекУчетнойЗаписиКартинкаИНадпись" id="53">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Проверка настроек учетной записи картинка и надпись</v8:content>
-								</v8:item>
-							</Title>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
 									<v8:content>Учетная запись не настроена картинка и надпись</v8:content>
 								</v8:item>
 							</ToolTip>
-							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ПроверкаНастроекУчетнойЗаписиКартинкаИНадписьРасширеннаяПодсказка" id="54"/>
@@ -968,19 +906,12 @@
 							<ExtendedTooltip name="УчетнаяЗаписьУспешноНастроенаЗаголовокРасширеннаяПодсказка" id="237"/>
 						</LabelDecoration>
 						<UsualGroup name="УчетнаяЗаписьУспешноНастроенаКартинкаИНадпись" id="64">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Учетная запись успешно настроена картинка и надпись</v8:content>
-								</v8:item>
-							</Title>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
 									<v8:content>Учетная запись не настроена картинка и надпись</v8:content>
 								</v8:item>
 							</ToolTip>
-							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="УчетнаяЗаписьУспешноНастроенаКартинкаИНадписьРасширеннаяПодсказка" id="65"/>
@@ -992,6 +923,10 @@
 											<v8:content>Картинка успешно</v8:content>
 										</v8:item>
 									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.Успешно32</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
 									<FileDragMode>AsFile</FileDragMode>
 									<ContextMenu name="КартинкаУспешноКонтекстноеМеню" id="67"/>
 									<ExtendedTooltip name="КартинкаУспешноРасширеннаяПодсказка" id="68"/>
@@ -1017,24 +952,11 @@ vasyapupkin@example.com завершена.</v8:content>
 			</ChildItems>
 		</Pages>
 		<UsualGroup name="КоманднаяПанель" id="28">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Командная панель</v8:content>
-				</v8:item>
-			</Title>
-			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="КоманднаяПанельРасширеннаяПодсказка" id="29"/>
 			<ChildItems>
 				<CommandBar name="КоманднаяПанельЛеваяЧасть" id="11">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Командная панель левая часть</v8:content>
-						</v8:item>
-					</Title>
 					<ExtendedTooltip name="КоманднаяПанельЛеваяЧастьРасширеннаяПодсказка" id="12"/>
 					<ChildItems>
 						<Button name="КнопкаНазад" id="20">
@@ -1057,12 +979,6 @@ vasyapupkin@example.com завершена.</v8:content>
 					<ExtendedTooltip name="ЗаглушкаРасширеннаяПодсказка" id="170"/>
 				</LabelDecoration>
 				<CommandBar name="КоманднаяПанельПраваяЧасть" id="30">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Командная панель правая часть</v8:content>
-						</v8:item>
-					</Title>
 					<HorizontalLocation>Right</HorizontalLocation>
 					<ExtendedTooltip name="КоманднаяПанельПраваяЧастьРасширеннаяПодсказка" id="31"/>
 					<ChildItems>
@@ -1077,10 +993,10 @@ vasyapupkin@example.com завершена.</v8:content>
 							<CommandName>Form.Command.Далее</CommandName>
 							<ExtendedTooltip name="КнопкаДалееРасширеннаяПодсказка" id="23"/>
 						</Button>
-						<Button name="КнопкаОтмена" id="18">
+						<Button name="КнопкаОтмена" id="268">
 							<Type>CommandBarButton</Type>
-							<CommandName>Form.StandardCommand.Cancel</CommandName>
-							<ExtendedTooltip name="КнопкаОтменаРасширеннаяПодсказка" id="19"/>
+							<CommandName>Form.Command.Отмена</CommandName>
+							<ExtendedTooltip name="КнопкаОтменаРасширеннаяПодсказка" id="269"/>
 						</Button>
 					</ChildItems>
 				</CommandBar>
@@ -1119,12 +1035,6 @@ vasyapupkin@example.com завершена.</v8:content>
 			</Type>
 		</Attribute>
 		<Attribute name="ТребуетсяВходНаСерверПередОтправкой" id="4">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Требуется вход на сервер перед отправкой</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
@@ -1160,12 +1070,6 @@ vasyapupkin@example.com завершена.</v8:content>
 			</Type>
 		</Attribute>
 		<Attribute name="ИспользоватьБезопасныйВходНаСерверИсходящейПочты" id="7">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Использовать безопасный вход на сервер исходящей почты</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
@@ -1202,12 +1106,6 @@ vasyapupkin@example.com завершена.</v8:content>
 			</Type>
 		</Attribute>
 		<Attribute name="ИспользоватьЗащищенноеСоединениеДляИсходящейПочты" id="10">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Использовать защищенное соединение для исходящей почты</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
@@ -1243,12 +1141,6 @@ vasyapupkin@example.com завершена.</v8:content>
 			</Type>
 		</Attribute>
 		<Attribute name="ИспользоватьБезопасныйВходНаСерверВходящейПочты" id="13">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Использовать безопасный вход на сервер входящей почты</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
@@ -1300,12 +1192,6 @@ vasyapupkin@example.com завершена.</v8:content>
 			</Type>
 		</Attribute>
 		<Attribute name="ИспользоватьЗащищенноеСоединениеДляВходящейПочты" id="17">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Использовать защищенное соединение для входящей почты</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
@@ -1368,34 +1254,16 @@ vasyapupkin@example.com завершена.</v8:content>
 			</Type>
 		</Attribute>
 		<Attribute name="ПроверкаЗавершиласьСОшибками" id="23">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Проверка завершилась с ошибками</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="КонтекстныйРежим" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Контекстный режим</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ОткрытьКарточкуУчетнойЗаписи" id="24">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть карточку учетной записи</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
@@ -1417,12 +1285,6 @@ vasyapupkin@example.com завершена.</v8:content>
 			</Type>
 		</Attribute>
 		<Attribute name="НастройкиЗаполнены" id="27">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Настройки заполнены</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
@@ -1450,12 +1312,6 @@ vasyapupkin@example.com завершена.</v8:content>
 			</Type>
 		</Attribute>
 		<Attribute name="УчетнаяЗаписьСсылка" id="30">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Учетная запись ссылка</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.УчетныеЗаписиЭлектроннойПочты</v8:Type>
 			</Type>
@@ -1476,54 +1332,24 @@ vasyapupkin@example.com завершена.</v8:content>
 			</Type>
 		</Attribute>
 		<Attribute name="ТребуетсяПодтверждениеЗакрытияФормы" id="32">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Требуется подтверждение закрытия формы</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="СсылкаНовойУчетнойЗаписи" id="25">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Ссылка новой учетной записи</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.УчетныеЗаписиЭлектроннойПочты</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ИспользуютсяПрофилиБезопасности" id="33">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Используются профили безопасности</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ПараметрыОбработчикаОжидания" id="34">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Параметры обработчика ожидания</v8:content>
-				</v8:item>
-			</Title>
 			<Type/>
 		</Attribute>
 		<Attribute name="РезультатФоновогоЗадания" id="35">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Результат фонового задания</v8:content>
-				</v8:item>
-			</Title>
 			<Type/>
 		</Attribute>
 		<Attribute name="ПериодХраненияСообщенийНаСервере" id="36">
@@ -1554,12 +1380,6 @@ vasyapupkin@example.com завершена.</v8:content>
 			</Type>
 		</Attribute>
 		<Attribute name="ИдентификаторЗадания" id="38">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Идентификатор задания</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -1573,6 +1393,41 @@ vasyapupkin@example.com завершена.</v8:content>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Вид учетной записи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТребуетсяАвторизацияПриОтправкеПисем" id="40">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ШифрованиеПриОтправкеПочты" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шифрование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШифрованиеПриПолученииПочты" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шифрование</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -1613,6 +1468,22 @@ vasyapupkin@example.com завершена.</v8:content>
 				</v8:item>
 			</Title>
 			<Action>ПерейтиКНастройкам</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Отмена" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Отмена</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>

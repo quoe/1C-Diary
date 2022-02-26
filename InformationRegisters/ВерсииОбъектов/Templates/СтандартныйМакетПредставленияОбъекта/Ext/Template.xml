@@ -8,6 +8,16 @@
 			<code>Русский</code>
 			<description>Русский</description>
 		</languageInfo>
+		<languageInfo>
+			<id>en</id>
+			<code>Английский</code>
+			<description>Английский</description>
+		</languageInfo>
+		<languageInfo>
+			<id>ro</id>
+			<code>Румынский</code>
+			<description>Румынский</description>
+		</languageInfo>
 	</languageSettings>
 	<columns>
 		<size>3</size>
@@ -1060,6 +1070,7 @@
 		<font>4</font>
 		<width>72</width>
 		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Top</verticalAlignment>
 		<fillType>Parameter</fillType>
 		<textOrientation>0</textOrientation>
 		<bySelectedColumns>false</bySelectedColumns>
@@ -1067,6 +1078,7 @@
 	</format>
 	<format>
 		<font>5</font>
+		<verticalAlignment>Top</verticalAlignment>
 		<fillType>Parameter</fillType>
 	</format>
 	<format>
@@ -1078,18 +1090,21 @@
 	</format>
 	<format>
 		<width>322</width>
-		<textColor>auto</textColor>
-		<backColor>auto</backColor>
+		<verticalAlignment>Top</verticalAlignment>
+		<textColor>style:ИзмененноеЗначениеРеквизитаЦвет</textColor>
+		<backColor>style:ИзмененноеЗначениеРеквизитаФон</backColor>
 		<fillType>Parameter</fillType>
 	</format>
 	<format>
 		<width>322</width>
-		<backColor>auto</backColor>
+		<verticalAlignment>Top</verticalAlignment>
+		<backColor>style:ДобавленныйРеквизитФон</backColor>
 		<fillType>Parameter</fillType>
 	</format>
 	<format>
 		<width>322</width>
-		<backColor>auto</backColor>
+		<verticalAlignment>Top</verticalAlignment>
+		<backColor>style:УдаленныйРеквизитФон</backColor>
 		<fillType>Parameter</fillType>
 		<markNegatives>false</markNegatives>
 	</format>
@@ -1129,8 +1144,8 @@
 		<font>6</font>
 		<width>322</width>
 		<horizontalAlignment>Center</horizontalAlignment>
-		<textColor>auto</textColor>
-		<backColor>auto</backColor>
+		<textColor>style:ИзмененноеЗначениеРеквизитаЦвет</textColor>
+		<backColor>style:ИзмененноеЗначениеРеквизитаФон</backColor>
 		<fillType>Parameter</fillType>
 		<hyperLink>true</hyperLink>
 	</format>
@@ -1138,14 +1153,14 @@
 		<font>6</font>
 		<width>322</width>
 		<horizontalAlignment>Center</horizontalAlignment>
-		<backColor>auto</backColor>
+		<backColor>style:ДобавленныйРеквизитФон</backColor>
 		<fillType>Parameter</fillType>
 		<hyperLink>true</hyperLink>
 	</format>
 	<format>
 		<width>322</width>
 		<horizontalAlignment>Center</horizontalAlignment>
-		<backColor>auto</backColor>
+		<backColor>style:УдаленныйРеквизитФон</backColor>
 		<fillType>Parameter</fillType>
 		<markNegatives>false</markNegatives>
 	</format>
@@ -1153,7 +1168,7 @@
 		<font>6</font>
 		<width>322</width>
 		<horizontalAlignment>Center</horizontalAlignment>
-		<textColor>auto</textColor>
+		<textColor>style:ИзмененноеЗначениеРеквизитаЦвет</textColor>
 		<fillType>Text</fillType>
 		<hyperLink>true</hyperLink>
 	</format>
@@ -1161,13 +1176,13 @@
 		<font>1</font>
 	</format>
 	<format>
-		<textColor>auto</textColor>
-		<backColor>auto</backColor>
+		<textColor>style:ИзмененноеЗначениеРеквизитаЦвет</textColor>
+		<backColor>style:ИзмененноеЗначениеРеквизитаФон</backColor>
 	</format>
 	<format>
-		<backColor>auto</backColor>
+		<backColor>style:ДобавленныйРеквизитФон</backColor>
 	</format>
 	<format>
-		<backColor>auto</backColor>
+		<backColor>style:УдаленныйРеквизитФон</backColor>
 	</format>
 </document>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.12">
+	<Item id="efe1ae94-b603-42df-b8c6-1cc8522c418b">
+		<Name>Удалить_ЗапретитьВводФактаДляОсновныхЗадач</Name>
+		<Code>000000004</Code>
+		<Description>(Не используется) Запретить ввод факта для основных задач</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="38b8ad37-9b1e-4404-9d50-21d4d10934c7">
+		<Name>ДатаПоследнейВыгрузкиФайлаЛистаЗадач</Name>
+		<Code>000000003</Code>
+		<Description>Дата последней выгрузки файла листа задач</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="d7b479f7-711b-4681-a071-f917cf75c1c3">
+		<Name>ОтключитьВозможностьСозданиеРегламентныхТекущихДел</Name>
+		<Code>000000007</Code>
+		<Description>Отключить возможность создание регламентных текущих дел</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="ae4a846f-f623-4b56-830a-0f93a7e258e7">
+		<Name>СписокПользователейКомуОтправлятьСистемныеУведомления</Name>
+		<Code>000000001</Code>
+		<Description>Список пользователей кому отправлять системные уведомления</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a28fc012-5cb6-472b-8441-a8494a3d37d0">
+		<Name>СтатусЗадачиПоУмолчанию</Name>
+		<Code>000000002</Code>
+		<Description>Статус задачи по умолчанию</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="612b685d-f5bb-495d-a75a-0eb782a20030">
+		<Name>ТелеграмMaxMessangeID</Name>
+		<Code>000000005</Code>
+		<Description>Телеграм MaxMessangeID</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="f54d31d1-3ab2-40f1-85a5-36ae338732b4">
+		<Name>ТелеграммИспользоватьЗаменуСимволовВДругуюКодировку</Name>
+		<Code>000000008</Code>
+		<Description>Телеграмм использовать замену символов в другую кодировку</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a4ff6b55-fe91-4281-a871-a45a7292fc3e">
+		<Name>ТелеграммИспользоватьПроксиДляОтправки</Name>
+		<Code>000000006</Code>
+		<Description>Телеграмм использовать прокси для отправки</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="32daf5bb-f401-4c8b-ab34-ebfbe1cc08f0">
+		<Name>ТелеграммРодительДляНовойЗадачиПоУмолчанию</Name>
+		<Code>000000009</Code>
+		<Description>Телеграмм родитель для новой задачи по умолчанию</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e3177d7a-d098-4afe-a977-e0b96514fa65">
+		<Name>ТолькоПросмотрДляСодержанияЗадач</Name>
+		<Code>000000010</Code>
+		<Description>Устанавливать только просмотр для содержания у существующих задач</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

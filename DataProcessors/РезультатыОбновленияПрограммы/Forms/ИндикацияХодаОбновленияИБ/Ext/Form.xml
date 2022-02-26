@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -29,22 +29,10 @@
 	</Events>
 	<ChildItems>
 		<Pages name="РежимЗапуска" id="5">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Режим запуска</v8:content>
-				</v8:item>
-			</Title>
 			<PagesRepresentation>None</PagesRepresentation>
 			<ExtendedTooltip name="РежимЗапускаExtendedTooltip" id="12"/>
 			<ChildItems>
 				<Page name="ОбновлениеВерсииПрограммы" id="6">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Обновление версии программы</v8:content>
-						</v8:item>
-					</Title>
 					<ToolTipRepresentation>None</ToolTipRepresentation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ОбновлениеВерсииПрограммыРасширеннаяПодсказка" id="13"/>
@@ -54,7 +42,7 @@
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Выполняется обновление %1 на версию %2</v8:content>
+									<v8:content>Выполняется обновление на версию %1</v8:content>
 								</v8:item>
 							</Title>
 							<ContextMenu name="ТекстСообщенияОбновляемаяКонфигурацияКонтекстноеМеню" id="2"/>
@@ -75,12 +63,6 @@
 					</ChildItems>
 				</Page>
 				<Page name="НачальноеЗаполнение" id="7">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Начальное заполнение</v8:content>
-						</v8:item>
-					</Title>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="НачальноеЗаполнениеExtendedTooltip" id="16"/>
 					<ChildItems>
@@ -144,12 +126,6 @@
 					</ChildItems>
 				</Page>
 				<Page name="ОбновлениеПараметровРаботыПрограммы" id="38">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Обновление параметров работы программы</v8:content>
-						</v8:item>
-					</Title>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ОбновлениеПараметровРаботыПрограммыРасширеннаяПодсказка" id="39"/>
 					<ChildItems>
@@ -217,12 +193,6 @@
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
 		<Attribute name="НовыйПараметрЗапуска" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Новый параметр запуска</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -232,12 +202,6 @@
 			</Type>
 		</Attribute>
 		<Attribute name="ВремяНачалаОбновления" id="6">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Время начала обновления</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:dateTime</v8:Type>
 				<v8:DateQualifiers>
@@ -262,54 +226,24 @@
 			</Type>
 		</Attribute>
 		<Attribute name="БлокировкаИБ" id="11">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Блокировка ИБ</v8:content>
-				</v8:item>
-			</Title>
 			<Type/>
 		</Attribute>
 		<Attribute name="ВыполняетсяОбновлениеВерсииИБ" id="4">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выполняется обновление версии ИБ</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="МонопольныйРежимУстановлен" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Монопольный режим установлен</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ТолькоОбновлениеПараметровРаботыПрограммы" id="14">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Только обновление параметров работы программы</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ИмяПланаОбмена" id="15">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Имя плана обмена</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -319,23 +253,11 @@
 			</Type>
 		</Attribute>
 		<Attribute name="ОписаниеПроцедурЗаполнения" id="16">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Описание процедур заполнения</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
 			<Columns>
 				<Column name="Очередь" id="1">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Очередь</v8:content>
-						</v8:item>
-					</Title>
 					<Type>
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>
@@ -346,12 +268,6 @@
 					</Type>
 				</Column>
 				<Column name="Статус" id="2">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Статус</v8:content>
-						</v8:item>
-					</Title>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -361,23 +277,11 @@
 					</Type>
 				</Column>
 				<Column name="ОписаниеПроцедур" id="3">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Описание процедур</v8:content>
-						</v8:item>
-					</Title>
 					<Type/>
 				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="АктивноПотоков" id="17">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Активно потоков</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
@@ -388,62 +292,22 @@
 			</Type>
 		</Attribute>
 		<Attribute name="КлиентСервер" id="18">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Клиент сервер</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ОписаниеПотоков" id="19">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Описание потоков</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>v8:ValueListType</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="МаксимальноПотоков" id="20">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Максимально потоков</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>10</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Any</v8:AllowedSign>
-				</v8:NumberQualifiers>
-			</Type>
-		</Attribute>
 		<Attribute name="Коробка" id="21">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Коробка</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ХодРегистрации" id="22">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Ход регистрации</v8:content>
-				</v8:item>
-			</Title>
 			<Type/>
+		</Attribute>
+		<Attribute name="ИдентификаторЗадания" id="23">
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Parameters>

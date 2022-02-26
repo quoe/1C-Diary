@@ -12,7 +12,9 @@
 			<Comment/>
 			<Location>Constant.ИспользоватьВнешнихПользователей</Location>
 			<PrivilegedGetMode>true</PrivilegedGetMode>
-			<Content/>
+			<Content>
+				<xr:Object>Catalog.ВнешниеПользователи</xr:Object>
+			</Content>
 		</Properties>
 	</FunctionalOption>
 </MetaDataObject>

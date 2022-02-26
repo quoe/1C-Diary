@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
 	<Customizable>false</Customizable>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<CommandSet>
@@ -26,7 +26,12 @@
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаЗаголовок" id="1574">
-			<Group>Horizontal</Group>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок</v8:content>
+				</v8:item>
+			</Title>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаЗаголовокExtendedTooltip" id="1632"/>
@@ -44,6 +49,12 @@
 					<ExtendedTooltip name="ОписаниеРазделаРасширеннаяПодсказка" id="1633"/>
 				</LabelDecoration>
 				<CommandBar name="ГруппаСправка" id="1577">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справка</v8:content>
+						</v8:item>
+					</Title>
 					<HorizontalLocation>Right</HorizontalLocation>
 					<ExtendedTooltip name="ГруппаСправкаExtendedTooltip" id="1635"/>
 					<ChildItems>
@@ -60,16 +71,9 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа частотный сервис</v8:content>
+					<v8:content>Частотный сервис</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа частотный сервис</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаЧастотныйСервисExtendedTooltip" id="1637"/>
@@ -91,7 +95,7 @@
 				</Button>
 				<Button name="ОбработкаУдалениеПомеченныхОбъектовОткрыть" id="1448">
 					<Type>Hyperlink</Type>
-					<CommandName>0</CommandName>
+					<CommandName>DataProcessor.УдалениеПомеченныхОбъектов.StandardCommand.Open</CommandName>
 					<ExtendedTooltip name="ОбработкаУдалениеПомеченныхОбъектовОткрытьExtendedTooltip" id="1641"/>
 				</Button>
 			</ChildItems>
@@ -105,13 +109,18 @@
 			</Title>
 			<Group>Vertical</Group>
 			<Behavior>Collapsible</Behavior>
-			<Collapsed>true</Collapsed>
 			<ControlRepresentation>Picture</ControlRepresentation>
 			<Representation>NormalSeparation</Representation>
 			<ChildItemsWidth>Equal</ChildItemsWidth>
 			<ExtendedTooltip name="ГруппаОтчетыИОбработкиРасширеннаяПодсказка" id="1713"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаОтчетыАдминистратора" id="1716">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчеты администратора</v8:content>
+						</v8:item>
+					</Title>
 					<Width>43</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
@@ -121,19 +130,32 @@
 					<ChildItems>
 						<Button name="ОбщаяКомандаПанельОтчетовАдминистрирование" id="1795">
 							<Type>Hyperlink</Type>
-							<CommandName>0</CommandName>
+							<CommandName>CommonCommand.ПанельОтчетовАдминистрирование</CommandName>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-							<ExtendedTooltip name="ОбщаяКомандаПанельОтчетовАдминистрированиеРасширеннаяПодсказка" id="1796"/>
+							<ExtendedTooltip name="ОбщаяКомандаПанельОтчетовАдминистрированиеРасширеннаяПодсказка" id="1796">
+								<TextColor>style:ПоясняющийТекст</TextColor>
+							</ExtendedTooltip>
 						</Button>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаДополнительныеОтчетыИОбработки" id="1730">
-					<Group>Horizontal</Group>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные отчеты и обработки</v8:content>
+						</v8:item>
+					</Title>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаДополнительныеОтчетыИОбработкиРасширеннаяПодсказка" id="1731"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаДополнительныеОтчетыПоАдминистрированию" id="1732">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительные отчеты по администрированию</v8:content>
+								</v8:item>
+							</Title>
 							<Width>43</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<Group>Vertical</Group>
@@ -143,7 +165,7 @@
 							<ChildItems>
 								<Button name="ДополнительныеОтчетыПоАдминистрированию" id="1818">
 									<Type>Hyperlink</Type>
-									<CommandName>0</CommandName>
+									<CommandName>CommonCommand.ДополнительныеОтчетыАдминистрирование</CommandName>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -163,6 +185,12 @@
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаДополнительныеОбработкиПоАдминистрированию" id="1739">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительные обработки по администрированию</v8:content>
+								</v8:item>
+							</Title>
 							<Width>43</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<Group>Vertical</Group>
@@ -172,7 +200,7 @@
 							<ChildItems>
 								<Button name="ДополнительныеОбработкиПоАдминистрированию" id="1820">
 									<Type>Hyperlink</Type>
-									<CommandName>0</CommandName>
+									<CommandName>CommonCommand.ДополнительныеОбработкиАдминистрирование</CommandName>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -203,12 +231,6 @@
 					<v8:content>Регламентные операции</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Регламентные операции</v8:content>
-				</v8:item>
-			</ToolTip>
 			<Group>Vertical</Group>
 			<Behavior>Collapsible</Behavior>
 			<Collapsed>true</Collapsed>
@@ -217,13 +239,24 @@
 			<ChildItemsWidth>Equal</ChildItemsWidth>
 			<ExtendedTooltip name="ГруппаРегламентныеОперацииExtendedTooltip" id="1642"/>
 			<ChildItems>
-				<UsualGroup name="Группа5" id="1586">
-					<Group>Horizontal</Group>
+				<UsualGroup name="ГруппаРегламентныеЗадания" id="1586">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Регламентные задания</v8:content>
+						</v8:item>
+					</Title>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="Группа5ExtendedTooltip" id="1643"/>
+					<ExtendedTooltip name="ГруппаРегламентныеЗаданияРасширеннаяПодсказка" id="1643"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаОбработкаРегламентныеИФоновыеЗадания" id="1509">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обработка регламентные и фоновые задания</v8:content>
+								</v8:item>
+							</Title>
 							<Width>43</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<Group>Vertical</Group>
@@ -233,7 +266,7 @@
 							<ChildItems>
 								<Button name="ОбработкаРегламентныеИФоновыеЗадания" id="1502">
 									<Type>Hyperlink</Type>
-									<CommandName>0</CommandName>
+									<CommandName>DataProcessor.РегламентныеИФоновыеЗадания.Command.РегламентныеИФоновыеЗадания</CommandName>
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 									<ExtendedTooltip name="ОбработкаРегламентныеИФоновыеЗаданияExtendedTooltip" id="1645">
 										<Title formatted="false">
@@ -250,15 +283,9 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа блокировка работы с внешними ресурсами</v8:content>
+									<v8:content>Блокировка работы с внешними ресурсами</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа блокировка работы с внешними ресурсами</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Width>43</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<Group>Vertical</Group>
@@ -284,48 +311,34 @@
 						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
-				<UsualGroup name="Группа6" id="1587">
-					<Group>Horizontal</Group>
+				<UsualGroup name="ГруппаОбработкаУправлениеИтогамиИАгрегатамиОткрыть" id="1506">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработка управление итогами и агрегатами открыть</v8:content>
+						</v8:item>
+					</Title>
+					<Width>43</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="Группа6ExtendedTooltip" id="1650"/>
+					<ExtendedTooltip name="ГруппаОбработкаУправлениеИтогамиИАгрегатамиОткрытьExtendedTooltip" id="1651"/>
 					<ChildItems>
-						<UsualGroup name="ГруппаОбработкаУправлениеИтогамиИАгрегатамиОткрыть" id="1506">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа обработка управление итогами и агрегатами открыть</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа обработка управление итогами и агрегатами открыть</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Width>43</Width>
-							<HorizontalStretch>false</HorizontalStretch>
-							<Group>Vertical</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаОбработкаУправлениеИтогамиИАгрегатамиОткрытьExtendedTooltip" id="1651"/>
-							<ChildItems>
-								<Button name="ОбработкаУправлениеИтогамиИАгрегатамиОткрыть" id="1501">
-									<Type>Hyperlink</Type>
-									<CommandName>0</CommandName>
-									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-									<ExtendedTooltip name="ОбработкаУправлениеИтогамиИАгрегатамиОткрытьExtendedTooltip" id="1652">
-										<Title formatted="false">
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Установка периода рассчитанных итогов.
+						<Button name="ОбработкаУправлениеИтогамиИАгрегатамиОткрыть" id="1501">
+							<Type>Hyperlink</Type>
+							<CommandName>DataProcessor.УправлениеИтогамиИАгрегатами.StandardCommand.Open</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОбработкаУправлениеИтогамиИАгрегатамиОткрытьExtendedTooltip" id="1652">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Установка периода рассчитанных итогов.
 Перестройка, заполнение и оптимизация агрегатов.</v8:content>
-											</v8:item>
-										</Title>
-									</ExtendedTooltip>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</Button>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -337,12 +350,6 @@
 					<v8:content>Резервное копирование и восстановление</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Резервное копирование и восстановление</v8:content>
-				</v8:item>
-			</ToolTip>
 			<Group>Vertical</Group>
 			<Behavior>Collapsible</Behavior>
 			<Collapsed>true</Collapsed>
@@ -360,12 +367,6 @@
 							<v8:content>Выбор способа резервного копирования</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Выбор способа резервного копирования</v8:content>
-						</v8:item>
-					</ToolTip>
 					<HorizontalStretch>true</HorizontalStretch>
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
@@ -412,12 +413,6 @@
 							<v8:content>Резервное копирование и восстановление</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Резервное копирование и восстановление</v8:content>
-						</v8:item>
-					</ToolTip>
 					<PagesRepresentation>None</PagesRepresentation>
 					<ExtendedTooltip name="СтраницыРезервноеКопированиеИВосстановлениеРасширеннаяПодсказка" id="2120"/>
 					<ChildItems>
@@ -428,12 +423,6 @@
 									<v8:content>На локальном компьютере</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>На локальном компьютере</v8:content>
-								</v8:item>
-							</ToolTip>
 							<ExtendedTooltip name="СтраницаНаЛокальномКомпьютереРасширеннаяПодсказка" id="2122"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаНаЛокальномКомпьютере" id="2123">
@@ -443,18 +432,17 @@
 											<v8:content>На локальном компьютере</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа на локальном компьютере</v8:content>
-										</v8:item>
-									</ToolTip>
-									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаНаЛокальномКомпьютереРасширеннаяПодсказка" id="2124"/>
 									<ChildItems>
 										<UsualGroup name="ГруппаРезервногоКопирования" id="1471">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Резервного копирования</v8:content>
+												</v8:item>
+											</Title>
 											<Width>43</Width>
 											<HorizontalStretch>false</HorizontalStretch>
 											<Group>Vertical</Group>
@@ -464,7 +452,7 @@
 											<ChildItems>
 												<Button name="ОбработкаРезервноеКопированиеИБОткрыть" id="2097">
 													<Type>Hyperlink</Type>
-													<CommandName>0</CommandName>
+													<CommandName>DataProcessor.РезервноеКопированиеИБ.StandardCommand.Open</CommandName>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -484,7 +472,7 @@
 												</Button>
 												<Button name="ОбработкаРезервноеКопированиеИБВыполнитьВосстановлениеДанных" id="2095">
 													<Type>Hyperlink</Type>
-													<CommandName>0</CommandName>
+													<CommandName>DataProcessor.РезервноеКопированиеИБ.Command.ВыполнитьВосстановлениеДанных</CommandName>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -508,15 +496,9 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Группа настройка резервного копирования</v8:content>
+													<v8:content>Настройка резервного копирования</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа настройка резервного копирования</v8:content>
-												</v8:item>
-											</ToolTip>
 											<Width>43</Width>
 											<HorizontalStretch>false</HorizontalStretch>
 											<Group>Vertical</Group>
@@ -526,7 +508,7 @@
 											<ChildItems>
 												<Button name="НастройкаРезервногоКопированияИБ" id="2099">
 													<Type>Hyperlink</Type>
-													<CommandName>0</CommandName>
+													<CommandName>DataProcessor.НастройкаРезервногоКопированияИБ.StandardCommand.Open</CommandName>
 													<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 													<ExtendedTooltip name="НастройкаРезервногоКопированияИБРасширеннаяПодсказка" id="2100">
 														<AutoMaxWidth>false</AutoMaxWidth>
@@ -547,18 +529,11 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа необходимо отключить облачный архив</v8:content>
+											<v8:content>Необходимо отключить облачный архив</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа необходимо отключить облачный архив</v8:content>
-										</v8:item>
-									</ToolTip>
 									<Width>86</Width>
 									<HorizontalStretch>false</HorizontalStretch>
-									<Group>Horizontal</Group>
 									<Representation>NormalSeparation</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаНеобходимоОтключитьОблачныйАрхивРасширеннаяПодсказка" id="2136"/>
@@ -566,6 +541,10 @@
 										<PictureDecoration name="ИконкаНеобходимоОтключитьОблачныйАрхив" id="2137">
 											<Width>2</Width>
 											<Height>1</Height>
+											<Picture>
+												<xr:Ref>CommonPicture.ИнформацияПоНедоступнымПолям</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</Picture>
 											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="ИконкаНеобходимоОтключитьОблачныйАрхивКонтекстноеМеню" id="2138"/>
 											<ExtendedTooltip name="ИконкаНеобходимоОтключитьОблачныйАрхивРасширеннаяПодсказка" id="2139"/>
@@ -573,6 +552,7 @@
 										<LabelDecoration name="ПояснениеНеобходимоОтключитьОблачныйАрхив" id="2140">
 											<AutoMaxWidth>false</AutoMaxWidth>
 											<AutoMaxHeight>false</AutoMaxHeight>
+											<TextColor>style:ПоясняющийТекст</TextColor>
 											<Title formatted="true">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -597,12 +577,6 @@
 									<v8:content>Облачный архив</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Облачный архив</v8:content>
-								</v8:item>
-							</ToolTip>
 							<ExtendedTooltip name="СтраницаОблачныйАрхивРасширеннаяПодсказка" id="2144"/>
 							<ChildItems>
 								<Pages name="СтраницыСостоянийОблачныйАрхив" id="2145">
@@ -612,12 +586,6 @@
 											<v8:content>Страницы состояний облачный архив</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Страницы состояний облачный архив</v8:content>
-										</v8:item>
-									</ToolTip>
 									<HorizontalStretch>true</HorizontalStretch>
 									<PagesRepresentation>None</PagesRepresentation>
 									<ExtendedTooltip name="СтраницыСостоянийОблачныйАрхивРасширеннаяПодсказка" id="2146"/>
@@ -629,14 +597,8 @@
 													<v8:content>Страница облачный архив ожидание</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Страница облачный архив ожидание</v8:content>
-												</v8:item>
-											</ToolTip>
 											<HorizontalStretch>true</HorizontalStretch>
-											<Group>Horizontal</Group>
+											<Group>HorizontalIfPossible</Group>
 											<ExtendedTooltip name="СтраницаОблачныйАрхивОжиданиеРасширеннаяПодсказка" id="2148"/>
 											<ChildItems>
 												<PictureDecoration name="ДекорацияСтраницаОблачныйАрхивКартинка" id="2149">
@@ -644,7 +606,7 @@
 													<Height>3</Height>
 													<Picture>
 														<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</Picture>
 													<FileDragMode>AsFile</FileDragMode>
 													<ContextMenu name="ДекорацияСтраницаОблачныйАрхивКартинкаКонтекстноеМеню" id="2150"/>
@@ -652,6 +614,12 @@
 												</PictureDecoration>
 												<UsualGroup name="ГруппаПрогрессПроверкиОблачногоАрхива" id="2152">
 													<EnableContentChange>true</EnableContentChange>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Прогресс проверки облачного архива</v8:content>
+														</v8:item>
+													</Title>
 													<Group>Vertical</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
@@ -684,45 +652,36 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Страница облачный архив Не подключено</v8:content>
+													<v8:content>Страница облачный архив не подключено</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Страница облачный архив Не подключено</v8:content>
-												</v8:item>
-											</ToolTip>
 											<HorizontalStretch>true</HorizontalStretch>
 											<ExtendedTooltip name="СтраницаОблачныйАрхивНеПодключеноРасширеннаяПодсказка" id="2161"/>
 											<ChildItems>
-												<UsualGroup name="ГруппаСервисОАНеПодключен" id="2162">
+												<UsualGroup name="ГруппаСервисОблачныйАрхивНеПодключен" id="2162">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Группа сервис ОАНе подключен</v8:content>
+															<v8:content>Сервис облачный архив не подключен</v8:content>
 														</v8:item>
 													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Группа сервис ОАНе подключен</v8:content>
-														</v8:item>
-													</ToolTip>
-													<Group>Horizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="ГруппаСервисОАНеПодключенРасширеннаяПодсказка" id="2163"/>
+													<ExtendedTooltip name="ГруппаСервисОблачныйАрхивНеПодключенРасширеннаяПодсказка" id="2163"/>
 													<ChildItems>
-														<PictureDecoration name="ИконкаСервисОАНеПодключен" id="2164">
+														<PictureDecoration name="ИконкаСервисОблачныйАрхивНеПодключен" id="2164">
 															<MaxHeight>4</MaxHeight>
 															<HorizontalStretch>false</HorizontalStretch>
 															<VerticalStretch>false</VerticalStretch>
+															<Picture>
+																<xr:Ref>CommonPicture.ИнформацияПоНедоступнымПолям</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
 															<FileDragMode>AsFile</FileDragMode>
-															<ContextMenu name="ИконкаСервисОАНеПодключенКонтекстноеМеню" id="2165"/>
-															<ExtendedTooltip name="ИконкаСервисОАНеПодключенРасширеннаяПодсказка" id="2166"/>
+															<ContextMenu name="ИконкаСервисОблачныйАрхивНеПодключенКонтекстноеМеню" id="2165"/>
+															<ExtendedTooltip name="ИконкаСервисОблачныйАрхивНеПодключенРасширеннаяПодсказка" id="2166"/>
 														</PictureDecoration>
-														<LabelDecoration name="ДекорацияСервисОАНеПодключен" id="2167">
+														<LabelDecoration name="ДекорацияСервисОблачныйАрхивНеПодключен" id="2167">
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<AutoMaxHeight>false</AutoMaxHeight>
 															<Title formatted="true">
@@ -731,8 +690,8 @@
 																	<v8:content>Для работы с 1С:Облачный архив, его необходимо подключить.</v8:content>
 																</v8:item>
 															</Title>
-															<ContextMenu name="ДекорацияСервисОАНеПодключенКонтекстноеМеню" id="2168"/>
-															<ExtendedTooltip name="ДекорацияСервисОАНеПодключенРасширеннаяПодсказка" id="2169"/>
+															<ContextMenu name="ДекорацияСервисОблачныйАрхивНеПодключенКонтекстноеМеню" id="2168"/>
+															<ExtendedTooltip name="ДекорацияСервисОблачныйАрхивНеПодключенРасширеннаяПодсказка" id="2169"/>
 														</LabelDecoration>
 													</ChildItems>
 												</UsualGroup>
@@ -747,31 +706,29 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Страница облачный архив Подключено на другом компьютере</v8:content>
+													<v8:content>Страница облачный архив подключено на другом компьютере</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Страница облачный архив Подключено на другом компьютере</v8:content>
-												</v8:item>
-											</ToolTip>
 											<HorizontalStretch>true</HorizontalStretch>
-											<Group>Horizontal</Group>
+											<Group>HorizontalIfPossible</Group>
 											<ExtendedTooltip name="СтраницаОблачныйАрхивПодключеноНаДругомКомпьютереРасширеннаяПодсказка" id="2173"/>
 											<ChildItems>
-												<PictureDecoration name="ИконкаСервисОАПодключенНаДругомКомпьютере" id="2174">
+												<PictureDecoration name="ИконкаСервисОблачныйАрхивПодключенНаДругомКомпьютере" id="2174">
 													<Width>2</Width>
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<AutoMaxHeight>false</AutoMaxHeight>
 													<MaxHeight>4</MaxHeight>
 													<HorizontalStretch>false</HorizontalStretch>
 													<VerticalStretch>true</VerticalStretch>
+													<Picture>
+														<xr:Ref>CommonPicture.ИнформацияПоНедоступнымПолям</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
 													<FileDragMode>AsFile</FileDragMode>
-													<ContextMenu name="ИконкаСервисОАПодключенНаДругомКомпьютереКонтекстноеМеню" id="2175"/>
-													<ExtendedTooltip name="ИконкаСервисОАПодключенНаДругомКомпьютереРасширеннаяПодсказка" id="2176"/>
+													<ContextMenu name="ИконкаСервисОблачныйАрхивПодключенНаДругомКомпьютереКонтекстноеМеню" id="2175"/>
+													<ExtendedTooltip name="ИконкаСервисОблачныйАрхивПодключенНаДругомКомпьютереРасширеннаяПодсказка" id="2176"/>
 												</PictureDecoration>
-												<LabelDecoration name="ДекорацияСервисОАПодключенНаДругомКомпьютере" id="2177">
+												<LabelDecoration name="ДекорацияСервисОблачныйАрхивПодключенНаДругомКомпьютере" id="2177">
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<MaxWidth>65</MaxWidth>
 													<AutoMaxHeight>false</AutoMaxHeight>
@@ -785,8 +742,8 @@
 &lt;link backup1C:InstallAgentOnThisPC&gt;Подключить&lt;/&gt; сервис 1С:Облачный архив на этом компьютере.</v8:content>
 														</v8:item>
 													</Title>
-													<ContextMenu name="ДекорацияСервисОАПодключенНаДругомКомпьютереКонтекстноеМеню" id="2178"/>
-													<ExtendedTooltip name="ДекорацияСервисОАПодключенНаДругомКомпьютереРасширеннаяПодсказка" id="2179"/>
+													<ContextMenu name="ДекорацияСервисОблачныйАрхивПодключенНаДругомКомпьютереКонтекстноеМеню" id="2178"/>
+													<ExtendedTooltip name="ДекорацияСервисОблачныйАрхивПодключенНаДругомКомпьютереРасширеннаяПодсказка" id="2179"/>
 													<Events>
 														<Event name="URLProcessing">ОблачныйАрхивОбработкаНавигационнойСсылки</Event>
 													</Events>
@@ -797,32 +754,20 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Страница облачный архив Работает</v8:content>
+													<v8:content>Страница облачный архив работает</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Страница облачный архив Работает</v8:content>
-												</v8:item>
-											</ToolTip>
 											<HorizontalStretch>true</HorizontalStretch>
-											<Group>Horizontal</Group>
+											<Group>HorizontalIfPossible</Group>
 											<ExtendedTooltip name="СтраницаОблачныйАрхивРаботаетРасширеннаяПодсказка" id="2181"/>
 											<ChildItems>
 												<UsualGroup name="ГруппаОблачныйАрхивСохранениеВосстановление" id="2182">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content> </v8:content>
+															<v8:content>Облачный архив сохранение восстановление</v8:content>
 														</v8:item>
 													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content> </v8:content>
-														</v8:item>
-													</ToolTip>
 													<Group>Vertical</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
@@ -835,12 +780,6 @@
 																	<v8:content>Группа резервное копирование программы</v8:content>
 																</v8:item>
 															</Title>
-															<ToolTip>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа резервное копирование программы</v8:content>
-																</v8:item>
-															</ToolTip>
 															<Width>43</Width>
 															<HorizontalStretch>false</HorizontalStretch>
 															<Group>Vertical</Group>
@@ -850,7 +789,7 @@
 															<ChildItems>
 																<Button name="ОблачныйАрхивРезервноеКопированиеПрограммы" id="2186">
 																	<Type>Hyperlink</Type>
-																	<CommandName>0</CommandName>
+																	<CommandName>DataProcessor.РезервноеКопированиеИБ.StandardCommand.Open</CommandName>
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -860,6 +799,7 @@
 																	<ExtendedTooltip name="ОблачныйАрхивРезервноеКопированиеПрограммыРасширеннаяПодсказка" id="2187"/>
 																</Button>
 																<LabelDecoration name="ОблачныйАрхивПояснениеРезервноеКопированиеПрограммы" id="2188">
+																	<TextColor>style:ПоясняющийТекст</TextColor>
 																	<Title formatted="false">
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -878,12 +818,6 @@
 																	<v8:content>Группа восстановление резервной копии</v8:content>
 																</v8:item>
 															</Title>
-															<ToolTip>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа восстановление резервной копии</v8:content>
-																</v8:item>
-															</ToolTip>
 															<Width>43</Width>
 															<HorizontalStretch>false</HorizontalStretch>
 															<Group>Vertical</Group>
@@ -906,6 +840,7 @@
 																	</Events>
 																</LabelDecoration>
 																<LabelDecoration name="ОблачныйАрхивПояснениеВосстановлениеРезервнойКопии" id="2196">
+																	<TextColor>style:ПоясняющийТекст</TextColor>
 																	<Title formatted="false">
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
@@ -926,12 +861,6 @@
 															<v8:content>Группа настройка резервного копирования</v8:content>
 														</v8:item>
 													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Группа настройка резервного копирования</v8:content>
-														</v8:item>
-													</ToolTip>
 													<Width>43</Width>
 													<HorizontalStretch>false</HorizontalStretch>
 													<Group>Vertical</Group>
@@ -954,6 +883,7 @@
 															</Events>
 														</LabelDecoration>
 														<LabelDecoration name="ОблачныйАрхивПояснениеНастройкаРезервногоКопирования" id="2204">
+															<TextColor>style:ПоясняющийТекст</TextColor>
 															<Title formatted="false">
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -972,17 +902,11 @@
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Страница облачный архив Ошибки</v8:content>
+													<v8:content>Страница облачный архив ошибки</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Страница облачный архив Ошибки</v8:content>
-												</v8:item>
-											</ToolTip>
 											<HorizontalStretch>true</HorizontalStretch>
-											<Group>Horizontal</Group>
+											<Group>HorizontalIfPossible</Group>
 											<ExtendedTooltip name="СтраницаОблачныйАрхивОшибкиРасширеннаяПодсказка" id="2208"/>
 											<ChildItems>
 												<PictureDecoration name="ИконкаОблачныйАрхивОшибки" id="2209">
@@ -991,6 +915,10 @@
 													<AutoMaxHeight>false</AutoMaxHeight>
 													<HorizontalStretch>false</HorizontalStretch>
 													<VerticalStretch>false</VerticalStretch>
+													<Picture>
+														<xr:Ref>CommonPicture.ИнформацияПоНедоступнымПолям</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
 													<FileDragMode>AsFile</FileDragMode>
 													<ContextMenu name="ИконкаОблачныйАрхивОшибкиКонтекстноеМеню" id="2210"/>
 													<ExtendedTooltip name="ИконкаОблачныйАрхивОшибкиРасширеннаяПодсказка" id="2211"/>
@@ -999,6 +927,7 @@
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<AutoMaxHeight>false</AutoMaxHeight>
 													<HorizontalStretch>true</HorizontalStretch>
+													<TextColor>style:ПоясняющийТекст</TextColor>
 													<Title formatted="false">
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -1026,7 +955,6 @@
 					<v8:content>Корректировка данных</v8:content>
 				</v8:item>
 			</Title>
-			<Group>Horizontal</Group>
 			<Behavior>Collapsible</Behavior>
 			<Collapsed>true</Collapsed>
 			<ControlRepresentation>Picture</ControlRepresentation>
@@ -1038,15 +966,9 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа обработка групповое изменение объектов</v8:content>
+							<v8:content>Обработка групповое изменение объектов</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа обработка групповое изменение объектов</v8:content>
-						</v8:item>
-					</ToolTip>
 					<Width>43</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
@@ -1056,7 +978,7 @@
 					<ChildItems>
 						<Button name="ОбработкаГрупповоеИзменениеОбъектовГрупповоеИзменениеРеквизитов" id="1778">
 							<Type>Hyperlink</Type>
-							<CommandName>0</CommandName>
+							<CommandName>DataProcessor.ГрупповоеИзменениеРеквизитов.Command.ГрупповоеИзменениеРеквизитов</CommandName>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<ExtendedTooltip name="ОбработкаГрупповоеИзменениеОбъектовГрупповоеИзменениеРеквизитовРасширеннаяПодсказка" id="1779">
 								<AutoMaxWidth>false</AutoMaxWidth>
@@ -1068,21 +990,35 @@
 								</Title>
 							</ExtendedTooltip>
 						</Button>
+						<Button name="ПравилаПроверкиУчета" id="2221">
+							<Type>Hyperlink</Type>
+							<CommandName>Catalog.ПравилаПроверкиУчета.StandardCommand.OpenList</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Правила проверки учета</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ПравилаПроверкиУчетаРасширеннаяПодсказка" id="2222">
+								<AutoMaxWidth>false</AutoMaxWidth>
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Правила проверки корректности данных (ссылочная целостность, циклические ссылки и.т.д.).</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</Button>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаПоискИУдалениеДублей" id="1788">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа поиск и удаление дублей</v8:content>
+							<v8:content>Поиск и удаление дублей</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа поиск и удаление дублей</v8:content>
-						</v8:item>
-					</ToolTip>
 					<Width>43</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
@@ -1092,7 +1028,7 @@
 					<ChildItems>
 						<Button name="ОбработкаПоискИУдалениеДублейПоискИУдалениеДублей" id="2093">
 							<Type>Hyperlink</Type>
-							<CommandName>0</CommandName>
+							<CommandName>DataProcessor.ПоискИУдалениеДублей.Command.ПоискИУдалениеДублей</CommandName>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<ExtendedTooltip name="ОбработкаПоискИУдалениеДублейПоискИУдалениеДублейРасширеннаяПодсказка" id="2094">
 								<AutoMaxWidth>false</AutoMaxWidth>
@@ -1112,7 +1048,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Результаты обновления программы</v8:content>
+					<v8:content>Обновление программы</v8:content>
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
@@ -1127,35 +1063,33 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа обновление и описание изменений первая строка</v8:content>
+							<v8:content>Обновление и описание изменений первая строка</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа обновление и описание изменений первая строка</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаОбновлениеИОписаниеИзмененийПерваяСтрокаРасширеннаяПодсказка" id="2044"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаУстановкаОбновлений" id="2105">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Установка обновлений</v8:content>
+								</v8:item>
+							</Title>
 							<Width>43</Width>
 							<HorizontalStretch>false</HorizontalStretch>
-							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаУстановкаОбновленийРасширеннаяПодсказка" id="2106"/>
 							<ChildItems>
 								<Button name="УстановкаОбновлений" id="2103">
 									<Type>Hyperlink</Type>
-									<CommandName>0</CommandName>
+									<CommandName>DataProcessor.УстановкаОбновлений.StandardCommand.Open</CommandName>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Установка обновлений</v8:content>
+											<v8:content>Установка обновлений и исправлений (патчей)</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
@@ -1164,36 +1098,39 @@
 										<Title formatted="false">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>Обновление программы из файла на локальном диске или в сетевом каталоге.</v8:content>
+												<v8:content>Обновление программы из файла на локальном диске, в сетевом каталоге или установка исправлений (патчей).</v8:content>
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
 								</Button>
 							</ChildItems>
 						</UsualGroup>
-						<UsualGroup name="ГруппаОткрытьОписаниеИзмененийСистемы" id="2045">
+						<UsualGroup name="ГруппаУстановленныеИсправления" id="2227">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа открыть описание изменений системы</v8:content>
+									<v8:content>Установленные исправления</v8:content>
 								</v8:item>
 							</Title>
-							<Width>43</Width>
-							<HorizontalStretch>false</HorizontalStretch>
-							<Group>Vertical</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаОткрытьОписаниеИзмененийСистемыExtendedTooltip" id="2046"/>
+							<ExtendedTooltip name="ГруппаУстановленныеИсправленияРасширеннаяПодсказка" id="2228"/>
 							<ChildItems>
-								<Button name="ОткрытьОписаниеИзмененийСистемы" id="2047">
+								<Button name="УстановленныеИсправленияОткрыть" id="2225">
 									<Type>Hyperlink</Type>
-									<CommandName>0</CommandName>
+									<CommandName>CommonForm.УстановленныеИсправления.StandardCommand.Open</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Установленные исправления (патчи)</v8:content>
+										</v8:item>
+									</Title>
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-									<ExtendedTooltip name="ОткрытьОписаниеИзмененийСистемыExtendedTooltip" id="2048">
+									<ExtendedTooltip name="УстановленныеИсправленияОткрытьРасширеннаяПодсказка" id="2226">
 										<Title formatted="false">
 											<v8:item>
 												<v8:lang>ru</v8:lang>
-												<v8:content>История изменений по версиям программы.</v8:content>
+												<v8:content>Список установленных в программе исправлений.</v8:content>
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
@@ -1206,16 +1143,9 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа обновление и описание изменений вторая строка</v8:content>
+							<v8:content>Обновление и описание изменений вторая строка</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа обновление и описание изменений вторая строка</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаОбновлениеИОписаниеИзмененийВтораяСтрокаРасширеннаяПодсказка" id="2060"/>
@@ -1224,15 +1154,9 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа отложенная обработка данных</v8:content>
+									<v8:content>Отложенная обработка данных</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа отложенная обработка данных</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Width>43</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<Group>Vertical</Group>
@@ -1256,7 +1180,55 @@
 								</Button>
 							</ChildItems>
 						</UsualGroup>
+						<UsualGroup name="ГруппаОткрытьОписаниеИзмененийСистемы" id="2045">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Открыть описание изменений системы</v8:content>
+								</v8:item>
+							</Title>
+							<Width>43</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОткрытьОписаниеИзмененийСистемыExtendedTooltip" id="2046"/>
+							<ChildItems>
+								<Button name="ОткрытьОписаниеИзмененийСистемы" id="2047">
+									<Type>Hyperlink</Type>
+									<CommandName>CommonForm.ОписаниеИзмененийПрограммы.StandardCommand.Open</CommandName>
+									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+									<ExtendedTooltip name="ОткрытьОписаниеИзмененийСистемыExtendedTooltip" id="2048">
+										<Title formatted="false">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>История изменений по версиям программы.</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРезультатыОбновленияПрограммыТретьяСтрока" id="2223">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результаты обновления программы третья строка</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРезультатыОбновленияПрограммыТретьяСтрокаРасширеннаяПодсказка" id="2224"/>
+					<ChildItems>
 						<UsualGroup name="ГруппаДетализироватьОбновлениеИБВЖурналеРегистрации" id="2061">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Детализировать обновление ИБ в журнале регистрации</v8:content>
+								</v8:item>
+							</Title>
 							<Width>43</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<Group>Vertical</Group>
@@ -1265,6 +1237,7 @@
 							<ExtendedTooltip name="ГруппаДетализироватьОбновлениеИБВЖурналеРегистрацииExtendedTooltip" id="2062"/>
 							<ChildItems>
 								<CheckBoxField name="ДетализироватьОбновлениеИБВЖурналеРегистрации" id="2063">
+									<DataPath>НаборКонстант.ДетализироватьОбновлениеИБВЖурналеРегистрации</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -1301,13 +1274,6 @@
 					<v8:content>Оценка производительности</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа оценка производительности</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Group>Horizontal</Group>
 			<Behavior>Collapsible</Behavior>
 			<Collapsed>true</Collapsed>
 			<ControlRepresentation>Picture</ControlRepresentation>
@@ -1319,15 +1285,9 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа выполнять замеры производительности</v8:content>
+							<v8:content>Выполнять замеры производительности</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа выполнять замеры производительности</v8:content>
-						</v8:item>
-					</ToolTip>
 					<Width>43</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
@@ -1359,21 +1319,28 @@
 								<Event name="OnChange">ВыполнятьЗамерыПроизводительностиПриИзменении</Event>
 							</Events>
 						</CheckBoxField>
+						<Button name="СправочникПрофилиКлючевыхОперацийОткрытьСписок" id="2217">
+							<Type>Hyperlink</Type>
+							<CommandName>0</CommandName>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="СправочникПрофилиКлючевыхОперацийОткрытьСписокРасширеннаяПодсказка" id="2218">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Настройки профилей ключевых операций.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</Button>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаОбработкаОценкаПроизводительности" id="1594">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа обработка оценка производительности</v8:content>
+							<v8:content>Обработка оценка производительности</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа обработка оценка производительности</v8:content>
-						</v8:item>
-					</ToolTip>
 					<Width>43</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
@@ -1381,28 +1348,15 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаОбработкаОценкаПроизводительностиExtendedTooltip" id="1676"/>
 					<ChildItems>
-						<Button name="ОбработкаОценкаПроизводительности" id="1595">
+						<Button name="ОбработкаНастройкиОценкиПроизводительности" id="1946">
 							<Type>Hyperlink</Type>
 							<CommandName>0</CommandName>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Показатели производительности</v8:content>
+									<v8:content>Настройки</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-							<ExtendedTooltip name="ОбработкаОценкаПроизводительностиExtendedTooltip" id="1677">
-								<Title formatted="false">
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Просмотр и оценка результатов замеров производительности.</v8:content>
-									</v8:item>
-								</Title>
-							</ExtendedTooltip>
-						</Button>
-						<Button name="ОбработкаНастройкиОценкиПроизводительности" id="1946">
-							<Type>Hyperlink</Type>
-							<CommandName>0</CommandName>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<ExtendedTooltip name="ОбработкаНастройкиОценкиПроизводительностиРасширеннаяПодсказка" id="1947">
 								<Title formatted="false">
@@ -1416,12 +1370,37 @@
 						<Button name="ОбработкаОценкаПроизводительностиЭкспортДанных" id="2215">
 							<Type>Hyperlink</Type>
 							<CommandName>0</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Экспорт замеров</v8:content>
+								</v8:item>
+							</Title>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<ExtendedTooltip name="ОбработкаОценкаПроизводительностиЭкспортДанныхРасширеннаяПодсказка" id="2216">
 								<Title formatted="false">
 									<v8:item>
 										<v8:lang>ru</v8:lang>
 										<v8:content>Экспорт замеров производительности за произвольный период</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</Button>
+						<Button name="ОбработкаОценкаПроизводительностиИмпортЗамеровПроизводительности" id="2219">
+							<Type>Hyperlink</Type>
+							<CommandName>0</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Импорт замеров</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<ExtendedTooltip name="ОбработкаОценкаПроизводительностиИмпортЗамеровПроизводительностиРасширеннаяПодсказка" id="2220">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Импорт замеров производительности.</v8:content>
 									</v8:item>
 								</Title>
 							</ExtendedTooltip>
@@ -1433,71 +1412,30 @@
 	</ChildItems>
 	<Attributes>
 		<Attribute name="НаборКонстант" id="1">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Набор констант</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>cfg:ConstantsSet</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
-		</Attribute>
-		<Attribute name="РежимРаботы" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Режим работы (фиксированная структура)</v8:content>
-				</v8:item>
-			</Title>
-			<Type/>
+			<UseAlways>
+				<Field>НаборКонстант.ИспользоватьДополнительныеОтчетыИОбработки</Field>
+				<Field>НаборКонстант.ИспользоватьРазделениеПоОбластямДанных</Field>
+			</UseAlways>
 		</Attribute>
 		<Attribute name="УдалениеПомеченныхИдентификатор" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Удаление помеченных идентификатор</v8:content>
-				</v8:item>
-			</Title>
 			<Type/>
 		</Attribute>
 		<Attribute name="УдалениеПомеченныхИспользование" id="4">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Удаление помеченных использование</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="УдалениеПомеченныхРасписание" id="6">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Удаление помеченных расписание</v8:content>
-				</v8:item>
-			</Title>
 			<Type/>
 		</Attribute>
 		<Attribute name="ПараметрыЦентраМониторинга" id="10">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Параметры центра мониторинга</v8:content>
-				</v8:item>
-			</Title>
 			<Type/>
 		</Attribute>
 		<Attribute name="ЦентрМониторингаАдресСервиса" id="14">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Центр мониторинга адрес сервиса</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -1507,12 +1445,6 @@
 			</Type>
 		</Attribute>
 		<Attribute name="ЦентрМониторингаРазрешитьОтправлятьДанные" id="15">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Центр мониторинга разрешить отправлять данные</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
@@ -1523,12 +1455,6 @@
 			</Type>
 		</Attribute>
 		<Attribute name="ПараметрыОблачногоАрхива" id="17">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Параметры облачного архива</v8:content>
-				</v8:item>
-			</Title>
 			<Type/>
 		</Attribute>
 		<Attribute name="ПрогрессПроверкиОблачногоАрхива" id="18">

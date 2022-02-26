@@ -15,45 +15,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Configuration.Дневник</name>
-		<right>
-			<name>MainWindowModeNormal</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeWorkplace</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeEmbeddedWorkplace</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeFullscreenWorkplace</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>MainWindowModeKiosk</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>AnalyticsSystemClient</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.БлокировкаРаботыПользователей.Attribute.СообщениеДляПользователей</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ПарольАдминистратораКластера</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -98,17 +60,6 @@
 	</object>
 	<object>
 		<name>InformationRegister.ВерсииОбъектов.StandardAttribute.Period</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.НестандартныеПортыСервера</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -225,6 +176,33 @@
 		</right>
 	</object>
 	<object>
+		<name>Configuration.Дневник</name>
+		<right>
+			<name>MainWindowModeNormal</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeEmbeddedWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeFullscreenWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeKiosk</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>AnalyticsSystemClient</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ПрофилиГруппДоступа.Attribute.Комментарий</name>
 		<right>
 			<name>View</name>
@@ -324,28 +302,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ИсточникОбновления</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.TabularSection.ДоступныеОбновления.Attribute.Версия2Разряд</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.ФизическиеЛица</name>
 		<right>
 			<name>Read</name>
@@ -417,6 +373,17 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.УстановкаОбновлений.Attribute.РезультатОбновления</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ГруппыДоступа.TabularSection.ВидыДоступа.Attribute.ВидДоступа</name>
 		<right>
 			<name>View</name>
@@ -429,17 +396,6 @@
 	</object>
 	<object>
 		<name>DataProcessor.РезервноеКопированиеИБ.Attribute.ВыполнитьРезервноеКопированиеСейчас</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.КодПользователяСервераОбновлений</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -472,17 +428,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.TabularSection.ДоступныеОбновления.Attribute.ФайлОбновления</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.ПрофилиГруппДоступа.TabularSection.ВидыДоступа</name>
 		<right>
 			<name>View</name>
@@ -494,7 +439,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.КодЗадачиПланировщика</name>
+		<name>DataProcessor.УстановкаОбновлений.Attribute.КодЗадачиПланировщика</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -506,138 +451,6 @@
 	</object>
 	<object>
 		<name>ChartOfCharacteristicTypes.ДополнительныеРеквизитыИСведения.Attribute.ФорматСвойства</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.БлокировкаРаботыПользователей.Attribute.ОкончаниеДействияБлокировки</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ВерсииОбъектов.Dimension.НомерВерсии</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.TabularSection.ДоступныеОбновления.Attribute.НомерДискаИТС</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ПарольАдминистратораИБ</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.TabularSection.ДоступныеОбновления</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ГруппыДоступа.Attribute.Профиль</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.НастройкиВерсионированияОбъектов.Dimension.ТипОбъекта</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ГруппыДоступа.TabularSection.Пользователи.Attribute.Пользователь</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ВерсииОбъектов.Attribute.АвторВерсии</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ПрофилиГруппДоступа.TabularSection.Роли</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ДатаВремяОбновления</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ГруппыДоступа.Attribute.Пользователь</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -692,6 +505,193 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.БлокировкаРаботыПользователей.Attribute.ОкончаниеДействияБлокировки</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВерсииОбъектов.Dimension.НомерВерсии</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ГруппыДоступа.Attribute.Профиль</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи.StandardAttribute.Predefined</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи.StandardAttribute.Ref</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи.StandardAttribute.IsFolder</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи.StandardAttribute.Owner</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи.StandardAttribute.Parent</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи.StandardAttribute.Description</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Пользователи.StandardAttribute.Code</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ГруппыДоступа.TabularSection.Пользователи.Attribute.Пользователь</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ВерсииОбъектов.Attribute.АвторВерсии</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ПрофилиГруппДоступа.TabularSection.Роли</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.УстановкаОбновлений.Attribute.ДатаВремяОбновления</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ГруппыДоступа.Attribute.Пользователь</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.НастройкиВерсионированияОбъектов.Resource.Использовать</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ГруппыДоступа.Attribute.Ответственный</name>
 		<right>
 			<name>View</name>
@@ -736,17 +736,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ПортАгентаСервера</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.РезервноеКопированиеИБ.Attribute.КодТипаРезервногоКопирования</name>
 		<right>
 			<name>View</name>
@@ -780,17 +769,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ИмяАдминистратораКластера</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.ГруппыДоступа.TabularSection.ВидыДоступа.Attribute.ВсеРазрешены</name>
 		<right>
 			<name>View</name>
@@ -802,18 +780,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.НастройкиВерсионированияОбъектов.Resource.Вариант</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.РежимОбновления</name>
+		<name>DataProcessor.УстановкаОбновлений.Attribute.РежимОбновления</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -879,28 +846,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ИспользоватьРасписаниеДляПроверкиОбновления</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ЗапомнитьПарольСервераОбновлений</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.СоставыГруппПользователей.StandardAttribute.Active</name>
 		<right>
 			<name>View</name>
@@ -945,7 +890,18 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.TabularSection.ДоступныеОбновления.Attribute.ПутьКЛокальномуФайлуОбновления</name>
+		<name>InformationRegister.НастройкиВерсионированияОбъектов.Resource.Вариант</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.УстановкаОбновлений.Attribute.ВосстанавливатьИнформационнуюБазу</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -967,7 +923,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ИмяКаталогаРезервнойКопииИБ</name>
+		<name>DataProcessor.УстановкаОбновлений.Attribute.ИмяКаталогаРезервнойКопииИБ</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -1000,7 +956,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ИмяФайлаОбновления</name>
+		<name>DataProcessor.УстановкаОбновлений.Attribute.ИмяФайлаОбновления</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -1012,28 +968,6 @@
 	</object>
 	<object>
 		<name>Catalog.ГруппыДоступа.TabularSection.ЗначенияДоступа</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ПортКластераСерверов</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ПропускатьПриветствие</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -1143,28 +1077,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.TabularSection.ДоступныеОбновления.Attribute.РазмерФайлаОбновления</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.РасписаниеПроверкиНаличияОбновления</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.Пользователи.TabularSection.КонтактнаяИнформация.Attribute.Вид</name>
 		<right>
 			<name>View</name>
@@ -1187,40 +1099,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.TabularSection.ДоступныеОбновления.Attribute.ВерсияДляОбновления</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.РезервноеКопированиеИБ.Attribute.ПарольАдминистратора</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.TabularSection.ДоступныеОбновления.Attribute.Версия4Разряд</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ПовторныйЗапуск</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -1260,39 +1139,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.TabularSection.ДоступныеОбновления.Attribute.ЛокальныйОтносительныйКаталог</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ТехническаяИнформацияОбОшибке</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.TabularSection.ДоступныеОбновления.Attribute.Версия1Разряд</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.Пользователи.TabularSection.КонтактнаяИнформация.Attribute.НомерТелефона</name>
 		<right>
 			<name>View</name>
@@ -1304,29 +1150,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ПарольСервераОбновлений</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ГруппыДоступа.Attribute.Описание</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.НастройкиВерсионированияОбъектов.Resource.Использовать</name>
+		<name>Catalog.ГруппыДоступа.Attribute.Комментарий</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -1480,17 +1304,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.TabularSection.ДоступныеОбновления.Attribute.Версия3Разряд</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.Пользователи.TabularSection.КонтактнаяИнформация</name>
 		<right>
 			<name>View</name>
@@ -1502,29 +1315,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.НуженФайлОбновления</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.АдресЭлектроннойПочты</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.КластерТребуетАутентификации</name>
+		<name>DataProcessor.УстановкаОбновлений.Attribute.АдресЭлектроннойПочты</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -1546,17 +1337,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.РезультатОбновления</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.БлокировкаРаботыПользователей.Attribute.ЗапретитьРаботуПользователей</name>
 		<right>
 			<name>View</name>
@@ -1568,7 +1348,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ПроверятьНаличиеОбновленияПриЗапуске</name>
+		<name>InformationRegister.НастройкиВерсионированияОбъектов.Dimension.ТипОбъекта</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -1579,29 +1359,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ИмяАдминистратораИБ</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ВыслатьОтчетНаПочту</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ВосстанавливатьИнформационнуюБазу</name>
+		<name>DataProcessor.УстановкаОбновлений.Attribute.ВыслатьОтчетНаПочту</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -1613,17 +1371,6 @@
 	</object>
 	<object>
 		<name>Catalog.ГруппыДоступа.TabularSection.ЗначенияДоступа.Attribute.ВидДоступа</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.TabularSection.ДоступныеОбновления.Attribute.Версия</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -1722,7 +1469,7 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.СоздаватьРезервнуюКопию</name>
+		<name>DataProcessor.УстановкаОбновлений.Attribute.СоздаватьРезервнуюКопию</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -1755,138 +1502,6 @@
 		</right>
 	</object>
 	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.TabularSection.ДоступныеОбновления.Attribute.ПутьКЛокальномуФайлу</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.StandardAttribute.Predefined</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.StandardAttribute.Ref</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.StandardAttribute.DeletionMark</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.StandardAttribute.IsFolder</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.StandardAttribute.Owner</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.StandardAttribute.Parent</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.StandardAttribute.Description</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Пользователи.StandardAttribute.Code</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.Attribute.ИсточникДискаИТС</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.TabularSection.ДоступныеОбновления.Attribute.ПутьКФайлуОбновления</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ГруппыДоступа.Attribute.ТипПользователей</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.СоставыГруппПользователей.Dimension.ГруппаПользователей</name>
 		<right>
 			<name>View</name>
@@ -1899,28 +1514,6 @@
 	</object>
 	<object>
 		<name>Catalog.ПрофилиГруппДоступа.TabularSection.ВидыДоступа.Attribute.Предустановленный</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.TabularSection.ДоступныеОбновления.Attribute.Поставщик</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>DataProcessor.ПоискИУстановкаОбновлений.TabularSection.ДоступныеОбновления.Attribute.Конфигурация</name>
 		<right>
 			<name>View</name>
 			<value>false</value>

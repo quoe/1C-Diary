@@ -1,6 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<MobileDeviceCommandBarContent>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string">КоманднаяПанель</xr:Value>
+		</xr:Item>
+	</MobileDeviceCommandBarContent>
 	<CommandSet>
 		<ExcludedCommand>Create</ExcludedCommand>
 	</CommandSet>
@@ -71,8 +78,13 @@
 				<Button name="ЗавершитьИЗакрыть" id="98">
 					<Type>CommandBarButton</Type>
 					<Visible>false</Visible>
+					<Representation>Text</Representation>
 					<DefaultButton>true</DefaultButton>
 					<CommandName>Form.Command.ЗавершитьИЗакрыть</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.WriteAndClose</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
 					<ExtendedTooltip name="ЗавершитьИЗакрытьExtendedTooltip" id="99"/>
 				</Button>
 				<Button name="ВыбратьГруппуВнешнихПользователей" id="67">
@@ -186,18 +198,17 @@
 				</Button>
 			</ChildItems>
 		</CommandBar>
-		<UsualGroup name="Группа" id="24">
+		<UsualGroup name="ГруппаСодержимое" id="24">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа</v8:content>
+					<v8:content>Содержимое</v8:content>
 				</v8:item>
 			</Title>
-			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ChildItemsWidth>Equal</ChildItemsWidth>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаExtendedTooltip" id="109"/>
+			<ExtendedTooltip name="ГруппаСодержимоеРасширеннаяПодсказка" id="109"/>
 			<ChildItems>
 				<UsualGroup name="ГруппыИПользователи" id="77">
 					<Title>
@@ -206,7 +217,6 @@
 							<v8:content>Группы и пользователи</v8:content>
 						</v8:item>
 					</Title>
-					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ChildItemsWidth>LeftNarrowest</ChildItemsWidth>
 					<ShowTitle>false</ShowTitle>
@@ -216,10 +226,9 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группы</v8:content>
+									<v8:content>Группы пользователей</v8:content>
 								</v8:item>
 							</Title>
-							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаГруппыExtendedTooltip" id="111"/>
@@ -239,6 +248,10 @@
 									<FileDragMode>AsFile</FileDragMode>
 									<DataPath>ГруппыВнешнихПользователей</DataPath>
 									<RowPictureDataPath>ГруппыВнешнихПользователей.НомерКартинки</RowPictureDataPath>
+									<RowsPicture>
+										<xr:Ref>CommonPicture.СостоянияПользователей</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</RowsPicture>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -248,6 +261,7 @@
 									<CommandSet>
 										<ExcludedCommand>Delete</ExcludedCommand>
 									</CommandSet>
+									<CurrentRowUse>SelectionPresentationAndChoice</CurrentRowUse>
 									<AutoRefresh>false</AutoRefresh>
 									<AutoRefreshPeriod>60</AutoRefreshPeriod>
 									<Period>
@@ -302,6 +316,7 @@
 										<Event name="BeforeAddRow">ГруппыВнешнихПользователейПередНачаломДобавления</Event>
 										<Event name="OnActivateRow">ГруппыВнешнихПользователейПриАктивизацииСтроки</Event>
 										<Event name="Drag">ГруппыВнешнихПользователейПеретаскивание</Event>
+										<Event name="OnChange">ГруппыВнешнихПользователейПриИзменении</Event>
 									</Events>
 									<ChildItems>
 										<LabelField name="НаименованиеГруппы" id="30">
@@ -364,7 +379,6 @@
 									<v8:content>Пользователи</v8:content>
 								</v8:item>
 							</Title>
-							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаПользователиExtendedTooltip" id="119"/>
@@ -382,6 +396,10 @@
 									<FileDragMode>AsFile</FileDragMode>
 									<DataPath>ВнешниеПользователиСписок</DataPath>
 									<RowPictureDataPath>ВнешниеПользователиСписок.НомерКартинки</RowPictureDataPath>
+									<RowsPicture>
+										<xr:Ref>CommonPicture.СостоянияПользователей</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</RowsPicture>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -484,6 +502,7 @@
 										<Event name="BeforeAddRow">ВнешниеПользователиСписокПередНачаломДобавления</Event>
 										<Event name="OnActivateRow">ВнешниеПользователиСписокПриАктивизацииСтроки</Event>
 										<Event name="BeforeRowChange">ВнешниеПользователиСписокПередНачаломИзменения</Event>
+										<Event name="OnChange">ВнешниеПользователиСписокПриИзменении</Event>
 									</Events>
 									<ChildItems>
 										<LabelField name="Наименование" id="51">
@@ -562,6 +581,10 @@
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>ВыбранныеПользователиИГруппы</DataPath>
 							<RowPictureDataPath>ВыбранныеПользователиИГруппы.НомерКартинки</RowPictureDataPath>
+							<RowsPicture>
+								<xr:Ref>CommonPicture.СостоянияПользователей</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</RowsPicture>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -634,7 +657,6 @@
 					<v8:content>Показывать внешних пользователей дочерних групп</v8:content>
 				</v8:item>
 			</Title>
-			<Group>Horizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПоказыватьВнешнихПользователейДочернихГруппExtendedTooltip" id="131"/>
@@ -917,12 +939,6 @@
 			</FunctionalOptions>
 		</Attribute>
 		<Attribute name="ОписаниеОтображаемыхВнешнихПользователей" id="8">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Описание отображаемых внешних пользователей</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -932,12 +948,6 @@
 			</Type>
 		</Attribute>
 		<Attribute name="ХранимыеПараметры" id="11">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Хранимые параметры</v8:content>
-				</v8:item>
-			</Title>
 			<Type/>
 		</Attribute>
 		<Attribute name="ВыбранныеПользователиИГруппы" id="4">
@@ -963,18 +973,12 @@
 					</Title>
 					<Type>
 						<v8:Type>cfg:CatalogRef.ВнешниеПользователи</v8:Type>
-						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 						<v8:Type>cfg:CatalogRef.ГруппыВнешнихПользователей</v8:Type>
 						<v8:Type>cfg:CatalogRef.ГруппыПользователей</v8:Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 					</Type>
 				</Column>
 				<Column name="НомерКартинки" id="2">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Номер картинки</v8:content>
-						</v8:item>
-					</Title>
 					<Type>
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>
@@ -987,12 +991,6 @@
 			</Columns>
 		</Attribute>
 		<Attribute name="СписокВыбранныхПользователейИзменен" id="5">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Список выбранных пользователей изменен</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
@@ -1259,7 +1257,7 @@
 	<CommandInterface>
 		<CommandBar>
 			<Item>
-				<Command>0</Command>
+				<Command>CommonCommand.ДополнительныеСведенияКоманднаяПанель</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarImportant</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>

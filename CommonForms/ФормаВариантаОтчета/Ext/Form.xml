@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<CommandBarLocation>Bottom</CommandBarLocation>
 	<ReportFormType>Variant</ReportFormType>
@@ -29,7 +29,9 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
+		<Event name="BeforeLoadVariantAtServer">ПередЗагрузкойВариантаНаСервере</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnLoadUserSettingsAtServer">ПриЗагрузкеПользовательскихНастроекНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -49,9 +51,6 @@
 					<v8:content>Таблица настроек</v8:content>
 				</v8:item>
 			</Title>
-			<SearchStringLocation>None</SearchStringLocation>
-			<ViewStatusLocation>None</ViewStatusLocation>
-			<SearchControlLocation>None</SearchControlLocation>
 			<ContextMenu name="КомпоновщикНастроекНастройкиКонтекстноеМеню" id="2"/>
 			<AutoCommandBar name="КомпоновщикНастроекНастройкиКоманднаяПанель" id="3"/>
 			<ExtendedTooltip name="КомпоновщикНастроекНастройкиExtendedTooltip" id="130"/>
@@ -109,7 +108,6 @@
 						<Table name="КомпоновщикНастроекНастройкиПараметрыДанных" id="6">
 							<Representation>Tree</Representation>
 							<Autofill>true</Autofill>
-							<Width>50</Width>
 							<InitialTreeView>ExpandAllLevels</InitialTreeView>
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Items.КомпоновщикНастроекНастройки.CurrentData.ItemDataParameters</DataPath>
@@ -119,9 +117,6 @@
 									<v8:content>Настройки параметров</v8:content>
 								</v8:item>
 							</Title>
-							<SearchStringLocation>None</SearchStringLocation>
-							<ViewStatusLocation>None</ViewStatusLocation>
-							<SearchControlLocation>None</SearchControlLocation>
 							<ContextMenu name="КомпоновщикНастроекНастройкиПараметрыДанныхКонтекстноеМеню" id="7"/>
 							<AutoCommandBar name="КомпоновщикНастроекНастройкиПараметрыДанныхКоманднаяПанель" id="8"/>
 							<ExtendedTooltip name="КомпоновщикНастроекНастройкиПараметрыДанныхExtendedTooltip" id="133"/>
@@ -163,7 +158,7 @@
 						<xr:Ref>StdPicture.DataCompositionUserFields</xr:Ref>
 						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
-					<Group>Horizontal</Group>
+					<Group>HorizontalIfPossible</Group>
 					<ExtendedTooltip name="СтраницаПользовательскихПолейExtendedTooltip" id="134"/>
 					<ChildItems>
 						<Table name="КомпоновщикНастроекНастройкиПользовательскиеПоля" id="10">
@@ -179,9 +174,6 @@
 									<v8:content>Настройки пользовательских полей</v8:content>
 								</v8:item>
 							</Title>
-							<SearchStringLocation>None</SearchStringLocation>
-							<ViewStatusLocation>None</ViewStatusLocation>
-							<SearchControlLocation>None</SearchControlLocation>
 							<ContextMenu name="КомпоновщикНастроекНастройкиПользовательскиеПоляКонтекстноеМеню" id="11"/>
 							<AutoCommandBar name="КомпоновщикНастроекНастройкиПользовательскиеПоляКоманднаяПанель" id="12"/>
 							<ExtendedTooltip name="КомпоновщикНастроекНастройкиПользовательскиеПоляExtendedTooltip" id="135"/>
@@ -242,14 +234,13 @@
 											<v8:content>Страница группируемых полей</v8:content>
 										</v8:item>
 									</Title>
-									<Group>Horizontal</Group>
+									<Group>HorizontalIfPossible</Group>
 									<ChildItemsWidth>LeftNarrowest</ChildItemsWidth>
 									<ExtendedTooltip name="НастройкиПолейГруппировкиExtendedTooltip" id="138"/>
 									<ChildItems>
 										<Table name="КомпоновщикНастроекНастройкиПоляГруппировкиДоступныеПоляПолейГруппировок" id="16">
 											<Representation>Tree</Representation>
 											<Autofill>true</Autofill>
-											<Width>60</Width>
 											<HeightInTableRows>15</HeightInTableRows>
 											<ChoiceMode>true</ChoiceMode>
 											<HorizontalLines>false</HorizontalLines>
@@ -264,9 +255,6 @@
 													<v8:content>Доступные поля группируемых полей</v8:content>
 												</v8:item>
 											</Title>
-											<SearchStringLocation>None</SearchStringLocation>
-											<ViewStatusLocation>None</ViewStatusLocation>
-											<SearchControlLocation>None</SearchControlLocation>
 											<ContextMenu name="КомпоновщикНастроекНастройкиПоляГруппировкиДоступныеПоляПолейГруппировокКонтекстноеМеню" id="17"/>
 											<AutoCommandBar name="КомпоновщикНастроекНастройкиПоляГруппировкиДоступныеПоляПолейГруппировокКоманднаяПанель" id="18"/>
 											<ExtendedTooltip name="КомпоновщикНастроекНастройкиПоляГруппировкиДоступныеПоляПолейГруппировокExtendedTooltip" id="139"/>
@@ -308,9 +296,6 @@
 													<v8:content>Таблица группируемых полей</v8:content>
 												</v8:item>
 											</Title>
-											<SearchStringLocation>None</SearchStringLocation>
-											<ViewStatusLocation>None</ViewStatusLocation>
-											<SearchControlLocation>None</SearchControlLocation>
 											<ContextMenu name="КомпоновщикНастроекНастройкиПоляГруппировкиКонтекстноеМеню" id="20"/>
 											<AutoCommandBar name="КомпоновщикНастроекНастройкиПоляГруппировкиКоманднаяПанель" id="21"/>
 											<ExtendedTooltip name="КомпоновщикНастроекНастройкиПоляГруппировкиExtendedTooltip" id="140"/>
@@ -351,9 +336,8 @@
 									<ExtendedTooltip name="НедоступныеНастройкиПолейГруппировкиExtendedTooltip" id="141"/>
 									<ChildItems>
 										<LabelDecoration name="НадписьНедоступныхПолейГруппировки" id="23">
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Height>2</Height>
-											<HorizontalStretch>true</HorizontalStretch>
-											<VerticalStretch>false</VerticalStretch>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -416,15 +400,13 @@
 											<v8:content>Страница полей</v8:content>
 										</v8:item>
 									</Title>
-									<Group>Horizontal</Group>
+									<Group>HorizontalIfPossible</Group>
 									<ChildItemsWidth>LeftNarrowest</ChildItemsWidth>
 									<ExtendedTooltip name="НастройкиВыбранныхПолейExtendedTooltip" id="146"/>
 									<ChildItems>
 										<Table name="КомпоновщикНастроекНастройкиВыборДоступныеПоляВыбора" id="30">
 											<Representation>Tree</Representation>
 											<Autofill>true</Autofill>
-											<Width>60</Width>
-											<HeightInTableRows>15</HeightInTableRows>
 											<ChoiceMode>true</ChoiceMode>
 											<HorizontalLines>false</HorizontalLines>
 											<VerticalLines>false</VerticalLines>
@@ -438,9 +420,6 @@
 													<v8:content>Доступные поля полей</v8:content>
 												</v8:item>
 											</Title>
-											<SearchStringLocation>None</SearchStringLocation>
-											<ViewStatusLocation>None</ViewStatusLocation>
-											<SearchControlLocation>None</SearchControlLocation>
 											<ContextMenu name="КомпоновщикНастроекНастройкиВыборДоступныеПоляВыбораКонтекстноеМеню" id="31"/>
 											<AutoCommandBar name="КомпоновщикНастроекНастройкиВыборДоступныеПоляВыбораКоманднаяПанель" id="32"/>
 											<ExtendedTooltip name="КомпоновщикНастроекНастройкиВыборДоступныеПоляВыбораExtendedTooltip" id="147"/>
@@ -483,9 +462,6 @@
 													<v8:content>Таблица полей</v8:content>
 												</v8:item>
 											</Title>
-											<SearchStringLocation>None</SearchStringLocation>
-											<ViewStatusLocation>None</ViewStatusLocation>
-											<SearchControlLocation>None</SearchControlLocation>
 											<ContextMenu name="КомпоновщикНастроекНастройкиВыборКонтекстноеМеню" id="34"/>
 											<AutoCommandBar name="КомпоновщикНастроекНастройкиВыборКоманднаяПанель" id="35"/>
 											<ExtendedTooltip name="КомпоновщикНастроекНастройкиВыборExtendedTooltip" id="148"/>
@@ -526,9 +502,7 @@
 									<ExtendedTooltip name="ОтключенныеНастройкиВыбранныхПолейExtendedTooltip" id="149"/>
 									<ChildItems>
 										<LabelDecoration name="НадписьЛокальныхВыбранныхПолей" id="37">
-											<Height>3</Height>
-											<HorizontalStretch>true</HorizontalStretch>
-											<VerticalStretch>false</VerticalStretch>
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -541,6 +515,7 @@
 											<ExtendedTooltip name="НадписьЛокальныхВыбранныхПолейExtendedTooltip" id="150"/>
 										</LabelDecoration>
 										<LabelDecoration name="ПереходКВыбраннымПолямОтчета" id="39">
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -566,9 +541,7 @@
 									<ExtendedTooltip name="НедоступныеНастройкиВыбранныхПолейExtendedTooltip" id="152"/>
 									<ChildItems>
 										<LabelDecoration name="НадписьНедоступныхВыбранныхПолей" id="42">
-											<Height>2</Height>
-											<HorizontalStretch>true</HorizontalStretch>
-											<VerticalStretch>false</VerticalStretch>
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -580,6 +553,7 @@
 											<ExtendedTooltip name="НадписьНедоступныхВыбранныхПолейExtendedTooltip" id="153"/>
 										</LabelDecoration>
 										<LabelDecoration name="ПереходКВыбраннымПолямОтчета1" id="44">
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -645,15 +619,13 @@
 											<v8:content>Страница полей</v8:content>
 										</v8:item>
 									</Title>
-									<Group>Horizontal</Group>
+									<Group>HorizontalIfPossible</Group>
 									<ChildItemsWidth>LeftNarrowest</ChildItemsWidth>
 									<ExtendedTooltip name="НастройкиОтбораExtendedTooltip" id="158"/>
 									<ChildItems>
 										<Table name="КомпоновщикНастроекНастройкиОтборДоступныеПоляОтбора" id="51">
 											<Representation>Tree</Representation>
 											<Autofill>true</Autofill>
-											<Width>60</Width>
-											<HeightInTableRows>15</HeightInTableRows>
 											<ChoiceMode>true</ChoiceMode>
 											<HorizontalLines>false</HorizontalLines>
 											<VerticalLines>false</VerticalLines>
@@ -667,9 +639,6 @@
 													<v8:content>Доступные поля отбора</v8:content>
 												</v8:item>
 											</Title>
-											<SearchStringLocation>None</SearchStringLocation>
-											<ViewStatusLocation>None</ViewStatusLocation>
-											<SearchControlLocation>None</SearchControlLocation>
 											<ContextMenu name="КомпоновщикНастроекНастройкиОтборДоступныеПоляОтбораКонтекстноеМеню" id="52"/>
 											<AutoCommandBar name="КомпоновщикНастроекНастройкиОтборДоступныеПоляОтбораКоманднаяПанель" id="53"/>
 											<ExtendedTooltip name="КомпоновщикНастроекНастройкиОтборДоступныеПоляОтбораExtendedTooltip" id="159"/>
@@ -712,9 +681,6 @@
 													<v8:content>Таблица отбора</v8:content>
 												</v8:item>
 											</Title>
-											<SearchStringLocation>None</SearchStringLocation>
-											<ViewStatusLocation>None</ViewStatusLocation>
-											<SearchControlLocation>None</SearchControlLocation>
 											<ViewMode>All</ViewMode>
 											<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
 											<ContextMenu name="КомпоновщикНастроекНастройкиОтборКонтекстноеМеню" id="55"/>
@@ -757,9 +723,7 @@
 									<ExtendedTooltip name="ОтключенныеНастройкиОтбораExtendedTooltip" id="161"/>
 									<ChildItems>
 										<LabelDecoration name="НадписьЛокальногоОтбора" id="58">
-											<Height>3</Height>
-											<HorizontalStretch>true</HorizontalStretch>
-											<VerticalStretch>false</VerticalStretch>
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -772,6 +736,7 @@
 											<ExtendedTooltip name="НадписьЛокальногоОтбораExtendedTooltip" id="162"/>
 										</LabelDecoration>
 										<LabelDecoration name="ПереходКОтборуОтчета" id="60">
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -797,9 +762,7 @@
 									<ExtendedTooltip name="НедоступныеНастройкиОтбораExtendedTooltip" id="164"/>
 									<ChildItems>
 										<LabelDecoration name="НадписьНедоступногоОтбора" id="63">
-											<Height>2</Height>
-											<HorizontalStretch>true</HorizontalStretch>
-											<VerticalStretch>false</VerticalStretch>
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -811,6 +774,7 @@
 											<ExtendedTooltip name="НадписьНедоступногоОтбораExtendedTooltip" id="165"/>
 										</LabelDecoration>
 										<LabelDecoration name="ПереходКОтборуОтчета1" id="65">
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -876,15 +840,13 @@
 											<v8:content>Страница сортировки</v8:content>
 										</v8:item>
 									</Title>
-									<Group>Horizontal</Group>
+									<Group>HorizontalIfPossible</Group>
 									<ChildItemsWidth>LeftNarrowest</ChildItemsWidth>
 									<ExtendedTooltip name="НастройкиПорядкаExtendedTooltip" id="170"/>
 									<ChildItems>
 										<Table name="КомпоновщикНастроекНастройкиПорядокДоступныеПоляПорядка" id="72">
 											<Representation>Tree</Representation>
 											<Autofill>true</Autofill>
-											<Width>60</Width>
-											<HeightInTableRows>15</HeightInTableRows>
 											<ChoiceMode>true</ChoiceMode>
 											<HorizontalLines>false</HorizontalLines>
 											<VerticalLines>false</VerticalLines>
@@ -898,9 +860,6 @@
 													<v8:content>Доступные поля сортировки</v8:content>
 												</v8:item>
 											</Title>
-											<SearchStringLocation>None</SearchStringLocation>
-											<ViewStatusLocation>None</ViewStatusLocation>
-											<SearchControlLocation>None</SearchControlLocation>
 											<ContextMenu name="КомпоновщикНастроекНастройкиПорядокДоступныеПоляПорядкаКонтекстноеМеню" id="73"/>
 											<AutoCommandBar name="КомпоновщикНастроекНастройкиПорядокДоступныеПоляПорядкаКоманднаяПанель" id="74"/>
 											<ExtendedTooltip name="КомпоновщикНастроекНастройкиПорядокДоступныеПоляПорядкаExtendedTooltip" id="171"/>
@@ -942,9 +901,6 @@
 													<v8:content>Таблица сортировки</v8:content>
 												</v8:item>
 											</Title>
-											<SearchStringLocation>None</SearchStringLocation>
-											<ViewStatusLocation>None</ViewStatusLocation>
-											<SearchControlLocation>None</SearchControlLocation>
 											<ContextMenu name="КомпоновщикНастроекНастройкиПорядокКонтекстноеМеню" id="76"/>
 											<AutoCommandBar name="КомпоновщикНастроекНастройкиПорядокКоманднаяПанель" id="77"/>
 											<ExtendedTooltip name="КомпоновщикНастроекНастройкиПорядокExtendedTooltip" id="172"/>
@@ -985,9 +941,7 @@
 									<ExtendedTooltip name="ОтключенныеНастройкиПорядкаExtendedTooltip" id="173"/>
 									<ChildItems>
 										<LabelDecoration name="НадписьЛокальногоПорядка" id="79">
-											<Height>3</Height>
-											<HorizontalStretch>true</HorizontalStretch>
-											<VerticalStretch>false</VerticalStretch>
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1000,6 +954,7 @@
 											<ExtendedTooltip name="НадписьЛокальногоПорядкаExtendedTooltip" id="174"/>
 										</LabelDecoration>
 										<LabelDecoration name="ПереходКПорядкуОтчета" id="81">
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1025,9 +980,7 @@
 									<ExtendedTooltip name="НедоступныеНастройкиПорядкаExtendedTooltip" id="176"/>
 									<ChildItems>
 										<LabelDecoration name="НадписьНедоступногоПорядка" id="84">
-											<Height>2</Height>
-											<HorizontalStretch>true</HorizontalStretch>
-											<VerticalStretch>false</VerticalStretch>
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1039,6 +992,7 @@
 											<ExtendedTooltip name="НадписьНедоступногоПорядкаExtendedTooltip" id="177"/>
 										</LabelDecoration>
 										<LabelDecoration name="ПереходКПорядкуОтчета1" id="86">
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1104,7 +1058,7 @@
 											<v8:content>Страница условного оформления</v8:content>
 										</v8:item>
 									</Title>
-									<Group>Horizontal</Group>
+									<Group>HorizontalIfPossible</Group>
 									<ExtendedTooltip name="НастройкиУсловногоОформленияExtendedTooltip" id="182"/>
 									<ChildItems>
 										<Table name="КомпоновщикНастроекНастройкиУсловноеОформление" id="93">
@@ -1120,9 +1074,6 @@
 													<v8:content>Таблица условного оформления</v8:content>
 												</v8:item>
 											</Title>
-											<SearchStringLocation>None</SearchStringLocation>
-											<ViewStatusLocation>None</ViewStatusLocation>
-											<SearchControlLocation>None</SearchControlLocation>
 											<SettingsNamedItemDetailedRepresentation>false</SettingsNamedItemDetailedRepresentation>
 											<ContextMenu name="КомпоновщикНастроекНастройкиУсловноеОформлениеКонтекстноеМеню" id="94"/>
 											<AutoCommandBar name="КомпоновщикНастроекНастройкиУсловноеОформлениеКоманднаяПанель" id="95"/>
@@ -1164,9 +1115,7 @@
 									<ExtendedTooltip name="ОтключенныеНастройкиУсловногоОформленияExtendedTooltip" id="184"/>
 									<ChildItems>
 										<LabelDecoration name="НадписьЛокальногоУсловногоОформления" id="97">
-											<Height>3</Height>
-											<HorizontalStretch>true</HorizontalStretch>
-											<VerticalStretch>false</VerticalStretch>
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1179,6 +1128,7 @@
 											<ExtendedTooltip name="НадписьЛокальногоУсловногоОформленияExtendedTooltip" id="185"/>
 										</LabelDecoration>
 										<LabelDecoration name="ПереходКУсловномуОформлениюОтчета" id="99">
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1204,9 +1154,7 @@
 									<ExtendedTooltip name="НедоступныеНастройкиУсловногоОформленияExtendedTooltip" id="187"/>
 									<ChildItems>
 										<LabelDecoration name="НадписьНедоступногоУсловногоОформления" id="102">
-											<Height>2</Height>
-											<HorizontalStretch>true</HorizontalStretch>
-											<VerticalStretch>false</VerticalStretch>
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1218,6 +1166,7 @@
 											<ExtendedTooltip name="НадписьНедоступногоУсловногоОформленияExtendedTooltip" id="188"/>
 										</LabelDecoration>
 										<LabelDecoration name="ПереходКУсловномуОформлениюОтчета1" id="104">
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1283,13 +1232,12 @@
 											<v8:content>Страница дополнительных настроек</v8:content>
 										</v8:item>
 									</Title>
-									<Group>Horizontal</Group>
+									<Group>HorizontalIfPossible</Group>
 									<ExtendedTooltip name="НастройкиПараметровВыводаExtendedTooltip" id="193"/>
 									<ChildItems>
 										<Table name="КомпоновщикНастроекНастройкиПараметрыВывода" id="111">
 											<Representation>Tree</Representation>
 											<Autofill>true</Autofill>
-											<Width>50</Width>
 											<InitialTreeView>ExpandAllLevels</InitialTreeView>
 											<FileDragMode>AsFile</FileDragMode>
 											<DataPath>Items.КомпоновщикНастроекНастройки.CurrentData.ItemOutputParameters</DataPath>
@@ -1299,9 +1247,6 @@
 													<v8:content>Таблица дополнительных настроек</v8:content>
 												</v8:item>
 											</Title>
-											<SearchStringLocation>None</SearchStringLocation>
-											<ViewStatusLocation>None</ViewStatusLocation>
-											<SearchControlLocation>None</SearchControlLocation>
 											<ContextMenu name="КомпоновщикНастроекНастройкиПараметрыВыводаКонтекстноеМеню" id="112"/>
 											<AutoCommandBar name="КомпоновщикНастроекНастройкиПараметрыВыводаКоманднаяПанель" id="113"/>
 											<ExtendedTooltip name="КомпоновщикНастроекНастройкиПараметрыВыводаExtendedTooltip" id="194"/>
@@ -1342,9 +1287,7 @@
 									<ExtendedTooltip name="ОтключенныеНастройкиПараметровВыводаExtendedTooltip" id="195"/>
 									<ChildItems>
 										<LabelDecoration name="НадписьЛокальныхПараметровВывода" id="115">
-											<Height>3</Height>
-											<HorizontalStretch>true</HorizontalStretch>
-											<VerticalStretch>false</VerticalStretch>
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1357,6 +1300,7 @@
 											<ExtendedTooltip name="НадписьЛокальныхПараметровВыводаExtendedTooltip" id="196"/>
 										</LabelDecoration>
 										<LabelDecoration name="ПереходКПараметрамВыводаОтчета" id="117">
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1382,9 +1326,7 @@
 									<ExtendedTooltip name="НедоступныеНастройкиПараметровВыводаExtendedTooltip" id="198"/>
 									<ChildItems>
 										<LabelDecoration name="НадписьНедоступныхПараметровВывода" id="120">
-											<Height>2</Height>
-											<HorizontalStretch>true</HorizontalStretch>
-											<VerticalStretch>false</VerticalStretch>
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1396,6 +1338,7 @@
 											<ExtendedTooltip name="НадписьНедоступныхПараметровВыводаExtendedTooltip" id="199"/>
 										</LabelDecoration>
 										<LabelDecoration name="ПереходКПараметрамВыводаОтчета1" id="122">
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1481,16 +1424,13 @@
 			</Type>
 		</Attribute>
 		<Attribute name="НастройкиОтчета" id="7">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Настройки отчета</v8:content>
-				</v8:item>
-			</Title>
 			<Type/>
-			<Edit>
-				<xr:Common>false</xr:Common>
-			</Edit>
+		</Attribute>
+		<Attribute name="ИдентификаторЭлементаСтруктурыНастроек" id="8">
+			<Type/>
+		</Attribute>
+		<Attribute name="ФормаПараметры" id="9">
+			<Type/>
 		</Attribute>
 	</Attributes>
 	<Commands>
@@ -1511,10 +1451,4 @@
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
-	<Parameters>
-		<Parameter name="ТекущаяСтрока">
-			<Type/>
-			<KeyParameter>true</KeyParameter>
-		</Parameter>
-	</Parameters>
 </Form>

@@ -12,7 +12,9 @@
 			<Comment>Управляет доступностью версионирования для каждого отдельного объекта</Comment>
 			<Location>InformationRegister.НастройкиВерсионированияОбъектов.Resource.Использовать</Location>
 			<PrivilegedGetMode>true</PrivilegedGetMode>
-			<Content/>
+			<Content>
+				<xr:Object>CommonCommand.ИсторияИзменений</xr:Object>
+			</Content>
 		</Properties>
 	</FunctionalOption>
 </MetaDataObject>

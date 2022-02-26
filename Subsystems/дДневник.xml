@@ -86,6 +86,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.дМентальныеКарты</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.дМестоНаДисках</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.дСлова</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.дОбновлениеИнформационнойБазы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.БазовыеПраваВнешнегоПользователя</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

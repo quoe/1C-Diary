@@ -2115,6 +2115,7 @@
 							</Synonym>
 							<Comment/>
 							<Type>
+								<v8:Type>cfg:CatalogRef.узЗадачи</v8:Type>
 								<v8:Type>cfg:CatalogRef.дВопросы</v8:Type>
 								<v8:Type>xs:boolean</v8:Type>
 								<v8:Type>cfg:CatalogRef.дВидыДеятельности</v8:Type>
@@ -3211,8 +3212,10 @@
 					<Name>Печать</Name>
 					<Synonym/>
 					<Comment/>
-					<Group>FormNavigationPanelImportant</Group>
-					<CommandParameterType/>
+					<Group>CommandGroup.Печать</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.дДневник</v8:Type>
+					</CommandParameterType>
 					<ParameterUseMode>Multiple</ParameterUseMode>
 					<ModifiesData>false</ModifiesData>
 					<Representation>Auto</Representation>
@@ -3232,8 +3235,10 @@
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<Group>FormNavigationPanelImportant</Group>
-					<CommandParameterType/>
+					<Group>CommandGroup.Печать</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.дДневник</v8:Type>
+					</CommandParameterType>
 					<ParameterUseMode>Multiple</ParameterUseMode>
 					<ModifiesData>false</ModifiesData>
 					<Representation>Auto</Representation>

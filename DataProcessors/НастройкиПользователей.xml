@@ -47,6 +47,7 @@
 					<Comment/>
 					<Group>FormNavigationPanelSeeAlso</Group>
 					<CommandParameterType>
+						<v8:Type>cfg:CatalogRef.ВнешниеПользователи</v8:Type>
 						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 					</CommandParameterType>
 					<ParameterUseMode>Single</ParameterUseMode>

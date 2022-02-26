@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
-	<Width>100</Width>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
 	<CommandSet>
 		<ExcludedCommand>Copy</ExcludedCommand>
 	</CommandSet>
@@ -18,7 +17,6 @@
 					<v8:content>Группа пользовательских настроек</v8:content>
 				</v8:item>
 			</Title>
-			<VerticalStretch>false</VerticalStretch>
 			<Group>Vertical</Group>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПользовательскихНастроекРасширеннаяПодсказка" id="44"/>
@@ -57,12 +55,15 @@
 			<FileDragMode>AsFile</FileDragMode>
 			<DataPath>Список</DataPath>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
 			<CommandSet>
 				<ExcludedCommand>Copy</ExcludedCommand>
 			</CommandSet>
-			<SearchStringLocation>None</SearchStringLocation>
-			<ViewStatusLocation>None</ViewStatusLocation>
-			<SearchControlLocation>None</SearchControlLocation>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -108,11 +109,25 @@
 			</SearchControlAddition>
 			<ChildItems>
 				<LabelField name="СписокГруппаДанных" id="26">
-					<DataPath>~Список.ГруппаДанных</DataPath>
+					<DataPath>Список.ГруппаДанных</DataPath>
 					<HorizontalAlign>Left</HorizontalAlign>
 					<Width>30</Width>
 					<ContextMenu name="СписокГруппаДанныхКонтекстноеМеню" id="27"/>
 					<ExtendedTooltip name="СписокГруппаДанныхРасширеннаяПодсказка" id="42"/>
+				</LabelField>
+				<LabelField name="ТипЗначенияДоступа" id="56">
+					<DataPath>Список.ТипЗначенияДоступа</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип значения доступа</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ТипЗначенияДоступаКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ТипЗначенияДоступаРасширеннаяПодсказка" id="58"/>
 				</LabelField>
 				<ColumnGroup name="СписокГруппаЗначениеДоступаСКартинкой" id="22">
 					<Title>
@@ -125,14 +140,18 @@
 					<ExtendedTooltip name="СписокГруппаЗначениеДоступаСКартинкойРасширеннаяПодсказка" id="32"/>
 					<ChildItems>
 						<PictureField name="СписокНомерКартинкиЗначенияДоступа" id="18">
-							<DataPath>~Список.НомерКартинкиЗначенияДоступа</DataPath>
+							<DataPath>Список.НомерКартинкиЗначенияДоступа</DataPath>
 							<TitleLocation>None</TitleLocation>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.СостоянияПользователей</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
 							<FileDragMode>AsFile</FileDragMode>
 							<ContextMenu name="СписокНомерКартинкиЗначенияДоступаКонтекстноеМеню" id="19"/>
 							<ExtendedTooltip name="СписокНомерКартинкиЗначенияДоступаРасширеннаяПодсказка" id="33"/>
 						</PictureField>
 						<LabelField name="СписокЗначениеДоступа" id="6">
-							<DataPath>~Список.ЗначениеДоступа</DataPath>
+							<DataPath>Список.ЗначениеДоступа</DataPath>
 							<DefaultItem>true</DefaultItem>
 							<ContextMenu name="СписокЗначениеДоступаКонтекстноеМеню" id="7"/>
 							<ExtendedTooltip name="СписокЗначениеДоступаРасширеннаяПодсказка" id="34"/>
@@ -146,24 +165,22 @@
 							<v8:content>Список группа доступа с картинкой</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Список группа доступа с картинкой</v8:content>
-						</v8:item>
-					</ToolTip>
 					<Group>InCell</Group>
 					<ExtendedTooltip name="СписокГруппаДоступаСКартинкойРасширеннаяПодсказка" id="36"/>
 					<ChildItems>
 						<PictureField name="СписокНомерКартинкиГруппыЗначенийДоступа" id="20">
-							<DataPath>~Список.НомерКартинкиГруппыЗначенийДоступа</DataPath>
+							<DataPath>Список.НомерКартинкиГруппыЗначенийДоступа</DataPath>
 							<TitleLocation>None</TitleLocation>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.СостоянияПользователей</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
 							<FileDragMode>AsFile</FileDragMode>
 							<ContextMenu name="СписокНомерКартинкиГруппыЗначенийДоступаКонтекстноеМеню" id="21"/>
 							<ExtendedTooltip name="СписокНомерКартинкиГруппыЗначенийДоступаРасширеннаяПодсказка" id="37"/>
 						</PictureField>
 						<LabelField name="СписокГруппаЗначенийДоступа" id="10">
-							<DataPath>~Список.ГруппаЗначенийДоступа</DataPath>
+							<DataPath>Список.ГруппаЗначенийДоступа</DataPath>
 							<DefaultItem>true</DefaultItem>
 							<ContextMenu name="СписокГруппаЗначенийДоступаКонтекстноеМеню" id="11"/>
 							<ExtendedTooltip name="СписокГруппаЗначенийДоступаРасширеннаяПодсказка" id="38"/>
@@ -180,10 +197,10 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
-				<Field>~Список.ГруппаДанных</Field>
-				<Field>~Список.ЗначениеДоступа</Field>
-				<Field>~Список.НомерКартинкиЗначенияДоступа</Field>
 				<Field>Список.DefaultPicture</Field>
+				<Field>Список.ГруппаДанных</Field>
+				<Field>Список.ЗначениеДоступа</Field>
+				<Field>Список.НомерКартинкиЗначенияДоступа</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
@@ -216,6 +233,7 @@
 				КОНЕЦ
 		ИНАЧЕ -1
 	КОНЕЦ КАК НомерКартинкиЗначенияДоступа,
+	ТипЗначения(ГруппыЗначенийДоступа.ЗначениеДоступа) КАК ТипЗначенияДоступа,
 	ГруппыЗначенийДоступа.ЗначениеДоступа,
 	ВЫБОР
 		КОГДА ТИПЗНАЧЕНИЯ(ГруппыЗначенийДоступа.ГруппаЗначенийДоступа) = ТИП(Справочник.Пользователи)

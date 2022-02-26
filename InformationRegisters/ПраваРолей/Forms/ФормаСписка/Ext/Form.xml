@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
 	<CommandSet>
 		<ExcludedCommand>Copy</ExcludedCommand>
 	</CommandSet>
@@ -17,7 +17,6 @@
 					<v8:content>Группа пользовательских настроек</v8:content>
 				</v8:item>
 			</Title>
-			<VerticalStretch>false</VerticalStretch>
 			<Group>Vertical</Group>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПользовательскихНастроекРасширеннаяПодсказка" id="57"/>
@@ -57,13 +56,16 @@
 			<FileDragMode>AsFile</FileDragMode>
 			<DataPath>Список</DataPath>
 			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список</v8:content>
+				</v8:item>
+			</Title>
 			<CommandSet>
 				<ExcludedCommand>Copy</ExcludedCommand>
 				<ExcludedCommand>Create</ExcludedCommand>
 			</CommandSet>
-			<SearchStringLocation>None</SearchStringLocation>
-			<ViewStatusLocation>None</ViewStatusLocation>
-			<SearchControlLocation>None</SearchControlLocation>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -109,7 +111,7 @@
 			</SearchControlAddition>
 			<ChildItems>
 				<LabelField name="СписокОбъектМетаданных" id="6">
-					<DataPath>~Список.ОбъектМетаданных</DataPath>
+					<DataPath>Список.ОбъектМетаданных</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ToolTip>
 						<v8:item>
@@ -121,7 +123,7 @@
 					<ExtendedTooltip name="СписокОбъектМетаданныхРасширеннаяПодсказка" id="39"/>
 				</LabelField>
 				<LabelField name="СписокРоль" id="4">
-					<DataPath>~Список.Роль</DataPath>
+					<DataPath>Список.Роль</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<Title>
 						<v8:item>
@@ -143,7 +145,13 @@
 					<ExtendedTooltip name="СписокГруппаПравоЧтениеРасширеннаяПодсказка" id="41"/>
 					<ChildItems>
 						<CheckBoxField name="СписокЧтение" id="29">
-							<DataPath>~Список.Чтение</DataPath>
+							<DataPath>Список.Чтение</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Чтение</v8:content>
+								</v8:item>
+							</Title>
 							<ToolTip>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -155,7 +163,7 @@
 							<ExtendedTooltip name="СписокЧтениеРасширеннаяПодсказка" id="42"/>
 						</CheckBoxField>
 						<CheckBoxField name="СписокЧтениеБезОграничения" id="14">
-							<DataPath>~Список.ЧтениеБезОграничения</DataPath>
+							<DataPath>Список.ЧтениеБезОграничения</DataPath>
 							<DefaultItem>true</DefaultItem>
 							<Title>
 								<v8:item>
@@ -179,14 +187,14 @@
 					<ExtendedTooltip name="СписокГруппаПравоДобавлениеРасширеннаяПодсказка" id="44"/>
 					<ChildItems>
 						<CheckBoxField name="СписокДобавление" id="8">
-							<DataPath>~Список.Добавление</DataPath>
+							<DataPath>Список.Добавление</DataPath>
 							<DefaultItem>true</DefaultItem>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="СписокДобавлениеКонтекстноеМеню" id="9"/>
 							<ExtendedTooltip name="СписокДобавлениеРасширеннаяПодсказка" id="45"/>
 						</CheckBoxField>
 						<CheckBoxField name="СписокДобавлениеБезОграничения" id="16">
-							<DataPath>~Список.ДобавлениеБезОграничения</DataPath>
+							<DataPath>Список.ДобавлениеБезОграничения</DataPath>
 							<DefaultItem>true</DefaultItem>
 							<Title>
 								<v8:item>
@@ -210,14 +218,14 @@
 					<ExtendedTooltip name="СписокГруппаПравоИзменениеРасширеннаяПодсказка" id="47"/>
 					<ChildItems>
 						<CheckBoxField name="СписокИзменение" id="10">
-							<DataPath>~Список.Изменение</DataPath>
+							<DataPath>Список.Изменение</DataPath>
 							<DefaultItem>true</DefaultItem>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="СписокИзменениеКонтекстноеМеню" id="11"/>
 							<ExtendedTooltip name="СписокИзменениеРасширеннаяПодсказка" id="48"/>
 						</CheckBoxField>
 						<CheckBoxField name="СписокИзменениеБезОграничения" id="18">
-							<DataPath>~Список.ИзменениеБезОграничения</DataPath>
+							<DataPath>Список.ИзменениеБезОграничения</DataPath>
 							<DefaultItem>true</DefaultItem>
 							<Title>
 								<v8:item>
@@ -232,21 +240,21 @@
 					</ChildItems>
 				</ColumnGroup>
 				<CheckBoxField name="СписокПросмотр" id="22">
-					<DataPath>~Список.Просмотр</DataPath>
+					<DataPath>Список.Просмотр</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="СписокПросмотрКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="СписокПросмотрРасширеннаяПодсказка" id="53"/>
 				</CheckBoxField>
 				<CheckBoxField name="СписокИнтерактивноеДобавление" id="24">
-					<DataPath>~Список.ИнтерактивноеДобавление</DataPath>
+					<DataPath>Список.ИнтерактивноеДобавление</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="СписокИнтерактивноеДобавлениеКонтекстноеМеню" id="25"/>
 					<ExtendedTooltip name="СписокИнтерактивноеДобавлениеРасширеннаяПодсказка" id="54"/>
 				</CheckBoxField>
 				<CheckBoxField name="СписокРедактирование" id="26">
-					<DataPath>~Список.Редактирование</DataPath>
+					<DataPath>Список.Редактирование</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="СписокРедактированиеКонтекстноеМеню" id="27"/>
@@ -353,11 +361,7 @@
 	<Parameters>
 		<Parameter name="ОбъектМетаданных">
 			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
+				<v8:Type>cfg:CatalogRef.ИдентификаторыОбъектовМетаданных</v8:Type>
 			</Type>
 			<KeyParameter>true</KeyParameter>
 		</Parameter>

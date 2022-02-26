@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
-	<InformationRegister uuid="d5012e69-89bc-40af-8e4f-377a042854ee">
+	<InformationRegister uuid="9a6bfcbe-6ac7-4839-bfb9-a11b97e64185">
 		<InternalInfo>
 			<xr:GeneratedType name="InformationRegisterRecord.ГруппыЗначенийДоступа" category="Record">
-				<xr:TypeId>fb253622-df1f-4a8e-9d73-4ea82a1d8a5b</xr:TypeId>
-				<xr:ValueId>94c0d1ff-85b8-4d97-8bf0-43f8867c2fb2</xr:ValueId>
+				<xr:TypeId>7579c52b-6f76-4aef-96b4-c5a3ad8cc6cb</xr:TypeId>
+				<xr:ValueId>c17e0466-aa24-4472-8569-9e9eb1ee4e40</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterManager.ГруппыЗначенийДоступа" category="Manager">
-				<xr:TypeId>53c2c390-a637-4cc3-9b4e-0162ba373526</xr:TypeId>
-				<xr:ValueId>5a296870-6da3-4aa7-a2a4-b0441e275e94</xr:ValueId>
+				<xr:TypeId>e484d33b-5af4-4f98-a675-55861aac32ed</xr:TypeId>
+				<xr:ValueId>d5d8bc73-c73a-4833-b35b-927809b69110</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterSelection.ГруппыЗначенийДоступа" category="Selection">
-				<xr:TypeId>8cf268bf-f3d2-4dbf-ba9b-8091d7132f41</xr:TypeId>
-				<xr:ValueId>39632b04-e96e-4fbc-b2a0-13daca7d5a1a</xr:ValueId>
+				<xr:TypeId>98d723d2-6af2-494a-be35-d72a9561aeb0</xr:TypeId>
+				<xr:ValueId>114cbe7e-7f2b-4cda-9d25-08da1b1c4a2c</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterList.ГруппыЗначенийДоступа" category="List">
-				<xr:TypeId>743a313b-b07a-42f3-9fc9-8ad81f26d457</xr:TypeId>
-				<xr:ValueId>f32c4814-f74f-4391-bca7-0d5be679124f</xr:ValueId>
+				<xr:TypeId>d909b82c-a2db-4bfa-a5dd-279b1f72580e</xr:TypeId>
+				<xr:ValueId>4c549b17-1993-4f1a-8caa-c5d45f72c5ce</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordSet.ГруппыЗначенийДоступа" category="RecordSet">
-				<xr:TypeId>0942c247-b30c-4eea-9bd0-dd9a4f7b7e26</xr:TypeId>
-				<xr:ValueId>46c4bde7-4e49-4dfc-87c4-43153ea6eb87</xr:ValueId>
+				<xr:TypeId>4f02eb7b-7803-4620-8817-d69297db8ff5</xr:TypeId>
+				<xr:ValueId>71e51c40-2c38-4f7f-a3f9-b496e33dab14</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordKey.ГруппыЗначенийДоступа" category="RecordKey">
-				<xr:TypeId>9a4ca35f-ad3c-4160-8ebc-e6476abb10be</xr:TypeId>
-				<xr:ValueId>52e9f210-c83f-4be3-95bf-3619611bb3d2</xr:ValueId>
+				<xr:TypeId>221eeeae-cdcc-45c7-8e4f-3552c78062bc</xr:TypeId>
+				<xr:ValueId>de379952-16eb-496c-9c1d-7ac45444fc7b</xr:ValueId>
 			</xr:GeneratedType>
 			<xr:GeneratedType name="InformationRegisterRecordManager.ГруппыЗначенийДоступа" category="RecordManager">
-				<xr:TypeId>45913249-a55a-4bd8-8ec2-10fa8051bca2</xr:TypeId>
-				<xr:ValueId>c95c7b9d-1276-4eb2-afa4-f608000abb7a</xr:ValueId>
+				<xr:TypeId>f7879ef2-7c6d-4d8b-a716-3cf6d320c90a</xr:TypeId>
+				<xr:ValueId>a5be3f93-f5b3-4689-8ea8-35cf5d4c8f48</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -170,190 +170,7 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="02f79fd8-5315-4c90-b520-db67dcb6e371">
-				<Properties>
-					<Name>НаследоватьПраваРодителей</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Наследовать права родителей</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment>Когда Ссылка = СсылкаВИерархии, флажок имеет смысл</Comment>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Флажок используется для случая установки прав по значениям доступа в иерархических справочниках. Например, по папкам файлов. Когда Истина наследуются права всех родителей для папки в полях "Значение доступа" и "Группа доступа"</v8:content>
-						</v8:item>
-					</ToolTip>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>DontUse</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Resource>
-			<Attribute uuid="7f90681d-6534-40ee-bbb7-5356c0ed9de2">
-				<Properties>
-					<Name>СвязьСРодителем</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Связь с родителем</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment>Истина, когда Ссылка &lt;&gt; СсылкаВИерархии, используется в стандартных шаблонах ограничения доступа</Comment>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Флажок используется для случая установки прав по значениям доступа в иерархических справочниках. Например, по папкам файлов. Когда Истина, тогда папка в поле "Значение доступа" относится к родителю (в иерархии), в поле "Группа доступа"</v8:content>
-						</v8:item>
-					</ToolTip>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>Index</Indexing>
-					<FullTextSearch>DontUse</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="d1aca4be-1e1e-4bbd-b0a6-a68bc7c8c586">
-				<Properties>
-					<Name>ИспользоватьПраваСсылки</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Использовать права ссылки</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment>Когда Ссылка = СсылкаВИерархии Тогда Истина Иначе СсылкаВИерархии.НаследоватьПраваРодителей, используется в стандартных шаблонах ограничения доступа</Comment>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Флажок используется для случая установки прав по значениям доступа в иерархических справочниках. Например, по папкам файлов. Значение равно значению поля "Наследовать права родителей" строки со значением доступа, как в поле "Группа доступа" текущей строки</v8:content>
-						</v8:item>
-					</ToolTip>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>Index</Indexing>
-					<FullTextSearch>DontUse</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Dimension uuid="9bb52788-4a3a-48b5-a551-5ca753b6c059">
-				<Properties>
-					<Name>ВидДоступа</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Вид доступа</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>10</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Вид доступа, используемый для значения доступа (обычно один на тип значения доступа).</v8:content>
-						</v8:item>
-					</ToolTip>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>true</FillFromFillingValue>
-					<FillValue xsi:type="xr:DesignTimeRef"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Master>true</Master>
-					<MainFilter>true</MainFilter>
-					<DenyIncompleteValues>false</DenyIncompleteValues>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>DontUse</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Dimension>
-			<Dimension uuid="4fb5004f-3cd9-44c4-a44b-d235cccf9e9c">
+			<Dimension uuid="b53c545c-3b1c-4315-a213-4f2b2c7128aa">
 				<Properties>
 					<Name>ЗначениеДоступа</Name>
 					<Synonym>
@@ -401,54 +218,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="872a0c47-fab5-4a54-8ab9-23940bbdefbb">
-				<Properties>
-					<Name>ТолькоВидДоступа</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Только вид доступа</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Флажок показывает, что в строке задана не группа значений указанного значения доступа, а использование вида доступа для значения доступа (используется для случая нескольких видов доступа для одного типа значения доступа)</v8:content>
-						</v8:item>
-					</ToolTip>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xs:boolean">false</FillValue>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Master>false</Master>
-					<MainFilter>true</MainFilter>
-					<DenyIncompleteValues>false</DenyIncompleteValues>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>DontUse</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Dimension>
-			<Dimension uuid="7428a626-3fbc-4f2c-a3dd-f14e8d90c00b">
+			<Dimension uuid="02a84df9-2171-43e6-8135-a74edd384826">
 				<Properties>
 					<Name>ГруппаЗначенийДоступа</Name>
 					<Synonym>
@@ -493,58 +263,6 @@
 					<DenyIncompleteValues>false</DenyIncompleteValues>
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>DontUse</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Dimension>
-			<Dimension uuid="2f20bff4-9201-4f36-9e74-eba4d9b3c59a">
-				<Properties>
-					<Name>ГруппаОбновляемыхДанных</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа обновляемых данных</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>1</v8:Digits>
-							<v8:FractionDigits>0</v8:FractionDigits>
-							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Вспомогательная характеристика используемая только при обновлении данных.</v8:content>
-						</v8:item>
-					</ToolTip>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Master>false</Master>
-					<MainFilter>false</MainFilter>
-					<DenyIncompleteValues>false</DenyIncompleteValues>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>

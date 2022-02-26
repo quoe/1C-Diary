@@ -1,0 +1,959 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа4" id="166">
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="167"/>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="106">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="107"/>
+			<ChildItems>
+				<Table name="ТЧТекущиеДела" id="1">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Объект.ТЧТекущиеДела</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ТЧТекущиеДелаКонтекстноеМеню" id="2">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="ТЧТекущиеДелаКонтекстноеМенюКомандаВыполнил" id="63">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаСделал</CommandName>
+								<ExtendedTooltip name="ТЧТекущиеДелаКонтекстноеМенюКомандаВыполнилРасширеннаяПодсказка" id="64"/>
+							</Button>
+							<Button name="ТЧТекущиеДелаКонтекстноеМенюКомандаДобавитьФактРабот" id="159">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаДобавитьФактРабот</CommandName>
+								<ExtendedTooltip name="ТЧТекущиеДелаКонтекстноеМенюКомандаДобавитьФактРаботРасширеннаяПодсказка" id="160"/>
+							</Button>
+						</ChildItems>
+					</ContextMenu>
+					<AutoCommandBar name="ТЧТекущиеДелаКоманднаяПанель" id="3">
+						<ChildItems>
+							<Button name="ТЧТекущиеДелаКомандаДобавитьФактРабот" id="161">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаДобавитьФактРабот</CommandName>
+								<ExtendedTooltip name="ТЧТекущиеДелаКомандаДобавитьФактРаботРасширеннаяПодсказка" id="162"/>
+							</Button>
+							<Button name="ТЧТекущиеДелаКомандаЧасовЗаДень" id="168">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаЧасовЗаДень</CommandName>
+								<ExtendedTooltip name="ТЧТекущиеДелаКомандаЧасовЗаДеньРасширеннаяПодсказка" id="169"/>
+							</Button>
+							<Button name="ТЧТекущиеДелаПереместитьВверх" id="46">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ТЧТекущиеДела.StandardCommand.MoveUp</CommandName>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="ТЧТекущиеДелаПереместитьВверхРасширеннаяПодсказка" id="47"/>
+							</Button>
+							<Button name="ТЧТекущиеДелаПереместитьВниз" id="48">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Item.ТЧТекущиеДела.StandardCommand.MoveDown</CommandName>
+								<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+								<ExtendedTooltip name="ТЧТекущиеДелаПереместитьВнизРасширеннаяПодсказка" id="49"/>
+							</Button>
+							<Button name="ТЧТекущиеДелаКомандаСохранить" id="81">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаСохранить</CommandName>
+								<ExtendedTooltip name="ТЧТекущиеДелаКомандаСохранитьРасширеннаяПодсказка" id="82"/>
+							</Button>
+							<Button name="ТЧТекущиеДелаКомандаОбновить" id="65">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаОбновить</CommandName>
+								<ExtendedTooltip name="ТЧТекущиеДелаКомандаОбновитьРасширеннаяПодсказка" id="66"/>
+							</Button>
+							<Button name="ТЧТекущиеДелаКомандаВыполнил" id="58">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаСделал</CommandName>
+								<ExtendedTooltip name="ТЧТекущиеДелаКомандаВыполнилРасширеннаяПодсказка" id="59"/>
+							</Button>
+							<Button name="ТЧТекущиеДелаКомандаПоказатьДопСведения" id="67">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаПоказатьДопСведения</CommandName>
+								<ExtendedTooltip name="ТЧТекущиеДелаКомандаПоказатьДопСведенияРасширеннаяПодсказка" id="68"/>
+							</Button>
+							<Button name="ТЧТекущиеДелаКомандаПредыдущийПериод" id="69">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаПредыдущийПериод</CommandName>
+								<ExtendedTooltip name="ТЧТекущиеДелаКомандаПредыдущийПериодРасширеннаяПодсказка" id="70"/>
+							</Button>
+							<Button name="ТЧТекущиеДелаКомандаНаДату" id="71">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаНаДату</CommandName>
+								<ExtendedTooltip name="ТЧТекущиеДелаКомандаНаДатуРасширеннаяПодсказка" id="72"/>
+							</Button>
+							<Button name="ТЧТекущиеДелаКомандаСледующийПериод" id="73">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаСледующийПериод</CommandName>
+								<ExtendedTooltip name="ТЧТекущиеДелаКомандаСледующийПериодРасширеннаяПодсказка" id="74"/>
+							</Button>
+							<Button name="ТЧТекущиеДелаИзменитьФорму" id="102">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+								<ExtendedTooltip name="ТЧТекущиеДелаИзменитьФормуРасширеннаяПодсказка" id="103"/>
+							</Button>
+							<Button name="ТЧТекущиеДелаКомандаНастройки" id="104">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.КомандаНастройки</CommandName>
+								<ExtendedTooltip name="ТЧТекущиеДелаКомандаНастройкиРасширеннаяПодсказка" id="105"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ТЧТекущиеДелаРасширеннаяПодсказка" id="4"/>
+					<SearchStringAddition name="ТЧТекущиеДелаСтрокаПоиска" id="5">
+						<AdditionSource>
+							<Item>ТЧТекущиеДела</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТЧТекущиеДелаСтрокаПоискаКонтекстноеМеню" id="6"/>
+						<ExtendedTooltip name="ТЧТекущиеДелаСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТЧТекущиеДелаСостояниеПросмотра" id="8">
+						<AdditionSource>
+							<Item>ТЧТекущиеДела</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТЧТекущиеДелаСостояниеПросмотраКонтекстноеМеню" id="9"/>
+						<ExtendedTooltip name="ТЧТекущиеДелаСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТЧТекущиеДелаУправлениеПоиском" id="11">
+						<AdditionSource>
+							<Item>ТЧТекущиеДела</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ТЧТекущиеДелаУправлениеПоискомКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="ТЧТекущиеДелаУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="OnEditEnd">ТЧТекущиеДелаПриОкончанииРедактирования</Event>
+						<Event name="ValueChoice">ТЧТекущиеДелаВыборЗначения</Event>
+						<Event name="Selection">ТЧТекущиеДелаВыбор</Event>
+						<Event name="BeforeDeleteRow">ТЧТекущиеДелаПередУдалением</Event>
+						<Event name="OnActivateRow">ТЧТекущиеДелаПриАктивизацииСтроки</Event>
+						<Event name="OnStartEdit">ТЧТекущиеДелаПриНачалеРедактирования</Event>
+						<Event name="OnChange">ТЧТекущиеДелаПриИзменении</Event>
+					</Events>
+					<ChildItems>
+						<LabelField name="ТЧТекущиеДелаНомерСтроки" id="14">
+							<DataPath>Объект.ТЧТекущиеДела.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТЧТекущиеДелаНомерСтрокиКонтекстноеМеню" id="15"/>
+							<ExtendedTooltip name="ТЧТекущиеДелаНомерСтрокиРасширеннаяПодсказка" id="16"/>
+						</LabelField>
+						<InputField name="ТЧТекущиеДелаТекстСодержания" id="20">
+							<DataPath>Объект.ТЧТекущиеДела.ТекстСодержания</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoCellHeight>true</AutoCellHeight>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ТЧТекущиеДелаТекстСодержанияКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="ТЧТекущиеДелаТекстСодержанияРасширеннаяПодсказка" id="22"/>
+							<Events>
+								<Event name="OnChange">ТЧТекущиеДелаТекстСодержанияПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="ТЧТекущиеДелаГруппаТекущегоДела" id="86">
+							<DataPath>Объект.ТЧТекущиеДела.ГруппаТекущегоДела</DataPath>
+							<SkipOnInput>true</SkipOnInput>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТЧТекущиеДелаГруппаТекущегоДелаКонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="ТЧТекущиеДелаГруппаТекущегоДелаРасширеннаяПодсказка" id="88"/>
+							<Events>
+								<Event name="OnChange">ТЧТекущиеДелаГруппаТекущегоДелаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<ColumnGroup name="ТЧТекущиеДелаГруппаЗадачаНомерЗадачи" id="53">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ТЧТекущие дела группа задача номер задачи</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ТЧТекущие дела группа задача номер задачи</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>InCell</Group>
+							<ExtendedTooltip name="ТЧТекущиеДелаГруппаЗадачаНомерЗадачиРасширеннаяПодсказка" id="54"/>
+							<ChildItems>
+								<InputField name="ТЧТекущиеДелаЗадача" id="32">
+									<DataPath>Объект.ТЧТекущиеДела.Задача</DataPath>
+									<SkipOnInput>true</SkipOnInput>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЧТекущиеДелаЗадачаКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="ТЧТекущиеДелаЗадачаРасширеннаяПодсказка" id="34"/>
+								</InputField>
+								<InputField name="ТЧТекущиеДелаЗадачаКод" id="50">
+									<DataPath>Объект.ТЧТекущиеДела.Задача.Code</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Номер задачи</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧГ=0</v8:content>
+										</v8:item>
+									</Format>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧГ=0</v8:content>
+										</v8:item>
+									</EditFormat>
+									<ContextMenu name="ТЧТекущиеДелаЗадачаКодКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="ТЧТекущиеДелаЗадачаКодРасширеннаяПодсказка" id="52"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<InputField name="ТЧТекущиеДелаВопрос" id="35">
+							<DataPath>Объект.ТЧТекущиеДела.Вопрос</DataPath>
+							<SkipOnInput>true</SkipOnInput>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ТЧТекущиеДелаВопросКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ТЧТекущиеДелаВопросРасширеннаяПодсказка" id="37"/>
+						</InputField>
+						<ColumnGroup name="ТЧТекущиеДелаДопСведения1" id="40">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ТЧТекущие дела доп сведения1</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ТЧТекущие дела доп сведения1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ТЧТекущиеДелаДопСведения1РасширеннаяПодсказка" id="41"/>
+						</ColumnGroup>
+						<ColumnGroup name="ТЧТекущиеДелаГруппа2" id="89">
+							<ExtendedTooltip name="ТЧТекущиеДелаГруппа2РасширеннаяПодсказка" id="90"/>
+						</ColumnGroup>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="ГруппаДопСведения" id="108">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа доп сведения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа доп сведения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДопСведенияРасширеннаяПодсказка" id="109"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНастройкаРегламента" id="138">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка регламента</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа настройка регламента</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Collapsible</Behavior>
+							<CollapsedRepresentationTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка регламента</v8:content>
+								</v8:item>
+							</CollapsedRepresentationTitle>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаНастройкаРегламентаРасширеннаяПодсказка" id="139"/>
+							<ChildItems>
+								<UsualGroup name="Группа3" id="157">
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="158"/>
+									<ChildItems>
+										<Button name="КомандаНастроитьРасписание" id="153">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.КомандаНастроитьРасписание</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>&lt;Расписание не задано&gt;</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="КомандаНастроитьРасписаниеРасширеннаяПодсказка" id="154"/>
+										</Button>
+										<Button name="КомандаСохранитьРегламентноеТекущееДело" id="155">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.КомандаСохранитьРегламентноеТекущееДело</CommandName>
+											<ExtendedTooltip name="КомандаСохранитьРегламентноеТекущееДелоРасширеннаяПодсказка" id="156"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<CheckBoxField name="ТЧТекущиеДелаВключеноРегламентноеТекущееДело" id="143">
+									<DataPath>Items.ТЧТекущиеДела.CurrentData.ВключеноРегламентноеТекущееДело</DataPath>
+									<CheckBoxType>Tumbler</CheckBoxType>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>БЛ=Нет; БИ=Да</v8:content>
+										</v8:item>
+									</EditFormat>
+									<ContextMenu name="ТЧТекущиеДелаВключеноРегламентноеТекущееДелоКонтекстноеМеню" id="144"/>
+									<ExtendedTooltip name="ТЧТекущиеДелаВключеноРегламентноеТекущееДелоРасширеннаяПодсказка" id="145"/>
+									<Events>
+										<Event name="OnChange">ТЧТекущиеДелаВключеноРегламентноеТекущееДелоПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ТЧТекущиеДелаТекстСодержания1" id="110">
+							<DataPath>Items.ТЧТекущиеДела.CurrentData.ТекстСодержания</DataPath>
+							<TitleLocation>Top</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<MultiLine>true</MultiLine>
+							<ChoiceListHeight>1</ChoiceListHeight>
+							<ContextMenu name="ТЧТекущиеДелаТекстСодержания1КонтекстноеМеню" id="111"/>
+							<ExtendedTooltip name="ТЧТекущиеДелаТекстСодержания1РасширеннаяПодсказка" id="112"/>
+						</InputField>
+						<InputField name="ТЧТекущиеДелаГруппаТекущегоДела1" id="132">
+							<DataPath>Items.ТЧТекущиеДела.CurrentData.ГруппаТекущегоДела</DataPath>
+							<ContextMenu name="ТЧТекущиеДелаГруппаТекущегоДела1КонтекстноеМеню" id="133"/>
+							<ExtendedTooltip name="ТЧТекущиеДелаГруппаТекущегоДела1РасширеннаяПодсказка" id="134"/>
+							<Events>
+								<Event name="OnChange">ТЧТекущиеДелаГруппаТекущегоДела1ПриИзменении</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="ГруппаЗадачаВопрос" id="128">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Задача/вопрос</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа задача вопрос</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗадачаВопросРасширеннаяПодсказка" id="129"/>
+							<ChildItems>
+								<UsualGroup name="Группа6" id="126">
+									<Group>Horizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="127"/>
+									<ChildItems>
+										<InputField name="ТЧТекущиеДелаЗадача1" id="113">
+											<DataPath>Items.ТЧТекущиеДела.CurrentData.Задача</DataPath>
+											<ContextMenu name="ТЧТекущиеДелаЗадача1КонтекстноеМеню" id="114"/>
+											<ExtendedTooltip name="ТЧТекущиеДелаЗадача1РасширеннаяПодсказка" id="115"/>
+										</InputField>
+										<InputField name="ТЧТекущиеДелаЗадачаКод1" id="123">
+											<DataPath>Items.ТЧТекущиеДела.CurrentData.Задача.Code</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditFormat>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ЧГ=0</v8:content>
+												</v8:item>
+											</EditFormat>
+											<ContextMenu name="ТЧТекущиеДелаЗадачаКод1КонтекстноеМеню" id="124"/>
+											<ExtendedTooltip name="ТЧТекущиеДелаЗадачаКод1РасширеннаяПодсказка" id="125"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="ТЧТекущиеДелаВопрос1" id="116">
+									<DataPath>Items.ТЧТекущиеДела.CurrentData.Вопрос</DataPath>
+									<ContextMenu name="ТЧТекущиеДелаВопрос1КонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="ТЧТекущиеДелаВопрос1РасширеннаяПодсказка" id="118"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаДопСведенияДополнительно" id="130">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительно</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа доп сведения дополнительно</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Collapsible</Behavior>
+							<CollapsedRepresentationTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дополнительно</v8:content>
+								</v8:item>
+							</CollapsedRepresentationTitle>
+							<Collapsed>true</Collapsed>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаДопСведенияДополнительноРасширеннаяПодсказка" id="131"/>
+							<ChildItems>
+								<CheckBoxField name="ТЧТекущиеДелаВыполнено" id="17">
+									<DataPath>Items.ТЧТекущиеДела.CurrentData.Выполнено</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Tumbler</CheckBoxType>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>БЛ=Нет; БИ=Да</v8:content>
+										</v8:item>
+									</EditFormat>
+									<ContextMenu name="ТЧТекущиеДелаВыполненоКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="ТЧТекущиеДелаВыполненоРасширеннаяПодсказка" id="19"/>
+								</CheckBoxField>
+								<InputField name="ТЧТекущиеДелаДатаВыполнения" id="29">
+									<DataPath>Items.ТЧТекущиеДела.CurrentData.ДатаВыполнения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЧТекущиеДелаДатаВыполненияКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ТЧТекущиеДелаДатаВыполненияРасширеннаяПодсказка" id="31"/>
+								</InputField>
+								<InputField name="ТЧТекущиеДелаДатаСоздания" id="26">
+									<DataPath>Items.ТЧТекущиеДела.CurrentData.ДатаСоздания</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЧТекущиеДелаДатаСозданияКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="ТЧТекущиеДелаДатаСозданияРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<InputField name="ТЧТекущиеДелаДатаТекущегоДела" id="75">
+									<DataPath>Items.ТЧТекущиеДела.CurrentData.ДатаТекущегоДела</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЧТекущиеДелаДатаТекущегоДелаКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="ТЧТекущиеДелаДатаТекущегоДелаРасширеннаяПодсказка" id="77"/>
+								</InputField>
+								<InputField name="ТЧТекущиеДелаАвтор" id="23">
+									<DataPath>Items.ТЧТекущиеДела.CurrentData.Автор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЧТекущиеДелаАвторКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ТЧТекущиеДелаАвторРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<InputField name="ТЧТекущиеДелаТекущееДело" id="83">
+									<DataPath>Items.ТЧТекущиеДела.CurrentData.ТекущееДело</DataPath>
+									<Visible>false</Visible>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЧТекущиеДелаТекущееДелоКонтекстноеМеню" id="84"/>
+									<ExtendedTooltip name="ТЧТекущиеДелаТекущееДелоРасширеннаяПодсказка" id="85"/>
+								</InputField>
+								<InputField name="ТЧТекущиеДелаПорядокДоп" id="78">
+									<DataPath>Items.ТЧТекущиеДела.CurrentData.ПорядокДоп</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЧТекущиеДелаПорядокДопКонтекстноеМеню" id="79"/>
+									<ExtendedTooltip name="ТЧТекущиеДелаПорядокДопРасширеннаяПодсказка" id="80"/>
+								</InputField>
+								<InputField name="ТЧТекущиеДелаПорядок" id="60">
+									<DataPath>Items.ТЧТекущиеДела.CurrentData.Порядок</DataPath>
+									<Visible>false</Visible>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТЧТекущиеДелаПорядокКонтекстноеМеню" id="61"/>
+									<ExtendedTooltip name="ТЧТекущиеДелаПорядокРасширеннаяПодсказка" id="62"/>
+								</InputField>
+								<UsualGroup name="ГруппаСтароеСодержание" id="151">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Старое содержание</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа старое содержание</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Behavior>Collapsible</Behavior>
+									<CollapsedRepresentationTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Старое содержание</v8:content>
+										</v8:item>
+									</CollapsedRepresentationTitle>
+									<Collapsed>true</Collapsed>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаСтароеСодержаниеРасширеннаяПодсказка" id="152"/>
+									<ChildItems>
+										<InputField name="ТЧТекущиеДелаТекстСодержанияСтарое" id="146">
+											<DataPath>Items.ТЧТекущиеДела.CurrentData.ТекстСодержанияСтарое</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<MultiLine>true</MultiLine>
+											<ContextMenu name="ТЧТекущиеДелаТекстСодержанияСтароеКонтекстноеМеню" id="147"/>
+											<ExtendedTooltip name="ТЧТекущиеДелаТекстСодержанияСтароеРасширеннаяПодсказка" id="148"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="100">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="101"/>
+			<ChildItems>
+				<CheckBoxField name="ПоказыватьСегодня" id="91">
+					<DataPath>Объект.ПоказыватьСегодня</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПоказыватьСегодняКонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="ПоказыватьСегодняРасширеннаяПодсказка" id="93"/>
+					<Events>
+						<Event name="OnChange">ПоказыватьСегодняПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ПоказыватьНаНеделе" id="94">
+					<DataPath>Объект.ПоказыватьНаНеделе</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПоказыватьНаНеделеКонтекстноеМеню" id="95"/>
+					<ExtendedTooltip name="ПоказыватьНаНеделеРасширеннаяПодсказка" id="96"/>
+					<Events>
+						<Event name="OnChange">ПоказыватьНаНеделеПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ПоказыватьПозже" id="97">
+					<DataPath>Объект.ПоказыватьПозже</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПоказыватьПозжеКонтекстноеМеню" id="98"/>
+					<ExtendedTooltip name="ПоказыватьПозжеРасширеннаяПодсказка" id="99"/>
+					<Events>
+						<Event name="OnChange">ПоказыватьПозжеПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ПоказыватьРегламентные" id="135">
+					<DataPath>Объект.ПоказыватьРегламентные</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПоказыватьРегламентныеКонтекстноеМеню" id="136"/>
+					<ExtendedTooltip name="ПоказыватьРегламентныеРасширеннаяПодсказка" id="137"/>
+					<Events>
+						<Event name="OnChange">ПоказыватьРегламентныеПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.узТекущиеДела</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПоказыватьДопСведения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать доп сведения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РасписаниеРегламентногоЗадания" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание регламентного задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="СтрокаТЧТекущиеДелаТекущееДело" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Строка ТЧТекущие дела текущее дело</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.узТекущиеДела</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="МодифицированностьТекущегоДела" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Модифицированность текущего дела</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтключитьВозможностьСозданиеРегламентныхТекущихДел" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отключить возможность создание регламентных текущих дел</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="узИспользоватьУчетВремени" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уз использовать учет времени</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийПользователь" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТЧТекущиеДела</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ТЧТекущиеДела.Выполнено</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ТЧТекущиеДела.ДатаВыполнения</dcsset:left>
+						<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">Объект.НаДатуКонецДня</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#00A600</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="false" italic="false" underline="false" strikeout="true" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТЧТекущиеДела</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ТЧТекущиеДела.Выполнено</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ТЧТекущиеДела.ДатаВыполнения</dcsset:left>
+						<dcsset:comparisonType>Greater</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">Объект.НаДатуКонецДня</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#00A600</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="false" italic="true" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаСделал" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сделал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда сделал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.узВыполнил</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаВыполнил</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаОбновить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаОбновить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаПоказатьДопСведения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доп сведения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда показать доп сведения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаПоказатьДопСведения</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаПредыдущийПериод" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предыдущий период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда предыдущий период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаПредыдущийПериод</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаНаДату" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>На дату</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Указать сегодня</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаНаДату</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаСледующийПериод" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Следующий период</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Следующий период</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveRight</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаСледующийПериод</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаСохранить" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+S</Shortcut>
+			<Picture>
+				<xr:Ref>StdPicture.Write</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаСохранить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаНастройки" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаНастройки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаНастроитьРасписание" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда настроить расписание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаНастроитьРасписание</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаСохранитьРегламентноеТекущееДело" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить регламентное текущее дело</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SaveFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаСохранитьРегламентноеТекущееДело</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаДобавитьФактРабот" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить факт работ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда добавить факт работ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ScheduledJob</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаДобавитьФактРабот</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.узИспользоватьУчетВремени</Item>
+			</FunctionalOptions>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаЧасовЗаДень" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>0 часов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Часов за день</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаЧасовЗаДень</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.узИспользоватьУчетВремени</Item>
+			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

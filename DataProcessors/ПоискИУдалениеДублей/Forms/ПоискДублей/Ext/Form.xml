@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -17,7 +17,7 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="Шапка" id="406">
+		<UsualGroup name="Шапка" id="406" DisplayImportance="VeryHigh">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -185,7 +185,6 @@
 											<v8:content>Горизонтальная найденные дубли</v8:content>
 										</v8:item>
 									</Title>
-									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаГоризонтальнаяНайденныеДублиРасширеннаяПодсказка" id="156"/>
@@ -365,6 +364,10 @@
 													</ToolTip>
 													<HorizontalAlign>Left</HorizontalAlign>
 													<EditMode>EnterOnInput</EditMode>
+													<HeaderPicture>
+														<xr:Ref>CommonPicture.Информация</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</HeaderPicture>
 													<Width>4</Width>
 													<HorizontalStretch>false</HorizontalStretch>
 													<ContextMenu name="НайденныеДублиКоличествоКонтекстноеМеню" id="120"/>
@@ -507,7 +510,6 @@
 										</v8:item>
 									</Title>
 									<Height>2</Height>
-									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаГоризонтальнаяСостояниеНайденногоРасширеннаяПодсказка" id="158"/>
@@ -516,6 +518,8 @@
 											<DataPath>ОписаниеСостоянияНайденныхДублей</DataPath>
 											<TitleLocation>None</TitleLocation>
 											<AutoMaxWidth>false</AutoMaxWidth>
+											<VerticalStretch>true</VerticalStretch>
+											<TextColor>style:ПоясняющийТекст</TextColor>
 											<ContextMenu name="ОписаниеСостоянияНайденныхДублейКонтекстноеМеню" id="203"/>
 											<ExtendedTooltip name="ОписаниеСостоянияНайденныхДублейРасширеннаяПодсказка" id="204"/>
 										</LabelField>
@@ -569,11 +573,15 @@
 							<v8:content>Шаг успешное удаление</v8:content>
 						</v8:item>
 					</Title>
-					<Group>Horizontal</Group>
+					<Group>HorizontalIfPossible</Group>
 					<ExtendedTooltip name="ШагУспешноеУдалениеРасширеннаяПодсказка" id="213"/>
 					<ChildItems>
 						<PictureDecoration name="Декорация5" id="352">
 							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<Picture>
+								<xr:Ref>CommonPicture.Успешно32</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
 							<FileDragMode>AsFile</FileDragMode>
 							<ContextMenu name="Декорация5КонтекстноеМеню" id="353"/>
 							<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="354"/>
@@ -643,7 +651,6 @@
 											<v8:content>Группа горизонтальная найденные дубли</v8:content>
 										</v8:item>
 									</ToolTip>
-									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаГоризонтальнаяНеобработанныеДублиРасширеннаяПодсказка" id="241"/>
@@ -812,6 +819,10 @@
 														</v8:item>
 													</ToolTip>
 													<EditMode>EnterOnInput</EditMode>
+													<HeaderPicture>
+														<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</HeaderPicture>
 													<Width>4</Width>
 													<HorizontalStretch>false</HorizontalStretch>
 													<ContextMenu name="НеобработанныеДублиКоличествоКонтекстноеМеню" id="300"/>
@@ -989,7 +1000,6 @@
 										</v8:item>
 									</Title>
 									<Shortcut>Ctrl+S</Shortcut>
-									<Group>Horizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаПояснениеКНеобработаннымРасширеннаяПодсказка" id="284"/>
@@ -997,6 +1007,8 @@
 										<LabelDecoration name="Декорация3" id="334">
 											<AutoMaxWidth>false</AutoMaxWidth>
 											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<TextColor>style:ПоясняющийТекст</TextColor>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1056,7 +1068,7 @@
 							<v8:content>Возникла ошибка</v8:content>
 						</v8:item>
 					</Title>
-					<Group>Horizontal</Group>
+					<Group>HorizontalIfPossible</Group>
 					<ExtendedTooltip name="ШагВозниклаОшибкаРасширеннаяПодсказка" id="449"/>
 					<ChildItems>
 						<PictureDecoration name="КартинкаПредупреждение32" id="450">
@@ -1067,6 +1079,10 @@
 								</v8:item>
 							</Title>
 							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<Picture>
+								<xr:Ref>CommonPicture.Предупреждение32</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
 							<FileDragMode>AsFile</FileDragMode>
 							<ContextMenu name="КартинкаПредупреждение32КонтекстноеМеню" id="451"/>
 							<ExtendedTooltip name="КартинкаПредупреждение32РасширеннаяПодсказка" id="452"/>
@@ -1114,7 +1130,6 @@
 					<v8:content>Панель действий мастера</v8:content>
 				</v8:item>
 			</Title>
-			<Group>Horizontal</Group>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ПанельДействийМастераРасширеннаяПодсказка" id="168"/>
@@ -1197,6 +1212,10 @@
 			<ExtendedTooltip name="ГруппаКартинокРасширеннаяПодсказка" id="76"/>
 			<ChildItems>
 				<PictureDecoration name="Предупреждение32" id="83">
+					<Picture>
+						<xr:Ref>CommonPicture.Предупреждение32</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
 					<FileDragMode>AsFile</FileDragMode>
 					<ContextMenu name="Предупреждение32КонтекстноеМеню" id="84"/>
 					<ExtendedTooltip name="Предупреждение32РасширеннаяПодсказка" id="85"/>
@@ -1217,6 +1236,10 @@
 							<v8:content>Информация32</v8:content>
 						</v8:item>
 					</Title>
+					<Picture>
+						<xr:Ref>CommonPicture.Информация32</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
 					<FileDragMode>AsFile</FileDragMode>
 					<ContextMenu name="Информация32КонтекстноеМеню" id="182"/>
 					<ExtendedTooltip name="Информация32РасширеннаяПодсказка" id="183"/>
@@ -1228,6 +1251,10 @@
 							<v8:content>Внимание16</v8:content>
 						</v8:item>
 					</Title>
+					<Picture>
+						<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
 					<FileDragMode>AsFile</FileDragMode>
 					<ContextMenu name="Внимание16КонтекстноеМеню" id="197"/>
 					<ExtendedTooltip name="Внимание16РасширеннаяПодсказка" id="198"/>
@@ -1239,6 +1266,10 @@
 							<v8:content>Информация16</v8:content>
 						</v8:item>
 					</Title>
+					<Picture>
+						<xr:Ref>CommonPicture.Информация</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
 					<FileDragMode>AsFile</FileDragMode>
 					<ContextMenu name="Информация16КонтекстноеМеню" id="215"/>
 					<ExtendedTooltip name="Информация16РасширеннаяПодсказка" id="216"/>
@@ -1254,12 +1285,6 @@
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
 		<Attribute name="АдресСхемыКомпоновки" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Адрес схемы компоновки</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -1284,23 +1309,11 @@
 			</Type>
 		</Attribute>
 		<Attribute name="КомпоновщикПредварительногоОтбора" id="6">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Компоновщик предварительного отбора</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>dcsset:SettingsComposer</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ОписаниеПрикладныхПравил" id="7">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Описание прикладных правил</v8:content>
-				</v8:item>
-			</Title>
 			<Type/>
 		</Attribute>
 		<Attribute name="ПравилаПоиска" id="8">
@@ -1309,12 +1322,6 @@
 			</Type>
 			<Columns>
 				<Column name="Реквизит" id="1">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Реквизит</v8:content>
-						</v8:item>
-					</Title>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -1324,12 +1331,6 @@
 					</Type>
 				</Column>
 				<Column name="Правило" id="2">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Правило</v8:content>
-						</v8:item>
-					</Title>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -1339,23 +1340,11 @@
 					</Type>
 				</Column>
 				<Column name="ВариантыСравнения" id="3">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Варианты сравнения</v8:content>
-						</v8:item>
-					</Title>
 					<Type>
 						<v8:Type>v8:ValueListType</v8:Type>
 					</Type>
 				</Column>
 				<Column name="ПредставлениеРеквизита" id="4">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Представление реквизита</v8:content>
-						</v8:item>
-					</Title>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -1367,23 +1356,11 @@
 			</Columns>
 		</Attribute>
 		<Attribute name="УчитыватьПрикладныеПравила" id="9">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Учитывать прикладные правила</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ВсеВариантыСравнения" id="10">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Все варианты сравнения</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
@@ -1411,12 +1388,6 @@
 			</Type>
 			<Columns>
 				<Column name="Ссылка" id="1">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Ссылка</v8:content>
-						</v8:item>
-					</Title>
 					<Type/>
 				</Column>
 				<Column name="Код" id="2">
@@ -1489,12 +1460,6 @@
 			</Columns>
 		</Attribute>
 		<Attribute name="АдресМестИспользования" id="13">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Адрес мест использования</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -1515,12 +1480,6 @@
 			</Type>
 			<Columns>
 				<Column name="Данные" id="1">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Данные</v8:content>
-						</v8:item>
-					</Title>
 					<Type/>
 				</Column>
 				<Column name="ПредставлениеДанных" id="2">
@@ -1552,23 +1511,11 @@
 			</Type>
 		</Attribute>
 		<Attribute name="ЭтоВнешняяОбработка" id="16">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Это внешняя обработка</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ИмяОбработки" id="17">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Имя обработки</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -1578,12 +1525,6 @@
 			</Type>
 		</Attribute>
 		<Attribute name="АдресРезультатаЗамены" id="20">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Адрес результата замены</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -1593,34 +1534,16 @@
 			</Type>
 		</Attribute>
 		<Attribute name="ЦветПоясняющийТекст" id="19">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Цвет поясняющего текста</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>v8ui:Color</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ЦветПоясняющийОшибкуТекст" id="21">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Цвет поясняющего ошибку текста</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>v8ui:Color</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ЦветНедоступныеДанные" id="22">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Цвет недоступных данных</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>v8ui:Color</v8:Type>
 			</Type>
@@ -1637,12 +1560,6 @@
 			</Type>
 			<Columns>
 				<Column name="Ссылка" id="1">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Ссылка</v8:content>
-						</v8:item>
-					</Title>
 					<Type/>
 				</Column>
 				<Column name="Код" id="2">
@@ -1686,12 +1603,6 @@
 					</Type>
 				</Column>
 				<Column name="Пометка" id="6">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Пометка</v8:content>
-						</v8:item>
-					</Title>
 					<Type>
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>
@@ -1726,12 +1637,6 @@
 			</Type>
 			<Columns>
 				<Column name="ОбъектОшибки" id="1">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Объект ошибки</v8:content>
-						</v8:item>
-					</Title>
 					<Type/>
 				</Column>
 				<Column name="ПредставлениеОбъектаОшибки" id="2">
@@ -1761,12 +1666,6 @@
 					</Type>
 				</Column>
 				<Column name="ТекстОшибки" id="4">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Текст ошибки</v8:content>
-						</v8:item>
-					</Title>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -1793,12 +1692,6 @@
 			</Type>
 		</Attribute>
 		<Attribute name="НастройкиМастера" id="27">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Настройки мастера</v8:content>
-				</v8:item>
-			</Title>
 			<Type/>
 		</Attribute>
 		<Attribute name="ПредставлениеПравилПоиска" id="18">
@@ -1832,23 +1725,11 @@
 			</Type>
 		</Attribute>
 		<Attribute name="НечеткийПоиск" id="29">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Нечеткий поиск</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<Attribute name="ВсегоНайденоДублей" id="30">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Всего найдено дублей</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
@@ -1858,29 +1739,7 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ВсегоЭлементов" id="31">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Всего элементов</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>10</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-				</v8:NumberQualifiers>
-			</Type>
-		</Attribute>
 		<Attribute name="АдресНастроек" id="32">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Адрес настроек</v8:content>
-				</v8:item>
-			</Title>
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -1890,13 +1749,26 @@
 			</Type>
 		</Attribute>
 		<Attribute name="ИдентификаторТекущейСтроки" id="33">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Идентификатор текущей строки</v8:content>
-				</v8:item>
-			</Title>
 			<Type/>
+		</Attribute>
+		<Attribute name="ОписаниеОшибкиПоискаДублей" id="34">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВсегоЭлементов" id="35">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>

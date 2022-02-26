@@ -176,6 +176,17 @@
 		</right>
 	</object>
 	<object>
+		<name>SessionParameter.ТекущийПользователь</name>
+		<right>
+			<name>Get</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Set</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.дВопросы</name>
 		<right>
 			<name>Read</name>
@@ -515,17 +526,6 @@
 		</right>
 		<right>
 			<name>TotalsControl</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>SessionParameter.ТекущийПользователь</name>
-		<right>
-			<name>Get</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Set</name>
 			<value>true</value>
 		</right>
 	</object>

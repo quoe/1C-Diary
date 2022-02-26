@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
 	<Customizable>false</Customizable>
 	<CommandSet>
 		<ExcludedCommand>Abort</ExcludedCommand>
@@ -18,12 +18,18 @@
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
 	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаЗаголовок" id="1762">
-			<Group>Horizontal</Group>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок</v8:content>
+				</v8:item>
+			</Title>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаЗаголовокExtendedTooltip" id="1829"/>
@@ -41,6 +47,12 @@
 					<ExtendedTooltip name="ОписаниеРазделаExtendedTooltip" id="1830"/>
 				</LabelDecoration>
 				<CommandBar name="ГруппаСправка" id="1765">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справка</v8:content>
+						</v8:item>
+					</Title>
 					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 					<ExtendedTooltip name="ГруппаСправкаExtendedTooltip" id="1832"/>
 					<ChildItems>
@@ -54,12 +66,19 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаНастройкиПрограммы" id="612">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки программы</v8:content>
+				</v8:item>
+			</Title>
 			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаНастройкиПрограммыРасширеннаяПодсказка" id="1834"/>
 			<ChildItems>
 				<InputField name="ЗаголовокПрограммы" id="1785">
+					<DataPath>НаборКонстант.ЗаголовокСистемы</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -77,11 +96,10 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа часовой пояс программы</v8:content>
+							<v8:content>Часовой пояс программы</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаЧасовойПоясПрограммыExtendedTooltip" id="1836">
@@ -103,12 +121,11 @@
 							<ExtendedTooltip name="ЧасовойПоясПрограммыExtendedTooltip" id="1837"/>
 							<Events>
 								<Event name="OnChange">ЧасовойПоясПрограммыПриИзменении</Event>
-								<Event name="StartChoice">ЧасовойПоясПрограммыНачалоВыбора</Event>
 							</Events>
 						</InputField>
 						<Button name="ВремяТекущегоСеанса" id="2061">
 							<Type>Hyperlink</Type>
-							<CommandName>0</CommandName>
+							<CommandName>CommonCommand.ВремяТекущегоСеанса</CommandName>
 							<ExtendedTooltip name="ВремяТекущегоСеансаРасширеннаяПодсказка" id="2062"/>
 						</Button>
 					</ChildItems>
@@ -131,6 +148,7 @@
 			<ChildItems>
 				<LabelDecoration name="ПояснениеПоПубликации" id="2040">
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<TextColor>style:ПоясняющийТекст</TextColor>
 					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -142,6 +160,7 @@
 					<ExtendedTooltip name="ПояснениеПоПубликацииРасширеннаяПодсказка" id="2042"/>
 				</LabelDecoration>
 				<InputField name="АдресПубликацииИнформационнойБазыВИнтернете" id="2043">
+					<DataPath>НаборКонстант.АдресПубликацииИнформационнойБазыВИнтернете</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -173,6 +192,7 @@
 					</Events>
 				</InputField>
 				<InputField name="АдресПубликацииИнформационнойБазыВЛокальнойСети" id="2046">
+					<DataPath>НаборКонстант.АдресПубликацииИнформационнойБазыВЛокальнойСети</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -221,7 +241,6 @@
 			<ExtendedTooltip name="ГруппаПараметрыКлиентСервернойИБРасширеннаяПодсказка" id="1868"/>
 			<ChildItems>
 				<UsualGroup name="Группа1" id="2059">
-					<Group>Horizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="2060"/>
@@ -230,15 +249,9 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа открыть параметры прокси сервера</v8:content>
+									<v8:content>Открыть параметры прокси сервера</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа открыть параметры прокси сервера</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Width>43</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<Group>Vertical</Group>
@@ -248,7 +261,7 @@
 							<ChildItems>
 								<Button name="ОткрытьПараметрыПроксиСервера" id="1686">
 									<Type>Hyperlink</Type>
-									<CommandName>0</CommandName>
+									<CommandName>CommonForm.ПараметрыПроксиСервера.StandardCommand.Open</CommandName>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -310,10 +323,9 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа настройка прокси сервера на сервере недоступна при использовании профилей безопасности</v8:content>
+							<v8:content>Настройка прокси сервера на сервере недоступна при использовании профилей безопасности</v8:content>
 						</v8:item>
 					</Title>
-					<Group>Horizontal</Group>
 					<Representation>NormalSeparation</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаНастройкаПроксиСервераНаСервереНедоступнаПриИспользованииПрофилейБезопасностиРасширеннаяПодсказка" id="1942"/>
@@ -325,12 +337,17 @@
 									<v8:content>Декорация настройка прокси сервера на сервере недоступна при использовании профилей безопасности</v8:content>
 								</v8:item>
 							</Title>
+							<Picture>
+								<xr:Ref>CommonPicture.ИнформацияПоНедоступнымПолям</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
 							<FileDragMode>AsFile</FileDragMode>
 							<ContextMenu name="ДекорацияНастройкаПроксиСервераНаСервереНедоступнаПриИспользованииПрофилейБезопасностиКонтекстноеМеню" id="1944"/>
 							<ExtendedTooltip name="ДекорацияНастройкаПроксиСервераНаСервереНедоступнаПриИспользованииПрофилейБезопасностиРасширеннаяПодсказка" id="1945"/>
 						</PictureDecoration>
 						<LabelDecoration name="ПояснениеНастройкаПроксиСервераНаСервереНедоступнаПриИспользованииПрофилейБезопасности" id="1946">
 							<AutoMaxWidth>false</AutoMaxWidth>
+							<TextColor>style:ПоясняющийТекст</TextColor>
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -352,12 +369,6 @@
 					<v8:content>Контактная информация</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа открыть виды контактной информации</v8:content>
-				</v8:item>
-			</ToolTip>
 			<Width>43</Width>
 			<HorizontalStretch>false</HorizontalStretch>
 			<Group>Vertical</Group>
@@ -369,7 +380,7 @@
 			<ChildItems>
 				<Button name="ОткрытьВидыКонтактнойИнформации" id="1640">
 					<Type>Hyperlink</Type>
-					<CommandName>0</CommandName>
+					<CommandName>Catalog.ВидыКонтактнойИнформации.StandardCommand.OpenList</CommandName>
 					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 					<ExtendedTooltip name="ОткрытьВидыКонтактнойИнформацииExtendedTooltip" id="1866">
 						<Title formatted="false">
@@ -389,13 +400,6 @@
 					<v8:content>Дополнительные реквизиты и сведения</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Дополнительные реквизиты и сведения</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Group>Horizontal</Group>
 			<Behavior>Collapsible</Behavior>
 			<Collapsed>true</Collapsed>
 			<ControlRepresentation>Picture</ControlRepresentation>
@@ -407,15 +411,9 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа использовать дополнительные реквизиты и сведения</v8:content>
+							<v8:content>Использовать дополнительные реквизиты и сведения</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа использовать дополнительные реквизиты и сведения</v8:content>
-						</v8:item>
-					</ToolTip>
 					<Width>43</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
@@ -424,6 +422,7 @@
 					<ExtendedTooltip name="ГруппаИспользоватьДополнительныеРеквизитыИСведенияExtendedTooltip" id="1847"/>
 					<ChildItems>
 						<CheckBoxField name="ИспользоватьДополнительныеРеквизитыИСведения" id="1803">
+							<DataPath>НаборКонстант.ИспользоватьДополнительныеРеквизитыИСведения</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -449,16 +448,9 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа дополнительные реквизиты и сведения прочие настройки</v8:content>
+									<v8:content>Дополнительные реквизиты и сведения прочие настройки</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа дополнительные реквизиты и сведения прочие настройки</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаДополнительныеРеквизитыИСведенияПрочиеНастройкиExtendedTooltip" id="1850"/>
@@ -475,6 +467,7 @@
 									<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="2034"/>
 									<ChildItems>
 										<CheckBoxField name="ИспользоватьОбщиеДополнительныеЗначения" id="1812">
+											<DataPath>НаборКонстант.ИспользоватьОбщиеДополнительныеЗначения</DataPath>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -497,6 +490,7 @@
 											</Events>
 										</CheckBoxField>
 										<CheckBoxField name="ИспользоватьОбщиеДополнительныеРеквизитыИСведения" id="1816">
+											<DataPath>НаборКонстант.ИспользоватьОбщиеДополнительныеРеквизитыИСведения</DataPath>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -528,15 +522,9 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа дополнительные реквизиты или сведения</v8:content>
+							<v8:content>Дополнительные реквизиты или сведения</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа дополнительные реквизиты или сведения</v8:content>
-						</v8:item>
-					</ToolTip>
 					<Width>43</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
@@ -549,7 +537,7 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа дополнительные реквизиты</v8:content>
+									<v8:content>Дополнительные реквизиты</v8:content>
 								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
@@ -559,7 +547,7 @@
 							<ChildItems>
 								<Button name="ДополнительныеРеквизиты" id="2051">
 									<Type>Hyperlink</Type>
-									<CommandName>0</CommandName>
+									<CommandName>Catalog.НаборыДополнительныхРеквизитовИСведений.Command.ДополнительныеРеквизиты</CommandName>
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 									<ExtendedTooltip name="ДополнительныеРеквизитыРасширеннаяПодсказка" id="2052">
 										<AutoMaxWidth>false</AutoMaxWidth>
@@ -578,7 +566,7 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа дополнительные сведения</v8:content>
+									<v8:content>Дополнительные сведения</v8:content>
 								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
@@ -588,7 +576,7 @@
 							<ChildItems>
 								<Button name="ДополнительныеСведения" id="2053">
 									<Type>Hyperlink</Type>
-									<CommandName>0</CommandName>
+									<CommandName>Catalog.НаборыДополнительныхРеквизитовИСведений.Command.ДополнительныеСведения</CommandName>
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 									<ExtendedTooltip name="ДополнительныеСведенияРасширеннаяПодсказка" id="2054">
 										<AutoMaxWidth>false</AutoMaxWidth>
@@ -614,7 +602,6 @@
 					<v8:content>История изменений</v8:content>
 				</v8:item>
 			</Title>
-			<Group>Horizontal</Group>
 			<Behavior>Collapsible</Behavior>
 			<Collapsed>true</Collapsed>
 			<ControlRepresentation>Picture</ControlRepresentation>
@@ -623,128 +610,80 @@
 			<ExtendedTooltip name="ГруппаВерсионированиеРасширеннаяПодсказка" id="2064"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаИспользоватьВерсионированиеОбъектов" id="2065">
-					<Width>43</Width>
-					<HorizontalStretch>false</HorizontalStretch>
-					<Group>Vertical</Group>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаИспользоватьВерсионированиеОбъектовExtendedTooltip" id="2066"/>
-					<ChildItems>
-						<CheckBoxField name="ИспользоватьВерсионированиеОбъектов" id="2067">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Хранить историю изменений</v8:content>
-								</v8:item>
-							</Title>
-							<TitleLocation>Right</TitleLocation>
-							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ИспользоватьВерсионированиеОбъектовКонтекстноеМеню" id="2068"/>
-							<ExtendedTooltip name="ИспользоватьВерсионированиеОбъектовExtendedTooltip" id="2069">
-								<AutoMaxWidth>false</AutoMaxWidth>
-								<Title formatted="false">
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Хранение и просмотр версий документов и справочников программы.</v8:content>
-									</v8:item>
-								</Title>
-							</ExtendedTooltip>
-							<Events>
-								<Event name="OnChange">ИспользоватьВерсионированиеОбъектовПриИзменении</Event>
-							</Events>
-						</CheckBoxField>
-					</ChildItems>
-				</UsualGroup>
-				<UsualGroup name="ГруппаРегистрСведенийНастройкиВерсионированияОбъектов" id="2070">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа регистр сведений настройки версионирования объектов</v8:content>
+							<v8:content>Использовать версионирование объектов</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа регистр сведений настройки версионирования объектов</v8:content>
+							<v8:content>Хранение и просмотр версий документов и справочников программы.</v8:content>
 						</v8:item>
 					</ToolTip>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 					<Width>43</Width>
 					<HorizontalStretch>false</HorizontalStretch>
-					<Group>Vertical</Group>
+					<Group>AlwaysHorizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаРегистрСведенийНастройкиВерсионированияОбъектовExtendedTooltip" id="2071"/>
+					<ExtendedTooltip name="ГруппаИспользоватьВерсионированиеОбъектовExtendedTooltip" id="2066"/>
 					<ChildItems>
-						<Button name="РегистрСведенийНастройкиВерсионированияОбъектов" id="2072">
+						<CheckBoxField name="ХранитьИсториюИзменений" id="2087">
+							<DataPath>ХранитьИсториюИзменений</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ХранитьИсториюИзмененийКонтекстноеМеню" id="2088"/>
+							<ExtendedTooltip name="ХранитьИсториюИзмененийРасширеннаяПодсказка" id="2089"/>
+							<Events>
+								<Event name="OnChange">ХранитьИсториюИзмененийПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<Button name="НастроитьХранениеИсторииИзменений" id="2090">
 							<Type>Hyperlink</Type>
-							<CommandName>0</CommandName>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Настройки хранения</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-							<ExtendedTooltip name="РегистрСведенийНастройкиВерсионированияОбъектовРасширеннаяПодсказка" id="2073">
-								<AutoMaxWidth>false</AutoMaxWidth>
-								<Title formatted="false">
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Настройка хранения и очистка версий документов и справочников.</v8:content>
-									</v8:item>
-								</Title>
-							</ExtendedTooltip>
+							<CommandName>Form.Command.НастроитьХранениеИсторииИзменений</CommandName>
+							<ExtendedTooltip name="НастроитьХранениеИсторииИзмененийРасширеннаяПодсказка" id="2091"/>
 						</Button>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ГруппаУправлениеПолнотекстовымПоискомИИзвлечениемТекстов" id="2074">
+		<UsualGroup name="ГруппаУправлениеПолнотекстовымПоиском" id="2074">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Полнотекстовый поиск данных</v8:content>
+					<v8:content>Поиск данных</v8:content>
 				</v8:item>
 			</Title>
-			<Width>43</Width>
 			<HorizontalStretch>false</HorizontalStretch>
-			<Group>Horizontal</Group>
 			<Behavior>Collapsible</Behavior>
 			<Collapsed>true</Collapsed>
 			<ControlRepresentation>Picture</ControlRepresentation>
 			<Representation>NormalSeparation</Representation>
-			<ExtendedTooltip name="ГруппаУправлениеПолнотекстовымПоискомИИзвлечениемТекстовExtendedTooltip" id="2075"/>
+			<ExtendedTooltip name="ГруппаУправлениеПолнотекстовымПоискомРасширеннаяПодсказка" id="2075"/>
 			<ChildItems>
-				<UsualGroup name="ГруппаУправлениеПолнотекстовымПоискомИИзвлечениемТекстовИспользование" id="2076">
+				<UsualGroup name="ГруппаПолнотекстовыйПоиск" id="2092">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа управление полнотекстовым поиском и извлечением текстов использование</v8:content>
+							<v8:content>Полнотекстовый поиск</v8:content>
 						</v8:item>
 					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа управление полнотекстовым поиском и извлечением текстов использование</v8:content>
+							<v8:content>Управление поиском в документах, файлах, отчетах.</v8:content>
 						</v8:item>
 					</ToolTip>
-					<Width>43</Width>
-					<Group>Vertical</Group>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаУправлениеПолнотекстовымПоискомИИзвлечениемТекстовИспользованиеРасширеннаяПодсказка" id="2077"/>
+					<ExtendedTooltip name="ГруппаПолнотекстовыйПоискРасширеннаяПодсказка" id="2093"/>
 					<ChildItems>
 						<CheckBoxField name="ИспользоватьПолнотекстовыйПоиск" id="2078">
 							<DataPath>ИспользоватьПолнотекстовыйПоиск</DataPath>
 							<TitleLocation>Right</TitleLocation>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Управление поиском и извлечением текстов из файлов.</v8:content>
-								</v8:item>
-							</ToolTip>
-							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<ThreeState>true</ThreeState>
 							<ContextMenu name="ИспользоватьПолнотекстовыйПоискКонтекстноеМеню" id="2079"/>
 							<ExtendedTooltip name="ИспользоватьПолнотекстовыйПоискРасширеннаяПодсказка" id="2080"/>
@@ -752,36 +691,10 @@
 								<Event name="OnChange">ИспользоватьПолнотекстовыйПоискПриИзменении</Event>
 							</Events>
 						</CheckBoxField>
-					</ChildItems>
-				</UsualGroup>
-				<UsualGroup name="ГруппаУправлениеПолнотекстовымПоискомИИзвлечениемТекстовНастройка" id="2081">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа управление полнотекстовым поиском и извлечением текстов настройка</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа управление полнотекстовым поиском и извлечением текстов настройка</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Group>Vertical</Group>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаУправлениеПолнотекстовымПоискомИИзвлечениемТекстовНастройкаРасширеннаяПодсказка" id="2082"/>
-					<ChildItems>
-						<Button name="УправлениеПолнотекстовымПоискомИИзвлечениемТекстов" id="2083">
+						<Button name="НастроитьПолнотекстовыйПоиск" id="2085">
 							<Type>Hyperlink</Type>
-							<CommandName>DataProcessor.ПанельАдминистрированияБСП.Command.УправлениеПолнотекстовымПоиском</CommandName>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Настроить</v8:content>
-								</v8:item>
-							</Title>
-							<ExtendedTooltip name="УправлениеПолнотекстовымПоискомИИзвлечениемТекстовРасширеннаяПодсказка" id="2084"/>
+							<CommandName>Form.Command.НастроитьПолнотекстовыйПоиск</CommandName>
+							<ExtendedTooltip name="НастроитьПолнотекстовыйПоискРасширеннаяПодсказка" id="2086"/>
 						</Button>
 					</ChildItems>
 				</UsualGroup>
@@ -794,7 +707,6 @@
 					<v8:content>Электронная подпись и шифрование</v8:content>
 				</v8:item>
 			</Title>
-			<Group>Horizontal</Group>
 			<Behavior>Collapsible</Behavior>
 			<Collapsed>true</Collapsed>
 			<ControlRepresentation>Picture</ControlRepresentation>
@@ -806,7 +718,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа использовать электронную подпись и шифрование</v8:content>
+							<v8:content>Использовать электронную подпись и шифрование</v8:content>
 						</v8:item>
 					</Title>
 					<Width>43</Width>
@@ -824,7 +736,6 @@
 								</v8:item>
 							</Title>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-							<Group>Horizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГоризонтальнаяГруппаРасширеннаяПодсказка" id="1954">
@@ -874,7 +785,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа настройки электронной подписи и шифрования</v8:content>
+							<v8:content>Настройки электронной подписи и шифрования</v8:content>
 						</v8:item>
 					</Title>
 					<Width>43</Width>
@@ -909,6 +820,11 @@
 				<v8:Type>cfg:ConstantsSet</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>НаборКонстант.ИзвлекатьТекстыФайловНаСервере</Field>
+				<Field>НаборКонстант.ИспользоватьПолнотекстовыйПоиск</Field>
+				<Field>НаборКонстант.ИспользоватьРазделениеПоОбластямДанных</Field>
+			</UseAlways>
 		</Attribute>
 		<Attribute name="ЧасовойПоясПрограммы" id="2">
 			<Title>
@@ -925,15 +841,6 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="РежимРаботы" id="5">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Режим работы</v8:content>
-				</v8:item>
-			</Title>
-			<Type/>
-		</Attribute>
 		<Attribute name="ИспользоватьПолнотекстовыйПоиск" id="6">
 			<Title>
 				<v8:item>
@@ -948,6 +855,17 @@
 					<v8:FractionDigits>0</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ХранитьИсториюИзменений" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Хранить историю изменений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
@@ -967,6 +885,30 @@
 			</ToolTip>
 			<Action>ИспользованиеПрофилейБезопасности</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="НастроитьПолнотекстовыйПоиск" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить</v8:content>
+				</v8:item>
+			</Title>
+			<Action>НастроитьПолнотекстовыйПоиск</Action>
+		</Command>
+		<Command name="НастроитьХранениеИсторииИзменений" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить хранение истории изменений</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастроитьХранениеИсторииИзменений</Action>
 		</Command>
 	</Commands>
 </Form>

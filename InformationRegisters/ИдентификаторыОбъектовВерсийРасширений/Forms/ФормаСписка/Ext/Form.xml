@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="ФормаВключитьВозможностьРедактирования" id="22">
@@ -86,13 +86,13 @@
 			</SearchControlAddition>
 			<ChildItems>
 				<LabelField name="ВерсияРасширений" id="24">
-					<DataPath>~Список.ВерсияРасширений</DataPath>
+					<DataPath>Список.ВерсияРасширений</DataPath>
 					<Width>14</Width>
 					<ContextMenu name="ВерсияРасширенийКонтекстноеМеню" id="25"/>
 					<ExtendedTooltip name="ВерсияРасширенийРасширеннаяПодсказка" id="26"/>
 				</LabelField>
 				<LabelField name="ИмяРасширения" id="33">
-					<DataPath>~Список.ИмяРасширения</DataPath>
+					<DataPath>Список.ИмяРасширения</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -104,21 +104,21 @@
 					<ExtendedTooltip name="ИмяРасширенияРасширеннаяПодсказка" id="35"/>
 				</LabelField>
 				<LabelField name="ПолноеИмяОбъекта" id="16">
-					<DataPath>~Список.ПолноеИмяОбъекта</DataPath>
+					<DataPath>Список.ПолноеИмяОбъекта</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<Width>20</Width>
 					<ContextMenu name="ПолноеИмяОбъектаКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="ПолноеИмяОбъектаРасширеннаяПодсказка" id="18"/>
 				</LabelField>
 				<LabelField name="Идентификатор" id="19">
-					<DataPath>~Список.Идентификатор</DataPath>
+					<DataPath>Список.Идентификатор</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<Width>20</Width>
 					<ContextMenu name="ИдентификаторКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="ИдентификаторРасширеннаяПодсказка" id="21"/>
 				</LabelField>
 				<LabelField name="ОписаниеРасширенийВерсии" id="30">
-					<DataPath>~Список.ОписаниеРасширенийВерсии</DataPath>
+					<DataPath>Список.ОписаниеРасширенийВерсии</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
