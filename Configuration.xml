@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
 	<Configuration uuid="028b3b99-0fa2-4956-b2d6-e4b9a35dce9b">
 		<InternalInfo>
 			<xr:ContainedObject>
@@ -9,10 +9,6 @@
 			<xr:ContainedObject>
 				<xr:ClassId>9fcd25a0-4822-11d4-9414-008048da11f9</xr:ClassId>
 				<xr:ObjectId>730b9010-81c4-4852-925f-31dbbc311859</xr:ObjectId>
-			</xr:ContainedObject>
-			<xr:ContainedObject>
-				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
-				<xr:ObjectId>ef285a84-fe2e-409d-a971-09d90844df36</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>e3687481-0a87-462c-a166-9f34594f9bba</xr:ClassId>
@@ -25,6 +21,10 @@
 			<xr:ContainedObject>
 				<xr:ClassId>51f2d5d8-ea4d-4064-8892-82951750031e</xr:ClassId>
 				<xr:ObjectId>4b499aa5-2031-4762-9ae3-5d873af8a717</xr:ObjectId>
+			</xr:ContainedObject>
+			<xr:ContainedObject>
+				<xr:ClassId>e68182ea-4237-4383-967f-90c1e3370bc7</xr:ClassId>
+				<xr:ObjectId>ef285a84-fe2e-409d-a971-09d90844df36</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:ContainedObject>
 				<xr:ClassId>fb282519-d103-4dd3-bc12-cb271d631dfc</xr:ClassId>
@@ -41,7 +41,7 @@
 			</Synonym>
 			<Comment/>
 			<NamePrefix/>
-			<ConfigurationExtensionCompatibilityMode>Version8_3_17</ConfigurationExtensionCompatibilityMode>
+			<ConfigurationExtensionCompatibilityMode>Version8_3_19</ConfigurationExtensionCompatibilityMode>
 			<DefaultRunMode>ManagedApplication</DefaultRunMode>
 			<UsePurposes>
 				<v8:Value xsi:type="app:ApplicationUsePurpose">PlatformApplication</v8:Value>
@@ -53,7 +53,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.дДневник</xr:Item>
 			</DefaultRoles>
 			<Vendor>quoe@mail.ru</Vendor>
-			<Version>1.0.0.0</Version>
+			<Version>1.0.1.0</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>false</UseManagedFormInOrdinaryApplication>
@@ -64,6 +64,7 @@
 			<ReportsVariantsStorage/>
 			<FormDataSettingsStorage/>
 			<DynamicListsUserSettingsStorage/>
+			<URLExternalDataStorage/>
 			<Content/>
 			<DefaultReportForm/>
 			<DefaultReportVariantForm/>
@@ -74,105 +75,131 @@
 			<DefaultDataHistoryVersionDataForm/>
 			<DefaultDataHistoryVersionDifferencesForm/>
 			<DefaultCollaborationSystemUsersChoiceForm/>
-			<RequiredMobileApplicationPermissions>
-				<app:permission>
-					<app:permission>Location</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>Contacts</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>Calendars</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>PushNotification</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>LocalNotification</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>Print</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>InAppPurchases</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>Ads</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>BackgroundLocation</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>BackgroundAudioPlayback</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>FileExchangeWithPersonalComputer</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>CallPhone</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>CallLog</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>HandlePhoneCalls</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>SendSMS</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>ReceiveSMS</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>SMSLog</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>Camera</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>Microphone</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>MusicLibrary</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>PicturesAndVideoLibraries</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>AudioAndVibrationPlayback</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>InstallPackages</app:permission>
-					<app:use>false</app:use>
-				</app:permission>
-				<app:permission>
-					<app:permission>AllowOSBackup</app:permission>
+			<RequiredMobileApplicationPermissions/>
+			<UsedMobileApplicationFunctionalities>
+				<app:functionality>
+					<app:functionality>Biometrics</app:functionality>
 					<app:use>true</app:use>
-				</app:permission>
-			</RequiredMobileApplicationPermissions>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>Location</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>BackgroundLocation</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>BluetoothPrinters</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>WiFiPrinters</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>Contacts</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>Calendars</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>PushNotifications</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>LocalNotifications</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>InAppPurchases</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>PersonalComputerFileExchange</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>Ads</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>NumberDialing</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>CallProcessing</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>CallLog</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>AutoSendSMS</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>ReceiveSMS</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>SMSLog</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>Camera</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>Microphone</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>MusicLibrary</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>PictureAndVideoLibraries</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>AudioPlaybackAndVibration</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>BackgroundAudioPlaybackAndVibration</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>InstallPackages</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>OSBackup</app:functionality>
+					<app:use>true</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>ApplicationUsageStatistics</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>BarcodeScanning</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>BackgroundAudioRecording</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+				<app:functionality>
+					<app:functionality>AllFilesAccess</app:functionality>
+					<app:use>false</app:use>
+				</app:functionality>
+			</UsedMobileApplicationFunctionalities>
 			<StandaloneConfigurationRestrictionRoles/>
+			<MobileApplicationURLs/>
 			<MainClientApplicationWindowMode>Normal</MainClientApplicationWindowMode>
 			<DefaultInterface/>
 			<DefaultStyle/>
@@ -245,14 +272,13 @@
 			<SessionParameter>ВыполняетсяЗаписьОбъекта</SessionParameter>
 			<SessionParameter>ВыполняетсяОбновлениеИБ</SessionParameter>
 			<SessionParameter>ДатаПоследнейОперации</SessionParameter>
-			<SessionParameter>ДействующиеДатыЗапретаИзменения</SessionParameter>
 			<SessionParameter>дИмяКомпьютераСистемы</SessionParameter>
 			<SessionParameter>дИмяПользователяСистемы</SessionParameter>
 			<SessionParameter>дИмяДоменаПользователя</SessionParameter>
 			<SessionParameter>ИдентификаторЗаданияИндикаторов</SessionParameter>
+			<SessionParameter>ДействующиеДатыЗапретаИзменения</SessionParameter>
 			<SessionParameter>ОбластьДанныхЗначение</SessionParameter>
 			<SessionParameter>ОбластьДанныхИспользование</SessionParameter>
-			<SessionParameter>ОбновитьВерсиюДатЗапретаИзмененияПослеЗагрузкиДанных</SessionParameter>
 			<SessionParameter>ОбщиеЗначения</SessionParameter>
 			<SessionParameter>ОграничиватьДоступПоВиду</SessionParameter>
 			<SessionParameter>ОграничиватьДоступПоВидуВнешниеПользователи</SessionParameter>
@@ -263,13 +289,14 @@
 			<SessionParameter>ОграничиватьДоступПоВидуПравоДобавления</SessionParameter>
 			<SessionParameter>ОграничиватьДоступПоВидуПравоИзменения</SessionParameter>
 			<SessionParameter>ОграничиватьДоступПоВидуПравоЧтения</SessionParameter>
+			<SessionParameter>ОбновитьВерсиюДатЗапретаИзмененияПослеЗагрузкиДанных</SessionParameter>
+			<SessionParameter>ПараметрыВнешнихРегламентированныхОтчетов</SessionParameter>
+			<SessionParameter>ПараметрыКлиентаНаСервереБИП</SessionParameter>
+			<SessionParameter>ПараметрыПереходаПоНавигационнойСсылке</SessionParameter>
 			<SessionParameter>ОтмененныеДлительныеОперации</SessionParameter>
 			<SessionParameter>ОшибкаРасхожденияВерсийПриПолученииДанных</SessionParameter>
-			<SessionParameter>ПараметрыВнешнихРегламентированныхОтчетов</SessionParameter>
 			<SessionParameter>ПараметрыКлиентаНаСервере</SessionParameter>
-			<SessionParameter>ПараметрыКлиентаНаСервереБИП</SessionParameter>
 			<SessionParameter>ПараметрыОбработчикаОбновления</SessionParameter>
-			<SessionParameter>ПараметрыПереходаПоНавигационнойСсылке</SessionParameter>
 			<SessionParameter>ПараметрыСеансаСинхронизацииДанных</SessionParameter>
 			<SessionParameter>ПодключенныеРасширения</SessionParameter>
 			<SessionParameter>ПравилаВыборочнойРегистрацииОбъектов</SessionParameter>
@@ -287,35 +314,34 @@
 			<Role>БазовыеПраваВнешнегоПользователя</Role>
 			<Role>ВыводНаПринтерФайлБуферОбмена</Role>
 			<Role>Пользователь</Role>
-			<Role>ДобавлениеИзменениеПользователей</Role>
-			<Role>ЗапускAutomation</Role>
+			<Role>ИспользованиеВариантовОтчетов</Role>
 			<Role>ЧтениеКурсовВалют</Role>
 			<Role>дДневник</Role>
+			<Role>ДобавлениеИзменениеПользователей</Role>
+			<Role>ИзменениеТекущегоВнешнегоПользователя</Role>
+			<Role>ИзменениеТекущегоПользователя</Role>
+			<Role>ЗапускAutomation</Role>
 			<Role>ЗапускВебКлиента</Role>
 			<Role>ЗапускВнешнегоСоединения</Role>
 			<Role>ЗапускТолстогоКлиента</Role>
+			<Role>НастройкаИОценкаПроизводительности</Role>
 			<Role>ЗапускТонкогоКлиента</Role>
-			<Role>ИзменениеТекущегоВнешнегоПользователя</Role>
-			<Role>ИзменениеТекущегоПользователя</Role>
 			<Role>ИзменениеДополнительныхСведений</Role>
 			<Role>ИзменениеУчастниковГруппДоступа</Role>
 			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
-			<Role>ИспользованиеВариантовОтчетов</Role>
-			<Role>ИспользованиеДополнительныхОтчетовИОбработок</Role>
-			<Role>НастройкаИОценкаПроизводительности</Role>
 			<Role>ОбновлениеКонфигурацииБазыДанных</Role>
 			<Role>ПолныеПрава</Role>
 			<Role>ПросмотрЖурналаРегистрации</Role>
 			<Role>ПросмотрОписанияИзмененийПрограммы</Role>
-			<Role>РежимВсеФункции</Role>
-			<Role>СохранениеДанныхПользователя</Role>
 			<Role>ЧтениеПерсональныхДанныхФизическихЛиц</Role>
 			<Role>ЧтениеФизическихЛиц</Role>
+			<Role>РежимВсеФункции</Role>
+			<Role>СохранениеДанныхПользователя</Role>
 			<Role>ЧтениеВерсийОбъектов</Role>
 			<Role>ЧтениеВнешнихПользователей</Role>
+			<Role>ИспользованиеДополнительныхОтчетовИОбработок</Role>
 			<Role>ЧтениеДополнительныхСведений</Role>
 			<Role>ЧтениеИнформацииОВерсияхОбъектов</Role>
-			<CommonModule>API</CommonModule>
 			<CommonModule>CRM_ОбменСGoogle</CommonModule>
 			<CommonModule>CRM_ОбменСGoogleКлиентСервер</CommonModule>
 			<CommonModule>CRM_УНФ_УправлениеНебольшойФирмойПовтИсп</CommonModule>
@@ -328,30 +354,35 @@
 			<CommonModule>АдминистрированиеКластераCOMКлиентСервер</CommonModule>
 			<CommonModule>АдминистрированиеКластераRASКлиентСервер</CommonModule>
 			<CommonModule>АдминистрированиеКластераКлиентСервер</CommonModule>
-			<CommonModule>ВнешниеПользователи</CommonModule>
+			<CommonModule>ВариантыОтчетов</CommonModule>
+			<CommonModule>ВариантыОтчетовВызовСервера</CommonModule>
+			<CommonModule>ВариантыОтчетовКлиент</CommonModule>
+			<CommonModule>ВариантыОтчетовКлиентСервер</CommonModule>
+			<CommonModule>ВариантыОтчетовПереопределяемый</CommonModule>
+			<CommonModule>ВариантыОтчетовПовтИсп</CommonModule>
+			<CommonModule>ВерсионированиеОбъектов</CommonModule>
+			<CommonModule>ВерсионированиеОбъектовКлиент</CommonModule>
+			<CommonModule>ВерсионированиеОбъектовПереопределяемый</CommonModule>
+			<CommonModule>ВерсионированиеОбъектовСобытия</CommonModule>
 			<CommonModule>ДневникВызовСервера</CommonModule>
 			<CommonModule>ДневникВызовСервераПовтИсп</CommonModule>
 			<CommonModule>ДневникКлиент</CommonModule>
 			<CommonModule>ДневникКлиентСервер</CommonModule>
-			<CommonModule>ДлительныеОперации</CommonModule>
-			<CommonModule>ДлительныеОперацииВызовСервера</CommonModule>
-			<CommonModule>ДлительныеОперацииГлобальный</CommonModule>
-			<CommonModule>ДлительныеОперацииКлиент</CommonModule>
 			<CommonModule>ДлительныеОперацииКлиентПовтИсп</CommonModule>
 			<CommonModule>дОбщиеФункцииКлиент</CommonModule>
 			<CommonModule>дОбщиеФункцииКлиентСервер</CommonModule>
 			<CommonModule>дОбщиеФункцииСервер</CommonModule>
-			<CommonModule>ЖурналРегистрации</CommonModule>
-			<CommonModule>ЖурналРегистрацииВызовСервера</CommonModule>
-			<CommonModule>ЖурналРегистрацииКлиент</CommonModule>
+			<CommonModule>ВнешниеПользователи</CommonModule>
+			<CommonModule>ДлительныеОперации</CommonModule>
+			<CommonModule>ДлительныеОперацииВызовСервера</CommonModule>
+			<CommonModule>ДлительныеОперацииГлобальный</CommonModule>
+			<CommonModule>ДлительныеОперацииКлиент</CommonModule>
 			<CommonModule>ЗаполнениеОбъектовУНФ</CommonModule>
 			<CommonModule>ЗаполнениеОбъектовУНФКлиент</CommonModule>
 			<CommonModule>ЗаполнениеОбъектовУНФПереопределяемый</CommonModule>
-			<CommonModule>ИнтеграцияПодсистемБСП</CommonModule>
-			<CommonModule>ИнтеграцияПодсистемБСПКлиент</CommonModule>
 			<CommonModule>ИнтеграцияСтандартныхПодсистем</CommonModule>
-			<CommonModule>ИнтеграцияСТехнологиейСервиса</CommonModule>
-			<CommonModule>ИнтеграцияСТехнологиейСервисаКлиент</CommonModule>
+			<CommonModule>ЖурналРегистрации</CommonModule>
+			<CommonModule>ЖурналРегистрацииВызовСервера</CommonModule>
 			<CommonModule>ИнтернетПоддержкаПользователей</CommonModule>
 			<CommonModule>ИнтернетПоддержкаПользователейВызовСервера</CommonModule>
 			<CommonModule>ИнтернетПоддержкаПользователейКлиент</CommonModule>
@@ -360,7 +391,12 @@
 			<CommonModule>ИнтернетПоддержкаПользователейПереопределяемый</CommonModule>
 			<CommonModule>ИнтернетПоддержкаПользователейСлужебныйКлиентПовтИсп</CommonModule>
 			<CommonModule>ИнтернетПоддержкаПользователейСлужебныйПовтИсп</CommonModule>
+			<CommonModule>ЖурналРегистрацииКлиент</CommonModule>
 			<CommonModule>КалендариСотрудников</CommonModule>
+			<CommonModule>ИнтеграцияПодсистемБСП</CommonModule>
+			<CommonModule>ИнтеграцияПодсистемБСПКлиент</CommonModule>
+			<CommonModule>ИнтеграцияСТехнологиейСервиса</CommonModule>
+			<CommonModule>ИнтеграцияСТехнологиейСервисаКлиент</CommonModule>
 			<CommonModule>ОбменМобильноеПриложение</CommonModule>
 			<CommonModule>ОбменМобильноеПриложениеВызовСервера</CommonModule>
 			<CommonModule>ОбменМобильноеПриложениеВызовСервераПовтИсп</CommonModule>
@@ -368,17 +404,7 @@
 			<CommonModule>ОбменСGoogleВызовСервера</CommonModule>
 			<CommonModule>ОбменСGoogleКлиент</CommonModule>
 			<CommonModule>ОбменСGoogleКлиентСервер</CommonModule>
-			<CommonModule>ОбновлениеИнформационнойБазы</CommonModule>
-			<CommonModule>ОбновлениеИнформационнойБазыБСП</CommonModule>
-			<CommonModule>ОбновлениеИнформационнойБазыВызовСервера</CommonModule>
-			<CommonModule>ОбновлениеИнформационнойБазыГлобальный</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыДневник</CommonModule>
-			<CommonModule>ОбновлениеИнформационнойБазыКлиент</CommonModule>
-			<CommonModule>ОбновлениеИнформационнойБазыКлиентПереопределяемый</CommonModule>
-			<CommonModule>ОбновлениеИнформационнойБазыПереопределяемый</CommonModule>
-			<CommonModule>ОбновлениеИнформационнойБазыСлужебный</CommonModule>
-			<CommonModule>ОбновлениеИнформационнойБазыСлужебныйВызовСервера</CommonModule>
-			<CommonModule>ОбновлениеИнформационнойБазыСлужебныйПовтИсп</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыСобытия</CommonModule>
 			<CommonModule>ОбработкаТекстаКлиентСервер</CommonModule>
 			<CommonModule>ОбслуживаниеДокументов</CommonModule>
@@ -387,18 +413,14 @@
 			<CommonModule>ОбслуживаниеСправочников</CommonModule>
 			<CommonModule>ОбслуживаниеСправочниковВызовСервера</CommonModule>
 			<CommonModule>ОбслуживаниеСправочниковКлиент</CommonModule>
-			<CommonModule>ОбщегоНазначения</CommonModule>
-			<CommonModule>ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>ОбщегоНазначенияВызовСервераПереопределяемый</CommonModule>
-			<CommonModule>ОбщегоНазначенияГлобальный</CommonModule>
 			<CommonModule>ОбщегоНазначенияДневник</CommonModule>
-			<CommonModule>ОбщегоНазначенияКлиент</CommonModule>
-			<CommonModule>ОбщегоНазначенияКлиентПереопределяемый</CommonModule>
-			<CommonModule>ОбщегоНазначенияКлиентПовтИсп</CommonModule>
-			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
-			<CommonModule>ОбщегоНазначенияПереопределяемый</CommonModule>
-			<CommonModule>ОбщегоНазначенияПовтИсп</CommonModule>
-			<CommonModule>ОбщегоНазначенияСлужебныйКлиент</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазы</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыБСП</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыВызовСервера</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыГлобальный</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыКлиент</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыКлиентПереопределяемый</CommonModule>
 			<CommonModule>ОценкаПроизводительностиВызовСервераПолныеПрава</CommonModule>
 			<CommonModule>ОценкаПроизводительностиКлиент</CommonModule>
 			<CommonModule>ОценкаПроизводительностиКлиентГлобальный</CommonModule>
@@ -409,47 +431,79 @@
 			<CommonModule>ПлановыеОперацииВызовСервера</CommonModule>
 			<CommonModule>ПлановыеОперацииКлиент</CommonModule>
 			<CommonModule>ПлановыеОперацииКлиентСервер</CommonModule>
-			<CommonModule>ПодсистемыКонфигурацииПереопределяемый</CommonModule>
-			<CommonModule>Пользователи</CommonModule>
-			<CommonModule>ПользователиКлиентСервер</CommonModule>
-			<CommonModule>ПользователиПереопределяемый</CommonModule>
-			<CommonModule>ПользователиСлужебный</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыПереопределяемый</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыСлужебный</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыСлужебныйВызовСервера</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыСлужебныйПовтИсп</CommonModule>
+			<CommonModule>ОбщегоНазначения</CommonModule>
+			<CommonModule>ОбщегоНазначенияВызовСервера</CommonModule>
+			<CommonModule>ОбщегоНазначенияГлобальный</CommonModule>
+			<CommonModule>ОбщегоНазначенияКлиент</CommonModule>
+			<CommonModule>ОбщегоНазначенияКлиентПереопределяемый</CommonModule>
+			<CommonModule>ОбщегоНазначенияКлиентПовтИсп</CommonModule>
+			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>
+			<CommonModule>ОбщегоНазначенияПереопределяемый</CommonModule>
+			<CommonModule>ОбщегоНазначенияПовтИсп</CommonModule>
+			<CommonModule>ОбщегоНазначенияСлужебныйКлиент</CommonModule>
 			<CommonModule>ПользователиСлужебныйВызовСервера</CommonModule>
-			<CommonModule>ПользователиСлужебныйКлиент</CommonModule>
-			<CommonModule>ПользователиСлужебныйКлиентСервер</CommonModule>
-			<CommonModule>ПользователиСлужебныйПовтИсп</CommonModule>
 			<CommonModule>ПользовательскиеНастройкиДневникСервер</CommonModule>
 			<CommonModule>ПрикрепленныеФайлыВызовСервера</CommonModule>
 			<CommonModule>ПрикрепленныеФайлыКлиент</CommonModule>
 			<CommonModule>ПрикрепленныеФайлыКлиентСервер</CommonModule>
 			<CommonModule>ПрикрепленныеФайлыСервер</CommonModule>
+			<CommonModule>РаботаВБезопасномРежиме</CommonModule>
+			<CommonModule>РаботаВБезопасномРежимеКлиент</CommonModule>
+			<CommonModule>РаботаВБезопасномРежимеКлиентПереопределяемый</CommonModule>
+			<CommonModule>РаботаВБезопасномРежимеПереопределяемый</CommonModule>
+			<CommonModule>РаботаВБезопасномРежимеСлужебный</CommonModule>
+			<CommonModule>ПодсистемыКонфигурацииПереопределяемый</CommonModule>
 			<CommonModule>РаботаСЦветомКлиентСервер</CommonModule>
+			<CommonModule>ПолучениеФайловИзИнтернета</CommonModule>
+			<CommonModule>ПолучениеФайловИзИнтернетаКлиент</CommonModule>
+			<CommonModule>ПолучениеФайловИзИнтернетаКлиентСервер</CommonModule>
+			<CommonModule>ПолучениеФайловИзИнтернетаСлужебный</CommonModule>
+			<CommonModule>РегламентныеЗаданияСлужебныйВызовСервера</CommonModule>
+			<CommonModule>РегламентныеЗаданияСлужебныйГлобальный</CommonModule>
+			<CommonModule>РегламентныеЗаданияСлужебныйКлиент</CommonModule>
+			<CommonModule>Пользователи</CommonModule>
+			<CommonModule>ПользователиКлиентСервер</CommonModule>
+			<CommonModule>ПользователиПереопределяемый</CommonModule>
+			<CommonModule>ПользователиСлужебный</CommonModule>
+			<CommonModule>ПользователиСлужебныйКлиент</CommonModule>
+			<CommonModule>ПользователиСлужебныйКлиентСервер</CommonModule>
+			<CommonModule>ПользователиСлужебныйПовтИсп</CommonModule>
+			<CommonModule>СобытияУНФКлиентСервер</CommonModule>
+			<CommonModule>СтандартныеПодсистемыКлиентСервер</CommonModule>
+			<CommonModule>УправлениеДоступомСлужебныйВМоделиСервиса</CommonModule>
 			<CommonModule>РегламентныеЗаданияКлиент</CommonModule>
 			<CommonModule>РегламентныеЗаданияПереопределяемый</CommonModule>
 			<CommonModule>РегламентныеЗаданияСервер</CommonModule>
 			<CommonModule>РегламентныеЗаданияСлужебный</CommonModule>
-			<CommonModule>РегламентныеЗаданияСлужебныйВызовСервера</CommonModule>
-			<CommonModule>РегламентныеЗаданияСлужебныйГлобальный</CommonModule>
-			<CommonModule>РегламентныеЗаданияСлужебныйКлиент</CommonModule>
-			<CommonModule>СобытияУНФКлиентСервер</CommonModule>
+			<CommonModule>УправлениеНебольшойФирмойПовтИсп</CommonModule>
+			<CommonModule>УправлениеНебольшойФирмойСервер</CommonModule>
 			<CommonModule>СтандартныеПодсистемыВызовСервера</CommonModule>
 			<CommonModule>СтандартныеПодсистемыГлобальный</CommonModule>
 			<CommonModule>СтандартныеПодсистемыКлиент</CommonModule>
 			<CommonModule>СтандартныеПодсистемыКлиентПовтИсп</CommonModule>
-			<CommonModule>СтандартныеПодсистемыКлиентСервер</CommonModule>
+			<CommonModule>КоннекторHTTP</CommonModule>
 			<CommonModule>СтандартныеПодсистемыПовтИсп</CommonModule>
 			<CommonModule>СтандартныеПодсистемыСервер</CommonModule>
 			<CommonModule>СтроковыеФункцииКлиентСервер</CommonModule>
-			<CommonModule>УправлениеНебольшойФирмойПовтИсп</CommonModule>
-			<CommonModule>УправлениеНебольшойФирмойСервер</CommonModule>
-			<CommonModule>КоннекторHTTP</CommonModule>
+			<CommonModule>УправлениеДоступом</CommonModule>
+			<CommonModule>УправлениеДоступомПереопределяемый</CommonModule>
+			<CommonModule>УправлениеДоступомСлужебный</CommonModule>
+			<CommonModule>УправлениеДоступомСлужебныйВызовСервера</CommonModule>
+			<CommonModule>УправлениеДоступомСлужебныйКлиент</CommonModule>
+			<CommonModule>УправлениеДоступомСлужебныйКлиентСервер</CommonModule>
+			<CommonModule>УправлениеДоступомСлужебныйПовтИсп</CommonModule>
+			<CommonModule>API</CommonModule>
 			<ExchangePlan>ОбменСGoogleCalendar</ExchangePlan>
 			<ScheduledJob>дЗагрузкаПрогнозаПогоды</ScheduledJob>
 			<FunctionalOption>ИспользоватьВерсионированиеОбъекта</FunctionalOption>
-			<FunctionalOption>ИспользоватьВнешнихПользователей</FunctionalOption>
-			<FunctionalOption>ИспользоватьПолнотекстовыйПоиск</FunctionalOption>
 			<FunctionalOption>ИспользоватьВерсионированиеОбъектов</FunctionalOption>
+			<FunctionalOption>ИспользоватьВнешнихПользователей</FunctionalOption>
 			<FunctionalOption>ИспользоватьГруппыПользователей</FunctionalOption>
+			<FunctionalOption>ИспользоватьПолнотекстовыйПоиск</FunctionalOption>
 			<FunctionalOption>ПрефиксИнформационнойБазы</FunctionalOption>
 			<FunctionalOption>РаботаВАвтономномРежиме</FunctionalOption>
 			<FunctionalOption>РаботаВЛокальномРежиме</FunctionalOption>
@@ -474,55 +528,54 @@
 			<Constant>ИспользоватьДополнительныеОтчетыИОбработки</Constant>
 			<Constant>ИспользоватьДополнительныеРеквизитыИСведения</Constant>
 			<Constant>ИспользоватьПолнотекстовыйПоиск</Constant>
-			<Constant>НастройкиВходаПользователей</Constant>
 			<Constant>НастройкиВыполненияРегламентныхЗаданий</Constant>
+			<Constant>НастройкиВходаПользователей</Constant>
 			<Constant>НеИспользоватьРазделениеПоОбластямДанных</Constant>
-			<Constant>ПараметрыБлокировкиРаботыСВнешнимиРесурсами</Constant>
 			<Constant>ПараметрыВариантовОтчетов</Constant>
 			<Constant>ПараметрыДополнительныхРеквизитовИСведений</Constant>
 			<Constant>ПараметрыРаботыПользователей</Constant>
-			<Constant>ПараметрыРезервногоКопирования</Constant>
 			<Constant>ПоддержкаРезервногоКопирования</Constant>
 			<Constant>ПрефиксПоследнегоАвтономногоРабочегоМеста</Constant>
-			<Constant>ПрефиксУзлаРаспределеннойИнформационнойБазы</Constant>
 			<Constant>ПрофильБезопасностиИнформационнойБазы</Constant>
 			<Constant>РазделыОписанияИзмененийСистемы</Constant>
 			<Constant>РежимИспользованияИнформационнойБазы</Constant>
+			<Constant>ПараметрыБлокировкиРаботыСВнешнимиРесурсами</Constant>
+			<Constant>ПараметрыРезервногоКопирования</Constant>
+			<Constant>ПрефиксУзлаРаспределеннойИнформационнойБазы</Constant>
 			<Constant>СведенияОБлокируемыхОбъектах</Constant>
 			<Constant>СведенияОбОбновленииИБ</Constant>
-			<Constant>ЭтоАвтономноеРабочееМесто</Constant>
 			<Constant>дПериодЗамераПроизводительности</Constant>
-			<CommonForm>ПраваДоступаУпрощенно</CommonForm>
-			<CommonForm>НастройкиПравОбъектов</CommonForm>
-			<CommonForm>НовыйПароль</CommonForm>
-			<CommonForm>ПраваДоступа</CommonForm>
-			<CommonForm>СменаПароля</CommonForm>
-			<CommonForm>Расширения</CommonForm>
-			<CommonForm>ФормаВариантаОтчета</CommonForm>
-			<CommonForm>ФормаНастроекОтчета</CommonForm>
-			<CommonForm>ФормаОтчета</CommonForm>
-			<CommonForm>ФормаПоиска</CommonForm>
+			<Constant>ЭтоАвтономноеРабочееМесто</Constant>
 			<CommonForm>Вопрос</CommonForm>
 			<CommonForm>ВосстановлениеСвязиСГлавнымУзлом</CommonForm>
+			<CommonForm>ГруппыПользователей</CommonForm>
+			<CommonForm>НастройкиПравОбъектов</CommonForm>
+			<CommonForm>НовыйПароль</CommonForm>
+			<CommonForm>ПараметрыАдминистрированияПрограммы</CommonForm>
+			<CommonForm>ПодтверждениеПароляУчетнойЗаписи</CommonForm>
 			<CommonForm>ПоказателиВыделенныхЯчеек</CommonForm>
+			<CommonForm>ПраваДоступа</CommonForm>
+			<CommonForm>ПраваДоступаУпрощенно</CommonForm>
 			<CommonForm>ПредупреждениеБезопасности</CommonForm>
 			<CommonForm>ПредупрежденияПриЗавершенииРаботы</CommonForm>
 			<CommonForm>СозданиеРезервнойКопии</CommonForm>
 			<CommonForm>РедактированиеДополнительныхСведений</CommonForm>
 			<CommonForm>РедактированиеТабличногоДокумента</CommonForm>
 			<CommonForm>Склонения</CommonForm>
-			<CommonForm>ГруппыПользователей</CommonForm>
-			<CommonForm>ПараметрыАдминистрированияПрограммы</CommonForm>
-			<CommonForm>ПодтверждениеПароляУчетнойЗаписи</CommonForm>
+			<CommonForm>СменаПароля</CommonForm>
 			<CommonForm>СохранениеПечатнойФормы</CommonForm>
 			<CommonForm>СтруктураПодчиненности</CommonForm>
+			<CommonForm>Расширения</CommonForm>
+			<CommonForm>ФормаВариантаОтчета</CommonForm>
+			<CommonForm>ФормаНастроекОтчета</CommonForm>
+			<CommonForm>ФормаОтчета</CommonForm>
+			<CommonForm>ФормаПоиска</CommonForm>
 			<Catalog>Валюты</Catalog>
 			<Catalog>ВариантыОтчетов</Catalog>
 			<Catalog>ВерсииРасширений</Catalog>
 			<Catalog>ВнешниеПользователи</Catalog>
 			<Catalog>ГруппыВнешнихПользователей</Catalog>
 			<Catalog>ГруппыДоступа</Catalog>
-			<Catalog>ГруппыПользователей</Catalog>
 			<Catalog>дВажностьЗаписи</Catalog>
 			<Catalog>дВидЗаписиУдалить</Catalog>
 			<Catalog>дВидыДеятельности</Catalog>
@@ -530,13 +583,16 @@
 			<Catalog>дДиалоги</Catalog>
 			<Catalog>дКатегория</Catalog>
 			<Catalog>дМентальныеКарты</Catalog>
-			<Catalog>ДополнительныеОтчетыИОбработки</Catalog>
 			<Catalog>дРезультат</Catalog>
+			<Catalog>дСловарь</Catalog>
 			<Catalog>дСостояния</Catalog>
 			<Catalog>дТеги</Catalog>
+			<Catalog>дЦвета</Catalog>
 			<Catalog>дШаблоныРегулярныхВыражений</Catalog>
 			<Catalog>дЭмоции</Catalog>
 			<Catalog>дЯзыки</Catalog>
+			<Catalog>ГруппыПользователей</Catalog>
+			<Catalog>ДополнительныеОтчетыИОбработки</Catalog>
 			<Catalog>ЗаписиКалендаряСотрудника</Catalog>
 			<Catalog>ЗначенияСвойствОбъектов</Catalog>
 			<Catalog>КалендариСотрудников</Catalog>
@@ -545,12 +601,12 @@
 			<Catalog>ПользовательскиеНастройкиОтчетов</Catalog>
 			<Catalog>ПредопределенныеВариантыОтчетов</Catalog>
 			<Catalog>ПредопределенныеВариантыОтчетовРасширений</Catalog>
-			<Catalog>ПрофилиГруппДоступа</Catalog>
 			<Catalog>СообщенияСистемы</Catalog>
+			<Catalog>ПрофилиГруппДоступа</Catalog>
 			<Catalog>ТомаХраненияФайлов</Catalog>
+			<Catalog>ФизическиеЛица</Catalog>
 			<Catalog>УчетныеЗаписиСинхронизацииФайлов</Catalog>
 			<Catalog>УчетныеЗаписиЭлектроннойПочты</Catalog>
-			<Catalog>ФизическиеЛица</Catalog>
 			<Document>дДневник</Document>
 			<DocumentJournal>дЖурналЗаписей</DocumentJournal>
 			<Enum>CRM_ОбластиДоступаGoogle</Enum>
@@ -562,10 +618,10 @@
 			<Enum>дИнтенсивностьОсадков</Enum>
 			<Enum>дМесяцы</Enum>
 			<Enum>дНастроения</Enum>
-			<Enum>ДополнительныеЗначенияДоступа</Enum>
 			<Enum>дПогодаОблачность</Enum>
 			<Enum>дТипЗаписиДневника</Enum>
 			<Enum>дТипОсадков</Enum>
+			<Enum>ДополнительныеЗначенияДоступа</Enum>
 			<Enum>ОбластиДоступаGoogle</Enum>
 			<Enum>ПолФизическогоЛица</Enum>
 			<Report>дЗаписейЗаМесяц</Report>
@@ -593,6 +649,7 @@
 			<DataProcessor>УдалениеПомеченныхОбъектов</DataProcessor>
 			<DataProcessor>УправлениеПолнотекстовымПоиском</DataProcessor>
 			<DataProcessor>ОбменСGoogle</DataProcessor>
+			<DataProcessor>дПроизводительность</DataProcessor>
 			<InformationRegister>CRM_СеансовыеДанныеGoogle</InformationRegister>
 			<InformationRegister>CRM_УчетныеЗаписиЭлектроннойПочты</InformationRegister>
 			<InformationRegister>ВерсииОбъектов</InformationRegister>
@@ -604,6 +661,7 @@
 			<InformationRegister>дДлинаСлов</InformationRegister>
 			<InformationRegister>дЗаписьДневника</InformationRegister>
 			<InformationRegister>дИзбранное</InformationRegister>
+			<InformationRegister>дИсторияИзбранного</InformationRegister>
 			<InformationRegister>дМентальныеКарты</InformationRegister>
 			<InformationRegister>дМестоНаДисках</InformationRegister>
 			<InformationRegister>дПамять</InformationRegister>
@@ -615,22 +673,23 @@
 			<InformationRegister>дПроцессы</InformationRegister>
 			<InformationRegister>дРезультат</InformationRegister>
 			<InformationRegister>дСетеваяАктивность</InformationRegister>
+			<InformationRegister>дСлова</InformationRegister>
 			<InformationRegister>дТеги</InformationRegister>
 			<InformationRegister>дУчетВремени</InformationRegister>
 			<InformationRegister>дЭмоции</InformationRegister>
+			<InformationRegister>ПрисоединенныеФайлы</InformationRegister>
 			<InformationRegister>ЗамерыВремени</InformationRegister>
 			<InformationRegister>ЗначенияГруппДоступа</InformationRegister>
 			<InformationRegister>ЗначенияГруппДоступаПоУмолчанию</InformationRegister>
 			<InformationRegister>ИдентификаторыОбъектовВерсийРасширений</InformationRegister>
-			<InformationRegister>НастройкиВерсионированияОбъектов</InformationRegister>
 			<InformationRegister>НастройкиПользователей</InformationRegister>
+			<InformationRegister>НастройкиВерсионированияОбъектов</InformationRegister>
 			<InformationRegister>НастройкиПравОбъектов</InformationRegister>
+			<InformationRegister>СеансовыеДанныеGoogle</InformationRegister>
 			<InformationRegister>ПараметрыРаботыВерсийРасширений</InformationRegister>
 			<InformationRegister>ПараметрыРаботыПрограммы</InformationRegister>
 			<InformationRegister>ПраваРолей</InformationRegister>
-			<InformationRegister>ПрисоединенныеФайлы</InformationRegister>
 			<InformationRegister>СведенияОПользователях</InformationRegister>
-			<InformationRegister>СеансовыеДанныеGoogle</InformationRegister>
 			<InformationRegister>СеансыВерсийРасширений</InformationRegister>
 			<InformationRegister>СоставыГруппПользователей</InformationRegister>
 			<AccumulationRegister>дСтатистикаСлов</AccumulationRegister>

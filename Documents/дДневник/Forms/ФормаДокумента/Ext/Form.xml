@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.12">
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
@@ -831,7 +831,7 @@
 									<v8:content>Группа предложения</v8:content>
 								</v8:item>
 							</ToolTip>
-							<Width>31</Width>
+							<Width>20</Width>
 							<Group>Vertical</Group>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаПредложенияРасширеннаяПодсказка" id="141"/>
@@ -1376,6 +1376,7 @@
 										</LabelField>
 										<LabelField name="ПоследниеТегиРегистратор" id="878">
 											<DataPath>ПоследниеТеги.Регистратор</DataPath>
+											<Visible>false</Visible>
 											<ContextMenu name="ПоследниеТегиРегистраторКонтекстноеМеню" id="879"/>
 											<ExtendedTooltip name="ПоследниеТегиРегистраторРасширеннаяПодсказка" id="880"/>
 										</LabelField>
@@ -2795,12 +2796,41 @@
 					</Picture>
 					<ExtendedTooltip name="ГруппаПереводРасширеннаяПодсказка" id="680"/>
 					<ChildItems>
-						<CheckBoxField name="НеПереводить" id="746">
-							<DataPath>Объект.НеПереводить</DataPath>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="НеПереводитьКонтекстноеМеню" id="747"/>
-							<ExtendedTooltip name="НеПереводитьРасширеннаяПодсказка" id="748"/>
-						</CheckBoxField>
+						<UsualGroup name="ПереводШапка" id="890">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Перевод шапка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Перевод шапка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПереводШапкаРасширеннаяПодсказка" id="891"/>
+							<ChildItems>
+								<CheckBoxField name="НеПереводить" id="746">
+									<DataPath>Объект.НеПереводить</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="НеПереводитьКонтекстноеМеню" id="747"/>
+									<ExtendedTooltip name="НеПереводитьРасширеннаяПодсказка" id="748"/>
+								</CheckBoxField>
+								<LabelDecoration name="ПереводОграничения" id="887">
+									<Width>80</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Переводиться будут записи с меньше 370 слов (2500 символов) - иначе долго получается ответ + нужен API на rapidapi.com</v8:content>
+										</v8:item>
+									</Title>
+									<BackColor>style:ToolTipBackColor</BackColor>
+									<ContextMenu name="ПереводОграниченияКонтекстноеМеню" id="888"/>
+									<ExtendedTooltip name="ПереводОграниченияРасширеннаяПодсказка" id="889"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
 						<Table name="Перевод" id="681">
 							<Height>10</Height>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
@@ -3938,6 +3968,9 @@
 			<Type>
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
+			<UseAlways>
+				<Field>ПоследниеТеги.Регистратор</Field>
+			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>false</DynamicDataRead>
@@ -4562,6 +4595,10 @@
 					<v8:content>Создать запись со ссылкой</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.GotoURL</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
 			<Action>СоздатьЗаписьСоСсылкой</Action>
 		</Command>
 		<Command name="ОкончаниеДатыКакНачало" id="28">
